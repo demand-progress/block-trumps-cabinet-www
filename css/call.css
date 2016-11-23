@@ -1,0 +1,551 @@
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+button,
+form,
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #09f;
+    text-decoration: none;
+
+    -webkit-transition: color 0.3s;
+            transition: color 0.3s;
+}
+
+a:hover {
+    color: #50b9ff;
+}
+
+#app {
+    color: #090909;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#app .please-wait {
+    color: #eee;
+    text-align: center;
+    padding: 32px;
+}
+
+#app .wrapper > header {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+#app .title {
+    font-size: 44px;
+    font-weight: 600;
+    padding: 32px 32px 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 479px) {
+    #app .title {
+        font-size: 30px;
+    }
+}
+
+#app .paragraph {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 32px 32px;
+    text-align: center;
+}
+
+#app .paragraph .spacer {
+    padding: 16px 0 0;
+}
+
+#app .phone-form form {
+    border: 5px solid #411;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
+    margin: 0 auto 16px;
+    max-width: 440px;
+
+    -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+}
+
+#app .phone-form form:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.216);
+}
+
+#app .phone-form form h2 {
+    font-weight: 600;
+    margin: 32px 32px 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#app .phone-form form .request {
+    padding: 0 32px 32px;
+    text-align: center;
+}
+
+#app .phone-form form input {
+    border-top: 1px solid #bbd;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.076);
+    color: #090909;
+    font-size: 24px;
+    padding: 16px;
+    text-align: center;
+    width: 100%;
+
+    -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+}
+
+#app .phone-form form input:focus {
+    box-shadow: inset 1px 1px 7px rgba(120, 232, 255, 0.463);
+}
+
+#app .phone-form form input:hover {
+    box-shadow: inset 1px 1px 7px rgba(120, 232, 255, 0.785);
+}
+
+#app .phone-form form button {
+    background-color: #09f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px 64px;
+    text-transform: uppercase;
+    width: 100%;
+
+    -webkit-transition: background-color 0.3s;
+            transition: background-color 0.3s;
+}
+
+#app .phone-form form button:hover {
+    background-color: #50b9ff;
+}
+
+#app .phone-form form button img {
+    height: 32px;
+    line-height: 1;
+    margin: 0px 0 0 12px;
+    position: absolute;
+
+    -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+
+    -webkit-transform: translate3d(0, 0, 0) rotate(0);
+            transform: translate3d(0, 0, 0) rotate(0);
+}
+
+#app .phone-form form button:hover img {
+    -webkit-transform: translate3d(0, 0, 0) rotate(6deg);
+            transform: translate3d(0, 0, 0) rotate(6deg);
+}
+
+#app .phone-script {
+    border: 5px solid #411;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
+    margin: 0 auto 32px;
+    max-width: 440px;
+    padding: 32px;
+    text-align: center;
+
+    -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+}
+
+#app .phone-script:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.216);
+}
+
+#app .phone-script h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 24px;
+}
+
+#app .phone-script .suggestion {
+    color: #09f;
+    font-weight: 600;
+}
+
+#app .phone-script .spacer {
+    padding: 0 0 16px;
+}
+
+#app .thanks {
+    font-size: 24px;
+    padding: 0 0 32px;
+    text-align: center;
+}
+
+#app .email-form form {
+    border: 5px solid #411;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
+    margin: 0 auto 32px;
+    max-width: 440px;
+    overflow: hidden;
+
+    -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+}
+
+#app .email-form form:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.216);
+}
+
+#app .email-form form input {
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.076);
+    color: #090909;
+    font-size: 24px;
+    padding: 16px;
+    text-align: center;
+    width: 100%;
+
+    -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+}
+
+#app .email-form form input:focus {
+    box-shadow: inset 1px 1px 7px rgba(120, 232, 255, 0.463);
+}
+
+#app .email-form form input:hover {
+    box-shadow: inset 1px 1px 7px rgba(120, 232, 255, 0.785);
+}
+
+#app .email-form form input.name,
+#app .email-form form input.email {
+    border-bottom: 1px solid #ccc;
+}
+
+#app .email-form form button {
+    background-color: #09f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px;
+    text-transform: uppercase;
+    width: 100%;
+
+    -webkit-transition: background-color 0.3s;
+            transition: background-color 0.3s;
+}
+
+#app .email-form form button:hover {
+    background-color: #50b9ff;
+}
+
+#app .email-form .disclaimer {
+    color: #808080;
+    font-size: 12px;
+    font-style: italic;
+    margin: 32px auto;
+    max-width: 460px;
+    padding: 0 32px;
+    text-align: center;
+}
+
+@media (max-width: 460px) {
+    #app .email-form form input {
+        border-bottom: 1px solid #ccc;
+        border-right: none;
+        width: 100%;
+    }
+
+    #app .email-form form input.zip {
+        border-bottom: none;
+    }
+}
+
+#app .opt-out-form {
+    border: 5px solid #411;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
+    margin: 0 auto 32px;
+    max-width: 440px;
+    padding: 32px;
+
+    -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+}
+
+#app .opt-out-form:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.216);
+}
+
+#app .opt-out-form .suggestion {
+    color: #09f;
+    font-weight: 600;
+}
+
+#app .opt-out-form .numbers .number {
+    padding: 16px 0 0;
+}
+
+#app .opt-out-form .numbers .number .name {
+    font-weight: 700;
+}
+
+#app .privacy {
+    color: #808080;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0 0 32px;
+    text-align: center;
+}
+
+#app .organizations {
+    background-color: #09f;
+    font-size: 16px;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+#app .organizations a {
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    max-width: 268px;
+}
+
+#app .organizations a:hover {
+    text-decoration: underline;
+}
+
+#app .social {
+    background-color: #45619d;
+    color: #fff;
+    padding: 0 0 48px;
+    text-align: center;
+}
+
+#app .social h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    padding: 32px 32px 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#app .social .copy {
+    margin: 0 auto;
+    max-width: 760px;
+    padding: 0 32px 32px;
+}
+
+#app .social .buttons {
+}
+
+#app .social .buttons a {
+    background-color: #09f;
+    background-position: 11px 7px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    border-radius: 2px;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    padding: 8px 16px 8px 48px;
+
+    -webkit-transition: background-color 0.3s;
+            transition: background-color 0.3s;
+}
+
+#app .social .buttons a:hover {
+    background-color: #50b9ff;
+}
+
+#app .social .buttons a.facebook {
+    background-image: url(../images/social/fb_white.png);
+    margin: 0 16px 0 0;
+}
+
+#app .social .buttons a.twitter {
+    background-image: url(../images/social/tw_white.png);
+}
+
+#app .contact {
+    border-top: 1px solid #eee;
+    font-size: 18px;
+    margin: 64px auto 0;
+    max-width: 960px;
+    padding: 32px;
+    text-align: center;
+}
+
+#app .creative-commons {
+    color: #808080;
+    font-size: 12px;
+    font-style: italic;
+    margin: 32px auto;
+    max-width: 460px;
+    opacity: 0.5;
+    padding: 0 32px;
+    text-align: center;
+}
+
+/* Intro animations */
+#app .wrapper > header {
+    opacity: 0;
+
+    -webkit-animation: fadein 0.312s forwards;
+            animation: fadein 0.312s forwards;
+}
+#app .wrapper > .form {
+    opacity: 0;
+
+    -webkit-animation: fadein 0.312s 0.06s forwards;
+            animation: fadein 0.312s 0.06s forwards;
+}
+#app .wrapper > .social {
+    opacity: 0;
+
+    -webkit-animation: fadein 0.312s 0.12s forwards;
+            animation: fadein 0.312s 0.12s forwards;
+}
+#app .wrapper > .organizations {
+    opacity: 0;
+
+    -webkit-animation: fadein 0.312s 0.18s forwards;
+            animation: fadein 0.312s 0.18s forwards;
+}
+#app .wrapper > .contact {
+    -webkit-animation: fadein 0.312s 0.24s forwards;
+            animation: fadein 0.312s 0.24s forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Feedback */
+#app .calling-wrapper {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 16px auto 0;
+    max-width: 720px;
+    padding: 24px 32px 32px;
+    position: relative;
+    border-top: 1px solid #ccc;
+}
+#app .calling-wrapper h3 {
+    font-weight: 600;
+    margin: 0 auto;
+    max-width: 360px;
+}
+#app .calling-wrapper form {
+    background-color: #45619d;
+    background-image: linear-gradient(#45619d, #09466f);
+    color: white;
+    border-radius: 5px;
+    color: #eee;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+    margin: 32px auto 0;
+    max-width: 300px;
+    padding: 16px 32px 32px;
+    position: relative;
+}
+#app .calling-wrapper form .wrapper {
+    position: relative;
+}
+#app .calling-wrapper form h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0 auto;
+    padding: 16px 16px 8px;
+}
+#app .calling-wrapper form input {
+    border: 1px solid #aaa;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.16);
+    padding: 8px;
+    width: 100%;
+}
+#app .calling-wrapper form button {
+    background: none;
+    background-color: #0199ff;
+    border-radius: 3px;
+    border: none;
+    color: #f0f4f5;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: auto;
+    line-height: 2.4;
+    margin: 16px 0 0;
+    padding: 0 16px;
+    text-shadow: none;
+    transition: background-color 0.16s;
+    width: 100%;
+}
+#app .calling-wrapper button:hover {
+    background-color: #50b9ff;
+}
+#app .calling-wrapper #thanks {
+    background: #0199ff;
+    color: #f0f4f5;
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    left: 0;
+    letter-spacing: 1px;
+    line-height: 2.4;
+    margin: 16px 0 0;
+    max-width: 430px;
+    padding: 0 16px;
+    position: absolute;
+    text-transform: uppercase;
+    transition: opacity 0.4s ease-out;
+    width: 100%;
+    z-index: 2;
+}
+#app .calling-wrapper .sent br,
+#app .calling-wrapper .sent h4,
+#app .calling-wrapper .sent input {
+    display: none;
+}
+#app .calling-wrapper .sent #thanks {
+    display: block;
+}
