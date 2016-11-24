@@ -46,6 +46,13 @@
 
 	'use strict';
 
+	// Config
+	var config = {};
+	config.akPage = 'block-trumps-cabinet-www';
+	config.callCampaign = 'block-trumps-cabinet';
+	config.link = 'https://blocktrumpscabinet.com/';
+	config.prettyCampaignName = 'Block Trump\'s Cabinet';
+
 	// Modules
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
@@ -65,14 +72,9 @@
 	    }
 	})();
 
-	// Config
-	var config = {};
-	config.campaign = 'block-trumps-cabinet';
-	config.link = 'https://blocktrumpscabinet.com/';
-	config.prettyCampaignName = 'Block Trump\'s Cabinet';
-
 	// URLs
 	var urls = {};
+	urls.actionkit = 'https://act.demandprogress.org/act/';
 	urls.facebook = 'https://www.facebook.com/sharer.php?u=';
 	urls.feedback = 'https://dp-feedback-tool.herokuapp.com/api/v1/feedback?';
 	urls.twitter = 'https://twitter.com/intent/tweet?text=';
@@ -111,6 +113,31 @@
 	        xhr.send(formData);
 	    }
 	};
+
+	function sendFormToActionKit(fields) {
+	    // iFrame
+	    var iframe = document.createElement('iframe');
+	    iframe.style.display = 'none';
+	    iframe.setAttribute('name', 'actionkit-iframe');
+	    document.body.appendChild(iframe);
+
+	    // Form
+	    var form = document.createElement('form');
+	    form.style.display = 'none';
+	    form.setAttribute('action', urls.actionkit);
+	    form.setAttribute('method', 'post');
+	    form.setAttribute('target', 'actionkit-iframe');
+
+	    Object.keys(fields).forEach(function (key) {
+	        var input = document.createElement('input');
+	        input.type = 'hidden';
+	        input.name = key;
+	        input.value = fields[key];
+	        form.appendChild(input);
+	    });
+
+	    form.submit();
+	}
 
 	var events = {
 	    list: {},
@@ -164,34 +191,108 @@
 
 	function k() {}
 
-	var Header = React.createClass({
-	    displayName: 'Header',
+	var Header = function Header() {
+	    return React.createElement(
+	        'header',
+	        null,
+	        React.createElement(
+	            'div',
+	            { className: 'title' },
+	            'TELL TRUMP: DON\'T APPOINT CORPORATE INSIDERS TO YOUR ADMINISTRATION'
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'paragraph' },
+	            'Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id.',
+	            React.createElement('div', { className: 'spacer' }),
+	            'Eros meis nusquam ei his. Sumo convenire cu mea, delicata eloquentiam cu pro. Wisi oblique detracto has ut, eos duis corpora scribentur ut. Ei est nonumy vidisse denique.',
+	            React.createElement('div', { className: 'spacer' }),
+	            'Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis.',
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'strong',
+	                null,
+	                'Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis. Cum maiorum phaedrum ne, te eam nisl cotidieque.'
+	            )
+	        )
+	    );
+	};
+
+	var EmailForm = React.createClass({
+	    displayName: 'EmailForm',
 
 	    render: function render() {
 	        return React.createElement(
-	            'header',
-	            null,
+	            'div',
+	            { className: 'email-form' },
 	            React.createElement(
-	                'div',
-	                { className: 'title' },
-	                'TELL TRUMP: DON\'T APPOINT CORPORATE INSIDERS TO YOUR ADMINISTRATION'
+	                'form',
+	                { onSubmit: this.onSubmit, ref: 'form' },
+	                React.createElement('input', { className: 'name', name: 'name', placeholder: 'Your name', autoFocus: 'autoFocus' }),
+	                React.createElement('input', { className: 'email', name: 'email', placeholder: 'Email', type: 'email' }),
+	                React.createElement('input', { className: 'zip', name: 'zip', placeholder: 'Zip code', type: 'tel' }),
+	                React.createElement(
+	                    'button',
+	                    null,
+	                    'Send Now'
+	                )
 	            ),
 	            React.createElement(
 	                'div',
-	                { className: 'paragraph' },
-	                'Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id.',
-	                React.createElement('div', { className: 'spacer' }),
-	                'Eros meis nusquam ei his. Sumo convenire cu mea, delicata eloquentiam cu pro. Wisi oblique detracto has ut, eos duis corpora scribentur ut. Ei est nonumy vidisse denique.',
-	                React.createElement('div', { className: 'spacer' }),
-	                'Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis.',
-	                React.createElement('div', { className: 'spacer' }),
-	                React.createElement(
-	                    'strong',
-	                    null,
-	                    'Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis. Cum maiorum phaedrum ne, te eam nisl cotidieque.'
-	                )
+	                { className: 'disclaimer' },
+	                'We do not share your email address without your permission. Demand Progress, Democracy For America, National People\u2019s Action, Other 98, RootsAction, and Rootstrikers may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.'
 	            )
 	        );
+	    },
+
+	    onSubmit: function onSubmit(e) {
+	        e.preventDefault();
+
+	        var form = this.refs.form;
+
+	        var name = form.querySelector('[name="name"]');
+	        if (!name.value.trim()) {
+	            name.focus();
+	            alert('Please enter your name.');
+	            return;
+	        }
+
+	        var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+	        var email = form.querySelector('[name="email"]');
+	        if (!email.value.trim()) {
+	            email.focus();
+	            alert('Please enter your email.');
+	            return;
+	        } else if (!emailRegex.test(email.value.trim())) {
+	            email.focus();
+	            alert('Please enter a valid email.');
+	            return;
+	        }
+
+	        var zip = form.querySelector('[name="zip"]');
+	        if (!zip.value.trim()) {
+	            zip.focus();
+	            alert('Please enter your zip.');
+	            return;
+	        }
+
+	        var fields = {
+	            'action_user_agent': navigator.userAgent,
+	            'country': 'United States',
+	            'email': email.value.trim(),
+	            'form_name': 'act-petition',
+	            'js': 1,
+	            'name': name.value.trim(),
+	            'opt_in': 1,
+	            'page': config.akPage,
+	            'source': getSource(),
+	            'want_progress': 1,
+	            'zip': zip.value.trim()
+	        };
+
+	        sendFormToActionKit(fields);
+
+	        this.props.changeForm('phone');
 	    }
 	});
 
@@ -261,7 +362,7 @@
 	        }
 
 	        var request = new XMLHttpRequest();
-	        var url = 'https://dp-call-congress.herokuapp.com/create?campaignId=' + config.campaign + '&userPhone=' + number + '&source_id=' + getSource();
+	        var url = 'https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=' + config.callCampaign + '&userPhone=' + number + '&source_id=' + getSource();
 	        request.open('GET', url, true);
 	        request.send();
 
@@ -358,8 +459,8 @@
 	        e.preventDefault();
 
 	        var data = {
-	            campaign: config.campaign,
-	            subject: 'Feedback from ' + (config.prettyCampaignName || config.campaign),
+	            callCampaign: config.callCampaign,
+	            subject: 'Feedback from ' + (config.prettyCampaignName || config.callCampaign),
 	            text: ''
 	        };
 
@@ -480,6 +581,10 @@
 	    render: function render() {
 	        var form = void 0;
 	        switch (this.state.form) {
+	            case 'email':
+	                form = React.createElement(EmailForm, { changeForm: this.changeForm });
+	                break;
+
 	            case 'phone':
 	                form = React.createElement(PhoneForm, { changeForm: this.changeForm });
 	                break;
@@ -505,7 +610,7 @@
 	    },
 
 	    getInitialState: function getInitialState() {
-	        var form = 'phone';
+	        var form = 'email';
 
 	        if (state.query.call_tool) {
 	            form = 'phone';
@@ -3855,30 +3960,38 @@
 	// Set.prototype.keys
 	Set.prototype != null && typeof Set.prototype.keys === 'function' && isNative(Set.prototype.keys);
 
+	var setItem;
+	var getItem;
+	var removeItem;
+	var getItemIDs;
+	var addRoot;
+	var removeRoot;
+	var getRootIDs;
+
 	if (canUseCollections) {
 	  var itemMap = new Map();
 	  var rootIDSet = new Set();
 
-	  var setItem = function (id, item) {
+	  setItem = function (id, item) {
 	    itemMap.set(id, item);
 	  };
-	  var getItem = function (id) {
+	  getItem = function (id) {
 	    return itemMap.get(id);
 	  };
-	  var removeItem = function (id) {
+	  removeItem = function (id) {
 	    itemMap['delete'](id);
 	  };
-	  var getItemIDs = function () {
+	  getItemIDs = function () {
 	    return Array.from(itemMap.keys());
 	  };
 
-	  var addRoot = function (id) {
+	  addRoot = function (id) {
 	    rootIDSet.add(id);
 	  };
-	  var removeRoot = function (id) {
+	  removeRoot = function (id) {
 	    rootIDSet['delete'](id);
 	  };
-	  var getRootIDs = function () {
+	  getRootIDs = function () {
 	    return Array.from(rootIDSet.keys());
 	  };
 	} else {
@@ -3894,31 +4007,31 @@
 	    return parseInt(key.substr(1), 10);
 	  };
 
-	  var setItem = function (id, item) {
+	  setItem = function (id, item) {
 	    var key = getKeyFromID(id);
 	    itemByKey[key] = item;
 	  };
-	  var getItem = function (id) {
+	  getItem = function (id) {
 	    var key = getKeyFromID(id);
 	    return itemByKey[key];
 	  };
-	  var removeItem = function (id) {
+	  removeItem = function (id) {
 	    var key = getKeyFromID(id);
 	    delete itemByKey[key];
 	  };
-	  var getItemIDs = function () {
+	  getItemIDs = function () {
 	    return Object.keys(itemByKey).map(getIDFromKey);
 	  };
 
-	  var addRoot = function (id) {
+	  addRoot = function (id) {
 	    var key = getKeyFromID(id);
 	    rootByKey[key] = true;
 	  };
-	  var removeRoot = function (id) {
+	  removeRoot = function (id) {
 	    var key = getKeyFromID(id);
 	    delete rootByKey[key];
 	  };
-	  var getRootIDs = function () {
+	  getRootIDs = function () {
 	    return Object.keys(rootByKey).map(getIDFromKey);
 	  };
 	}
@@ -4699,7 +4812,7 @@
 
 	'use strict';
 
-	module.exports = '15.4.0';
+	module.exports = '15.4.1';
 
 /***/ },
 /* 31 */
@@ -6104,6 +6217,28 @@
 	  return '.' + inst._rootNodeID;
 	};
 
+	function isInteractive(tag) {
+	  return tag === 'button' || tag === 'input' || tag === 'select' || tag === 'textarea';
+	}
+
+	function shouldPreventMouseEvent(name, type, props) {
+	  switch (name) {
+	    case 'onClick':
+	    case 'onClickCapture':
+	    case 'onDoubleClick':
+	    case 'onDoubleClickCapture':
+	    case 'onMouseDown':
+	    case 'onMouseDownCapture':
+	    case 'onMouseMove':
+	    case 'onMouseMoveCapture':
+	    case 'onMouseUp':
+	    case 'onMouseUpCapture':
+	      return !!(props.disabled && isInteractive(type));
+	    default:
+	      return false;
+	  }
+	}
+
 	/**
 	 * This is a unified interface for event plugins to be installed and configured.
 	 *
@@ -6172,7 +6307,12 @@
 	   * @return {?function} The stored callback.
 	   */
 	  getListener: function (inst, registrationName) {
+	    // TODO: shouldPreventMouseEvent is DOM-specific and definitely should not
+	    // live here; needs to be moved to a better place soon
 	    var bankForRegistrationName = listenerBank[registrationName];
+	    if (shouldPreventMouseEvent(registrationName, inst._currentElement.type, inst._currentElement.props)) {
+	      return null;
+	    }
 	    var key = getDictionaryKey(inst);
 	    return bankForRegistrationName && bankForRegistrationName[key];
 	  },
@@ -20262,18 +20402,6 @@
 	  return tag === 'button' || tag === 'input' || tag === 'select' || tag === 'textarea';
 	}
 
-	function shouldPreventMouseEvent(inst) {
-	  if (inst) {
-	    var disabled = inst._currentElement && inst._currentElement.props.disabled;
-
-	    if (disabled) {
-	      return isInteractive(inst._tag);
-	    }
-	  }
-
-	  return false;
-	}
-
 	var SimpleEventPlugin = {
 
 	  eventTypes: eventTypes,
@@ -20344,10 +20472,7 @@
 	      case 'topMouseDown':
 	      case 'topMouseMove':
 	      case 'topMouseUp':
-	        // Disabled elements should not respond to mouse events
-	        if (shouldPreventMouseEvent(targetInst)) {
-	          return null;
-	        }
+	      // TODO: Disabled elements should not respond to mouse events
 	      /* falls through */
 	      case 'topMouseOut':
 	      case 'topMouseOver':
@@ -21709,7 +21834,7 @@
 
 	'use strict';
 
-	module.exports = '15.4.0';
+	module.exports = '15.4.1';
 
 /***/ },
 /* 172 */

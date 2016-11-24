@@ -1,3 +1,11 @@
+// Config
+const config = {};
+config.akPage = 'block-trumps-cabinet-www';
+config.callCampaign = 'block-trumps-cabinet';
+config.link = 'https://blocktrumpscabinet.com/';
+config.prettyCampaignName = 'Block Trump\'s Cabinet';
+
+
 // Modules
 const React = require('react');
 const ReactDOM = require('react-dom');
@@ -17,14 +25,9 @@ const ReactDOM = require('react-dom');
     }
 })();
 
-// Config
-const config = {};
-config.campaign = 'block-trumps-cabinet';
-config.link = 'https://blocktrumpscabinet.com/';
-config.prettyCampaignName = 'Block Trump\'s Cabinet';
-
 // URLs
 const urls = {};
+urls.actionkit = 'https://act.demandprogress.org/act/';
 urls.facebook = 'https://www.facebook.com/sharer.php?u=';
 urls.feedback = 'https://dp-feedback-tool.herokuapp.com/api/v1/feedback?';
 urls.twitter = 'https://twitter.com/intent/tweet?text=';
@@ -63,6 +66,31 @@ const ajax = {
         xhr.send(formData);
     },
 };
+
+function sendFormToActionKit(fields) {
+    // iFrame
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.setAttribute('name', 'actionkit-iframe');
+    document.body.appendChild(iframe);
+
+    // Form
+    const form = document.createElement('form');
+    form.style.display = 'none';
+    form.setAttribute('action', urls.actionkit);
+    form.setAttribute('method', 'post');
+    form.setAttribute('target', 'actionkit-iframe');
+
+    Object.keys(fields).forEach(function(key) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = fields[key];
+        form.appendChild(input);
+    });
+
+    form.submit();
+}
 
 const events = {
     list: {},
@@ -116,28 +144,102 @@ function findPos(obj) {
 
 function k() {}
 
-const Header = React.createClass({
+const Header = () => (
+    <header>
+        <div className="title">
+            TELL TRUMP: DON'T APPOINT CORPORATE INSIDERS TO YOUR ADMINISTRATION
+        </div>
+
+        <div className="paragraph">
+            Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id.
+            <div className="spacer" />
+
+            Eros meis nusquam ei his. Sumo convenire cu mea, delicata eloquentiam cu pro. Wisi oblique detracto has ut, eos duis corpora scribentur ut. Ei est nonumy vidisse denique.
+            <div className="spacer" />
+
+            Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis.
+            <div className="spacer" />
+
+            <strong>Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis. Cum maiorum phaedrum ne, te eam nisl cotidieque.</strong>
+        </div>
+    </header>
+);
+
+const EmailForm = React.createClass({
     render: function() {
         return (
-            <header>
-                <div className="title">
-                    TELL TRUMP: DON'T APPOINT CORPORATE INSIDERS TO YOUR ADMINISTRATION
+            <div className="email-form">
+                <form onSubmit={ this.onSubmit } ref="form">
+                    <input className="name" name="name" placeholder="Your name" autoFocus="autoFocus" />
+                    <input className="email" name="email" placeholder="Email" type="email" />
+                    <input className="zip" name="zip" placeholder="Zip code" type="tel" />
+                    <button>
+                        Send Now
+                    </button>
+                </form>
+
+                <div className="disclaimer">
+                    We do not share your email address without your permission.
+                    Demand Progress,
+                    Democracy For America,
+                    National People’s Action,
+                    Other 98,
+                    RootsAction, and
+                    Rootstrikers
+                    may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.
                 </div>
-
-                <div className="paragraph">
-                    Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id.
-                    <div className="spacer" />
-
-                    Eros meis nusquam ei his. Sumo convenire cu mea, delicata eloquentiam cu pro. Wisi oblique detracto has ut, eos duis corpora scribentur ut. Ei est nonumy vidisse denique.
-                    <div className="spacer" />
-
-                    Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis.
-                    <div className="spacer" />
-
-                    <strong>Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis. Cum maiorum phaedrum ne, te eam nisl cotidieque.</strong>
-                </div>
-            </header>
+            </div>
         );
+    },
+
+    onSubmit: function(e) {
+        e.preventDefault();
+
+        const form = this.refs.form;
+
+        const name = form.querySelector('[name="name"]');
+        if (!name.value.trim()) {
+            name.focus();
+            alert('Please enter your name.');
+            return;
+        }
+
+        const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+        const email = form.querySelector('[name="email"]');
+        if (!email.value.trim()) {
+            email.focus();
+            alert('Please enter your email.');
+            return;
+        } else if (!emailRegex.test(email.value.trim())) {
+            email.focus();
+            alert('Please enter a valid email.');
+            return;
+        }
+
+        const zip = form.querySelector('[name="zip"]');
+        if (!zip.value.trim()) {
+            zip.focus();
+            alert('Please enter your zip.');
+            return;
+        }
+
+        const fields = {
+            'action_user_agent': navigator.userAgent,
+            'country': 'United States',
+            'email': email.value.trim(),
+            'form_name': 'act-petition',
+            'js': 1,
+            'name': name.value.trim(),
+            'opt_in': 1,
+            'page': config.akPage,
+            'source': getSource(),
+            'want_progress': 1,
+            'zip': zip.value.trim(),
+        };
+
+        sendFormToActionKit(fields);
+
+        this.props.changeForm('phone');
     },
 });
 
@@ -185,7 +287,7 @@ const PhoneForm = React.createClass({
         }
 
         const request = new XMLHttpRequest();
-        const url = `https://dp-call-congress.herokuapp.com/create?campaignId=${config.campaign}&userPhone=${number}&source_id=${getSource()}`;
+        const url = `https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=${config.callCampaign}&userPhone=${number}&source_id=${getSource()}`;
         request.open('GET', url, true);
         request.send();
 
@@ -263,8 +365,8 @@ const PhoneScript = React.createClass({
         e.preventDefault();
 
         const data = {
-            campaign: config.campaign,
-            subject: 'Feedback from ' + (config.prettyCampaignName || config.campaign),
+            callCampaign: config.callCampaign,
+            subject: 'Feedback from ' + (config.prettyCampaignName || config.callCampaign),
             text: '',
         };
 
@@ -361,6 +463,10 @@ const Form = React.createClass({
     render: function() {
         let form;
         switch (this.state.form) {
+            case 'email':
+            form = <EmailForm changeForm={ this.changeForm } />;
+            break;
+
             case 'phone':
             form = <PhoneForm changeForm={ this.changeForm } />;
             break;
@@ -386,7 +492,7 @@ const Form = React.createClass({
     },
 
     getInitialState: function () {
-        let form = 'phone';
+        let form = 'email';
 
         if (state.query.call_tool) {
             form = 'phone';

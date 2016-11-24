@@ -242,7 +242,7 @@ a:hover {
 }
 
 #app .email-form form button {
-    background-color: #09f;
+    background-color: #ffb406;
     color: #fff;
     cursor: pointer;
     font-size: 24px;
@@ -256,7 +256,7 @@ a:hover {
 }
 
 #app .email-form form button:hover {
-    background-color: #50b9ff;
+    background-color: #ffa905;
 }
 
 #app .email-form .disclaimer {
@@ -505,7 +505,7 @@ a:hover {
 }
 #app .calling-wrapper form button {
     background: none;
-    background-color: #0199ff;
+    background-color: #ffb406;
     border-radius: 3px;
     border: none;
     color: #f0f4f5;
@@ -521,7 +521,7 @@ a:hover {
     width: 100%;
 }
 #app .calling-wrapper button:hover {
-    background-color: #50b9ff;
+    background-color: #ffa905;
 }
 #app .calling-wrapper #thanks {
     background: #0199ff;
