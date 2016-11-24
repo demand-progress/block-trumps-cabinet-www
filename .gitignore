@@ -2,3 +2,5 @@
 design/
 reaper/
 node_modules/
+.idea/
+*.iml
