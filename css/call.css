@@ -1,5 +1,10 @@
 body {
-    background-color: #f9f9f9;
+    /*background-color: #ad2d20;*/
+    background-color: #f1f1f1;
+    background-image: url(../images/Trump-WH-header-collage.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin: 0;
 }
 
@@ -28,19 +33,24 @@ input[type=number] {
 }
 
 a {
-    color: #09f;
+    color: #9a1606;
     text-decoration: none;
-
     -webkit-transition: color 0.3s;
             transition: color 0.3s;
 }
 
 a:hover {
-    color: #50b9ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 914px) {
+    body {
+        background-size: 915px auto;
+    }
 }
 
 #app {
-    color: #090909;
+    color: #330904;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -56,29 +66,67 @@ a:hover {
 }
 
 #app .title {
+    color: #f1f1f1;
     font-size: 44px;
-    font-weight: 600;
-    padding: 32px 32px;
+    font-weight: bold;
+    padding: 20px 32px 32px;
     text-align: center;
     text-transform: uppercase;
 }
+#app .title span {
+    font-size: 32px;
+    color: #3a0c07;
+}
 
-@media (max-width: 479px) {
+@media (max-width: 879px) {
     #app .title {
         font-size: 30px;
     }
+    #app .title span {
+        font-size: 22px;
+    }
 }
 
+#app .petition,
 #app .paragraph {
     font-size: 16px;
     margin: 0 auto;
-    max-width: 960px;
-    padding: 0 32px 32px;
-    text-align: center;
+    max-width: 840px;
+    padding: 1px 32px 32px;
 }
 
+#app .petition h3,
+#app .paragraph h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#app .petition .spacer,
 #app .paragraph .spacer {
     padding: 16px 0 0;
+}
+
+#app .paragraph hr {
+	border: 0;
+	height: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 34px;
+	width: 100%;
+}
+
+#app .paragraph .profiles {
+    padding: 12px 34px;
+}
+
+#app .paragraph img {
+    display: none;
+    float: left;
+    margin: 0 18px 12px 0;
+    max-height: 200px;
+}
+#app .paragraph .clear {
+    clear: both;
 }
 
 #app .phone-form form {
@@ -201,8 +249,15 @@ a:hover {
     text-align: center;
 }
 
+#app .email-form .petition {
+    background-color: #f1f1f1;
+    box-shadow: 1px 1px 15px 2px rgba(65,5,5, 0.3);
+    font-style: italic;
+    margin-bottom: 22px;
+}
+
 #app .email-form form {
-    border: 5px solid #411;
+    border: 1px solid #bdbdbd;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
     margin: 0 auto 32px;
     max-width: 440px;
@@ -260,7 +315,7 @@ a:hover {
 }
 
 #app .email-form .disclaimer {
-    color: #808080;
+    color: #7d7d7d;
     font-size: 12px;
     font-style: italic;
     margin: 32px auto;
@@ -398,12 +453,10 @@ a:hover {
 }
 
 #app .creative-commons {
-    color: #808080;
     font-size: 12px;
     font-style: italic;
     margin: 32px auto;
-    max-width: 460px;
-    opacity: 0.5;
+    opacity: 0.6;
     padding: 0 32px;
     text-align: center;
 }

@@ -198,22 +198,13 @@
 	        React.createElement(
 	            'div',
 	            { className: 'title' },
-	            'TELL TRUMP: DON\'T APPOINT CORPORATE INSIDERS TO YOUR ADMINISTRATION'
-	        ),
-	        React.createElement(
-	            'div',
-	            { className: 'paragraph' },
-	            'Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id.',
-	            React.createElement('div', { className: 'spacer' }),
-	            'Eros meis nusquam ei his. Sumo convenire cu mea, delicata eloquentiam cu pro. Wisi oblique detracto has ut, eos duis corpora scribentur ut. Ei est nonumy vidisse denique.',
-	            React.createElement('div', { className: 'spacer' }),
-	            'Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis.',
-	            React.createElement('div', { className: 'spacer' }),
 	            React.createElement(
-	                'strong',
+	                'span',
 	                null,
-	                'Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis. Cum maiorum phaedrum ne, te eam nisl cotidieque.'
-	            )
+	                'Tell the Senate:'
+	            ),
+	            React.createElement('br', null),
+	            'Block Trump\u2019s Cabinet of Hate and Wall Street Greed'
 	        )
 	    );
 	};
@@ -225,6 +216,18 @@
 	        return React.createElement(
 	            'div',
 	            { className: 'email-form' },
+	            React.createElement(
+	                'div',
+	                { className: 'petition', id: 'petition' },
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    'Petition to members of the U.S. Senate:'
+	                ),
+	                'Donald Trump\u2019s first appointments to cabinet-level roles in his administration are horrifying. Trump nominees and rumored picks range from white nationalists and climate deniers to Wall Street insiders and corporate lobbyists.',
+	                React.createElement('div', { className: 'spacer' }),
+	                'As representatives of all Americans, you must stand up against hatred and greed. Fight to block and resist every Trump nominee who embraces racism, xenophobia, misogyny, homophobia, climate denial, and Wall Street greed.'
+	            ),
 	            React.createElement(
 	                'form',
 	                { onSubmit: this.onSubmit, ref: 'form' },
@@ -241,7 +244,8 @@
 	                'div',
 	                { className: 'disclaimer' },
 	                'We do not share your email address without your permission. Demand Progress, Democracy For America, National People\u2019s Action, Other 98, RootsAction, and Rootstrikers may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.'
-	            )
+	            ),
+	            React.createElement(BodyCopy, null)
 	        );
 	    },
 
@@ -694,17 +698,17 @@
 	        return React.createElement(
 	            'div',
 	            { className: 'creative-commons' },
-	            'Social media photo via ',
+	            'Trump photo (edited) via ',
 	            React.createElement(
 	                'a',
-	                { href: 'https://www.flickr.com/photos/132084522@N05/17086570218/in/photolist-s2T93f-aCsYXi-oPq1C2-aCtoP8-aCtq3g-aCtqM8-aCw4ZE-aCw5Ay-aCw5iu-aCtqjT-9xMgR-2ixJCg-4Hgjqa-iBNpq-5AJv1X-bxnPa3-4hMTnc-5ppxQp-5ppzf2-5ptSUW-7Msw4U-E5Z87-7onZXi-wsAoC-7881oQ-6yR8Ad-MKW8o-9McFm3-9McFaC-4hRZqU-5tw48Y-5tJZ6J-5tECet-7LmT9N-tV1WT-d5LKYs-eCnroP-rdRMnA-aCtqBx-aCvB1G-aCvAFq-aCsUAr-aCvBTd-aCsTw8-aCvAqd-aCvztu-aCvCBL-aCsV14-aCvEhU-aCvEMh', target: '_blank' },
-	                'Sam Valadi'
+	                { href: 'https://commons.wikimedia.org/wiki/File%3ADonald_Trump_(16493063167).jpg', target: '_blank' },
+	                'Michael Vadon'
 	            ),
 	            ' under a ',
 	            React.createElement(
 	                'a',
-	                { href: 'https://creativecommons.org/licenses/by/2.0/', target: '_blank' },
-	                'CC BY 2.0'
+	                { href: 'http://creativecommons.org/licenses/by-sa/2.0', target: '_blank' },
+	                'CC BY-SA 2.0'
 	            ),
 	            ' license.'
 	        );
@@ -776,6 +780,114 @@
 	    }
 	});
 
+	var BodyCopy = function BodyCopy() {
+	    return React.createElement(
+	        'div',
+	        { className: 'paragraph' },
+	        React.createElement('hr', null),
+	        'Trump rose to power with a divisive campaign that showed he was willing to embrace every fringe ideology from xenophobia to sexism to flat-out racism in order to gain power.',
+	        React.createElement(
+	            'h3',
+	            null,
+	            'Trump\u2019s Broken Promises:'
+	        ),
+	        'Despite his campaign, Trump promised in election night to be \u201Ca president for all Americans.\u201D But the parade of horribles that Trump has nominated to his administration show he is welcoming hate right into the White House.',
+	        React.createElement('div', { className: 'spacer' }),
+	        'And his pledge to \u201Cdrain the swamp\u201D and make Washington work for ordinary Americans instead of powerful elites? Forget about it. Trump\u2019s cabinet is so pro-corporate it\u2019s called \u201Can investment banker\u2019s dream.\u201D',
+	        React.createElement('div', { className: 'spacer' }),
+	        React.createElement(
+	            'h3',
+	            null,
+	            'Who the Trump Cabinet Really Works For:'
+	        ),
+	        'Wall Street bankers and Trump\u2019s corporate cronies are cheering the Trump agenda. It\u2019s a corporate wish list that would eliminate protections for working people and our environment, and eviscerate strong rules reining in Wall Street.',
+	        React.createElement('div', { className: 'spacer' }),
+	        'The Trump administration is shaping up to benefit Donald Trump and his family\u2019s business empire in a big way, with massive conflicts of interest posed by Trump\u2019s continued stake in the Trump Organization.',
+	        React.createElement('div', { className: 'spacer' }),
+	        React.createElement(
+	            'h3',
+	            null,
+	            'The Senate Must Block and Resist Trump\'s Cabinet'
+	        ),
+	        'The U.S. Senate has confirmation power over most of Trump\'s cabinet. Senators must use this power to block and resist Trump\u2019s cabinet of hate and greed. Consider who we\u2019re talking about:',
+	        React.createElement('div', { className: 'spacer' }),
+	        React.createElement(
+	            'div',
+	            { className: 'profiles' },
+	            React.createElement('img', { src: 'images/TrumpHair.png', alt: 'Donald Trump\'s Hair' }),
+	            React.createElement(
+	                'strong',
+	                null,
+	                'Jeff Sessions (Attorney General)'
+	            ),
+	            ' \u2013 The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country\u2019s civil rights laws, despite a history of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, ',
+	            React.createElement(
+	                'a',
+	                { href: 'http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html', target: '_blank' },
+	                'and calling the ACLU and NAACP "un-American."'
+	            ),
+	            React.createElement('div', { className: 'spacer clear' }),
+	            React.createElement('img', { src: 'images/TrumpHair.png', alt: 'Donald Trump\'s Hair' }),
+	            React.createElement(
+	                'strong',
+	                null,
+	                'TBD A Wall Street insider as Treasury Secretary'
+	            ),
+	            ' \u2013 TBD Donald Trump is reportedly choosing between Steve Mnuchin, an ex-Goldman Sachs executive who got rich kicking people out of their homes, foreclosing on 36,000 homes,[2] Jamie Dimon, the billionaire CEO of Wall Street giant JPMorgan,[3] and Rep. Jeb Hensarling, who has sought for years to roll back key protections against recklessness and greed on Wall Street, complaining that banks face "regulatory waterboarding."[4]',
+	            React.createElement('div', { className: 'spacer clear' }),
+	            React.createElement('img', { src: 'images/TrumpHair.png', alt: 'Donald Trump\'s Hair' }),
+	            React.createElement(
+	                'strong',
+	                null,
+	                'Wilbur Ross (Secretary of Commerce)'
+	            ),
+	            ' - Trump\'s reported pick to be Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," ',
+	            React.createElement(
+	                'a',
+	                { href: 'http://www.thedailybeast.com/articles/2016/11/17/could-this-man-be-donald-trump-s-future-secretary-of-outsourcing.html', target: '_blank' },
+	                'he offshored American textile jobs to China and Mexico'
+	            ),
+	            ' and ',
+	            React.createElement(
+	                'a',
+	                { href: 'http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb', target: '_blank' },
+	                '12 coal workers died at his mine in West Virginia.'
+	            ),
+	            ' But he complains that ',
+	            React.createElement(
+	                'a',
+	                { href: 'http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb', target: '_blank' },
+	                '\u201Cthe 1 percent is being picked on for political reasons.\u201D'
+	            ),
+	            ' Ross bailed out Donald Trump\'s failing casinos in Atlantic City, ',
+	            React.createElement(
+	                'a',
+	                { href: 'http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0', target: '_blank' },
+	                'buying himself a seat in Trump\'s crony cabinet.'
+	            ),
+	            React.createElement('div', { className: 'spacer clear' })
+	        ),
+	        'The Senate will be narrowly divided 52-48 between Republicans and Democrats in 2017 and many key Senate committees will be split 10-9 or 11-10. ',
+	        React.createElement(
+	            'strong',
+	            null,
+	            'If Democrats stick together it could only take one or two principled Republican votes to block many of Trump\u2019s nominees.'
+	        ),
+	        React.createElement('div', { className: 'spacer' }),
+	        'Donald Trump may have won the Electoral College, but members of the U.S. Senate should not give any support to Trump appointees espousing racism, xenophobia, misogyny, homophobia, climate denial, and corporate greed.',
+	        React.createElement('div', { className: 'spacer' }),
+	        React.createElement(
+	            'a',
+	            { href: '#petition' },
+	            React.createElement(
+	                'strong',
+	                null,
+	                'Sign the petition if you agree.'
+	            )
+	        )
+	    );
+	};
+
 	var CallPages = React.createClass({
 	    displayName: 'CallPages',
 
@@ -785,7 +897,8 @@
 	            { className: 'wrapper' },
 	            React.createElement(Header, null),
 	            React.createElement(Form, null),
-	            React.createElement(Contact, null)
+	            React.createElement(Contact, null),
+	            React.createElement(CreativeCommons, null)
 	        );
 	    },
 
@@ -3960,38 +4073,30 @@
 	// Set.prototype.keys
 	Set.prototype != null && typeof Set.prototype.keys === 'function' && isNative(Set.prototype.keys);
 
-	var setItem;
-	var getItem;
-	var removeItem;
-	var getItemIDs;
-	var addRoot;
-	var removeRoot;
-	var getRootIDs;
-
 	if (canUseCollections) {
 	  var itemMap = new Map();
 	  var rootIDSet = new Set();
 
-	  setItem = function (id, item) {
+	  var setItem = function (id, item) {
 	    itemMap.set(id, item);
 	  };
-	  getItem = function (id) {
+	  var getItem = function (id) {
 	    return itemMap.get(id);
 	  };
-	  removeItem = function (id) {
+	  var removeItem = function (id) {
 	    itemMap['delete'](id);
 	  };
-	  getItemIDs = function () {
+	  var getItemIDs = function () {
 	    return Array.from(itemMap.keys());
 	  };
 
-	  addRoot = function (id) {
+	  var addRoot = function (id) {
 	    rootIDSet.add(id);
 	  };
-	  removeRoot = function (id) {
+	  var removeRoot = function (id) {
 	    rootIDSet['delete'](id);
 	  };
-	  getRootIDs = function () {
+	  var getRootIDs = function () {
 	    return Array.from(rootIDSet.keys());
 	  };
 	} else {
@@ -4007,31 +4112,31 @@
 	    return parseInt(key.substr(1), 10);
 	  };
 
-	  setItem = function (id, item) {
+	  var setItem = function (id, item) {
 	    var key = getKeyFromID(id);
 	    itemByKey[key] = item;
 	  };
-	  getItem = function (id) {
+	  var getItem = function (id) {
 	    var key = getKeyFromID(id);
 	    return itemByKey[key];
 	  };
-	  removeItem = function (id) {
+	  var removeItem = function (id) {
 	    var key = getKeyFromID(id);
 	    delete itemByKey[key];
 	  };
-	  getItemIDs = function () {
+	  var getItemIDs = function () {
 	    return Object.keys(itemByKey).map(getIDFromKey);
 	  };
 
-	  addRoot = function (id) {
+	  var addRoot = function (id) {
 	    var key = getKeyFromID(id);
 	    rootByKey[key] = true;
 	  };
-	  removeRoot = function (id) {
+	  var removeRoot = function (id) {
 	    var key = getKeyFromID(id);
 	    delete rootByKey[key];
 	  };
-	  getRootIDs = function () {
+	  var getRootIDs = function () {
 	    return Object.keys(rootByKey).map(getIDFromKey);
 	  };
 	}
@@ -4812,7 +4917,7 @@
 
 	'use strict';
 
-	module.exports = '15.4.1';
+	module.exports = '15.4.0';
 
 /***/ },
 /* 31 */
@@ -6217,28 +6322,6 @@
 	  return '.' + inst._rootNodeID;
 	};
 
-	function isInteractive(tag) {
-	  return tag === 'button' || tag === 'input' || tag === 'select' || tag === 'textarea';
-	}
-
-	function shouldPreventMouseEvent(name, type, props) {
-	  switch (name) {
-	    case 'onClick':
-	    case 'onClickCapture':
-	    case 'onDoubleClick':
-	    case 'onDoubleClickCapture':
-	    case 'onMouseDown':
-	    case 'onMouseDownCapture':
-	    case 'onMouseMove':
-	    case 'onMouseMoveCapture':
-	    case 'onMouseUp':
-	    case 'onMouseUpCapture':
-	      return !!(props.disabled && isInteractive(type));
-	    default:
-	      return false;
-	  }
-	}
-
 	/**
 	 * This is a unified interface for event plugins to be installed and configured.
 	 *
@@ -6307,12 +6390,7 @@
 	   * @return {?function} The stored callback.
 	   */
 	  getListener: function (inst, registrationName) {
-	    // TODO: shouldPreventMouseEvent is DOM-specific and definitely should not
-	    // live here; needs to be moved to a better place soon
 	    var bankForRegistrationName = listenerBank[registrationName];
-	    if (shouldPreventMouseEvent(registrationName, inst._currentElement.type, inst._currentElement.props)) {
-	      return null;
-	    }
 	    var key = getDictionaryKey(inst);
 	    return bankForRegistrationName && bankForRegistrationName[key];
 	  },
@@ -20402,6 +20480,18 @@
 	  return tag === 'button' || tag === 'input' || tag === 'select' || tag === 'textarea';
 	}
 
+	function shouldPreventMouseEvent(inst) {
+	  if (inst) {
+	    var disabled = inst._currentElement && inst._currentElement.props.disabled;
+
+	    if (disabled) {
+	      return isInteractive(inst._tag);
+	    }
+	  }
+
+	  return false;
+	}
+
 	var SimpleEventPlugin = {
 
 	  eventTypes: eventTypes,
@@ -20472,7 +20562,10 @@
 	      case 'topMouseDown':
 	      case 'topMouseMove':
 	      case 'topMouseUp':
-	      // TODO: Disabled elements should not respond to mouse events
+	        // Disabled elements should not respond to mouse events
+	        if (shouldPreventMouseEvent(targetInst)) {
+	          return null;
+	        }
 	      /* falls through */
 	      case 'topMouseOut':
 	      case 'topMouseOver':
@@ -21834,7 +21927,7 @@
 
 	'use strict';
 
-	module.exports = '15.4.1';
+	module.exports = '15.4.0';
 
 /***/ },
 /* 172 */

@@ -147,20 +147,9 @@ function k() {}
 const Header = () => (
     <header>
         <div className="title">
-            TELL TRUMP: DON'T APPOINT CORPORATE INSIDERS TO YOUR ADMINISTRATION
-        </div>
-
-        <div className="paragraph">
-            Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id.
-            <div className="spacer" />
-
-            Eros meis nusquam ei his. Sumo convenire cu mea, delicata eloquentiam cu pro. Wisi oblique detracto has ut, eos duis corpora scribentur ut. Ei est nonumy vidisse denique.
-            <div className="spacer" />
-
-            Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis.
-            <div className="spacer" />
-
-            <strong>Lorem ipsum dolor sit amet, no pro ludus molestie, eu sed sanctus accusamus accommodare, pri munere reprehendunt id. Etiam sonet sed in, tation dolore lucilius nec id. Ea eam iuvaret delicata, ad cum quodsi maiestatis. Cum maiorum phaedrum ne, te eam nisl cotidieque.</strong>
+            <span>Tell the Senate:</span>
+            <br/>
+            Block Trump’s Cabinet of Hate and Wall Street Greed
         </div>
     </header>
 );
@@ -169,6 +158,14 @@ const EmailForm = React.createClass({
     render: function() {
         return (
             <div className="email-form">
+                <div className="petition" id="petition">
+                    <h3>Petition to members of the U.S. Senate:</h3>
+
+                    Donald Trump’s first appointments to cabinet-level roles in his administration are horrifying. Trump nominees and rumored picks range from white nationalists and climate deniers to Wall Street insiders and corporate lobbyists.
+                    <div className="spacer" />
+
+                    As representatives of all Americans, you must stand up against hatred and greed. Fight to block and resist every Trump nominee who embraces racism, xenophobia, misogyny, homophobia, climate denial, and Wall Street greed.
+                </div>
                 <form onSubmit={ this.onSubmit } ref="form">
                     <input className="name" name="name" placeholder="Your name" autoFocus="autoFocus" />
                     <input className="email" name="email" placeholder="Email" type="email" />
@@ -188,6 +185,9 @@ const EmailForm = React.createClass({
                     Rootstrikers
                     may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.
                 </div>
+
+                <BodyCopy />
+
             </div>
         );
     },
@@ -565,7 +565,7 @@ const CreativeCommons = React.createClass({
     render: function() {
         return (
             <div className="creative-commons">
-                Social media photo via <a href="https://www.flickr.com/photos/132084522@N05/17086570218/in/photolist-s2T93f-aCsYXi-oPq1C2-aCtoP8-aCtq3g-aCtqM8-aCw4ZE-aCw5Ay-aCw5iu-aCtqjT-9xMgR-2ixJCg-4Hgjqa-iBNpq-5AJv1X-bxnPa3-4hMTnc-5ppxQp-5ppzf2-5ptSUW-7Msw4U-E5Z87-7onZXi-wsAoC-7881oQ-6yR8Ad-MKW8o-9McFm3-9McFaC-4hRZqU-5tw48Y-5tJZ6J-5tECet-7LmT9N-tV1WT-d5LKYs-eCnroP-rdRMnA-aCtqBx-aCvB1G-aCvAFq-aCsUAr-aCvBTd-aCsTw8-aCvAqd-aCvztu-aCvCBL-aCsV14-aCvEhU-aCvEMh" target="_blank">Sam Valadi</a> under a <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a> license.
+                Trump photo (edited) via <a href="https://commons.wikimedia.org/wiki/File%3ADonald_Trump_(16493063167).jpg" target="_blank">Michael Vadon</a> under a <a href="http://creativecommons.org/licenses/by-sa/2.0" target="_blank">CC BY-SA 2.0</a> license.
             </div>
         );
     },
@@ -620,6 +620,49 @@ const Social = React.createClass({
     },
 });
 
+const BodyCopy = () => (
+    <div className="paragraph">
+        <hr />
+        Trump rose to power with a divisive campaign that showed he was willing to embrace every fringe ideology from xenophobia to sexism to flat-out racism in order to gain power.
+
+        <h3>Trump’s Broken Promises:</h3>
+        Despite his campaign, Trump promised in election night to be “a president for all Americans.” But the parade of horribles that Trump has nominated to his administration show he is welcoming hate right into the White House.
+        <div className="spacer" />
+        And his pledge to “drain the swamp” and make Washington work for ordinary Americans instead of powerful elites? Forget about it. Trump’s cabinet is so pro-corporate it’s called “an investment banker’s dream.”
+        <div className="spacer" />
+
+        <h3>Who the Trump Cabinet Really Works For:</h3>
+        Wall Street bankers and Trump’s corporate cronies are cheering the Trump agenda. It’s a corporate wish list that would eliminate protections for working people and our environment, and eviscerate strong rules reining in Wall Street.
+        <div className="spacer" />
+        The Trump administration is shaping up to benefit Donald Trump and his family’s business empire in a big way, with massive conflicts of interest posed by Trump’s continued stake in the Trump Organization.
+        <div className="spacer" />
+
+        <h3>The Senate Must Block and Resist Trump's Cabinet</h3>
+        The U.S. Senate has confirmation power over most of Trump's cabinet. Senators must use this power to block and resist Trump’s cabinet of hate and greed. Consider who we’re talking about:
+        <div className="spacer" />
+
+        <div className="profiles">
+            <strong>Jeff Sessions (Attorney General)</strong> – The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country’s civil rights laws, despite a history of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, <a href="http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html" target="_blank">and calling the ACLU and NAACP "un-American."</a>
+            <div className="spacer clear" />
+
+            <strong>TBD A Wall Street insider as Treasury Secretary</strong> – TBD Donald Trump is reportedly choosing between Steve Mnuchin, an ex-Goldman Sachs executive who got rich kicking people out of their homes, foreclosing on 36,000 homes,[2] Jamie Dimon, the billionaire CEO of Wall Street giant JPMorgan,[3] and Rep. Jeb Hensarling, who has sought for years to roll back key protections against recklessness and greed on Wall Street, complaining that banks face "regulatory waterboarding."[4]
+            <div className="spacer clear" />
+
+            <strong>Wilbur Ross (Secretary of Commerce)</strong> - Trump's reported pick to be Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," <a href="http://www.thedailybeast.com/articles/2016/11/17/could-this-man-be-donald-trump-s-future-secretary-of-outsourcing.html" target="_blank">he offshored American textile jobs to China and Mexico</a> and <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">12 coal workers died at his mine in West Virginia.</a> But he complains that <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">“the 1 percent is being picked on for political reasons.”</a> Ross bailed out Donald Trump's failing casinos in Atlantic City, <a href="http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0" target="_blank">buying himself a seat in Trump's crony cabinet.</a>
+            <div className="spacer clear" />
+        </div>
+
+        The Senate will be narrowly divided 52-48 between Republicans and Democrats in 2017 and many key Senate committees will be split 10-9 or 11-10. <strong>If Democrats stick together it could only take one or two principled Republican votes to block many of Trump’s nominees.</strong>
+        <div className="spacer" />
+
+        Donald Trump may have won the Electoral College, but members of the U.S. Senate should not give any support to Trump appointees espousing racism, xenophobia, misogyny, homophobia, climate denial, and corporate greed.
+        <div className="spacer" />
+
+        <a href="#petition"><strong>Sign the petition if you agree.</strong></a>
+
+    </div>
+);
+
 const CallPages = React.createClass({
     render: function() {
         return (
@@ -629,6 +672,8 @@ const CallPages = React.createClass({
                 <Form />
 
                 <Contact />
+
+                <CreativeCommons />
             </div>
         );
     },
