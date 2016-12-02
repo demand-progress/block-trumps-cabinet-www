@@ -661,14 +661,14 @@ const BodyCopy = () => (
             </div>
             <div className="spacer clear" />
 
-        The Senate will be narrowly divided 52-48 between Republicans and Democrats in 2017 and many key Senate committees will be split 10-9 or 11-10. <strong>If Democrats stick together it could only take one or two principled Republican votes to block many of Trump’s nominees.</strong>
-        <div className="spacer" />
+            The Senate will be narrowly divided 52-48 between Republicans and Democrats in 2017 and many key Senate committees will be split 10-9 or 11-10. <strong>If Democrats stick together it could only take one or two principled Republican votes to block many of Trump’s nominees.</strong>
+            <div className="spacer" />
 
-        Donald Trump may have won the Electoral College, but members of the U.S. Senate should not give any support to Trump appointees espousing racism, xenophobia, misogyny, homophobia, climate denial, and corporate greed.
-        <div className="spacer" />
+            Donald Trump may have won the Electoral College, but members of the U.S. Senate should not give any support to Trump appointees espousing racism, xenophobia, misogyny, homophobia, climate denial, and corporate greed.
+            <div className="spacer" />
 
-        <a href="#petition" className="sign-the-petition">Sign the petition if you agree.</a>
-
+            <a href="#petition" className="sign-the-petition">Sign the petition if you agree.</a>
+        </div>
     </div>
 );
 

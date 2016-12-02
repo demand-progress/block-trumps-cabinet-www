@@ -144,6 +144,7 @@ a:hover {
     font-size: 22px;
     font-weight: 700;
     margin: 10px auto;
+    max-width: 100%;
     padding: 16px;
     text-align: center;
     text-transform: uppercase;

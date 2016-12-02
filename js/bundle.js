@@ -780,6 +780,30 @@
 	    }
 	});
 
+	var CallPages = React.createClass({
+	    displayName: 'CallPages',
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { className: 'wrapper' },
+	            React.createElement(Header, null),
+	            React.createElement(Form, null),
+	            React.createElement(Contact, null),
+	            React.createElement(CreativeCommons, null)
+	        );
+	    },
+
+	    imagesToPreload: ['images/phone.svg'],
+
+	    componentDidMount: function componentDidMount() {
+	        for (var i = 0; i < this.imagesToPreload.length; i++) {
+	            var image = new Image();
+	            image.src = this.imagesToPreload[i];
+	        }
+	    }
+	});
+
 	var BodyCopy = function BodyCopy() {
 	    return React.createElement(
 	        'div',
@@ -830,6 +854,7 @@
 	                    'and calling the ACLU and NAACP "un-American."'
 	                )
 	            ),
+	            React.createElement('div', { className: 'spacer clear' }),
 	            React.createElement(
 	                'div',
 	                { className: 'profile' },
@@ -841,6 +866,7 @@
 	                ),
 	                ' \u2013 TBD Donald Trump is reportedly choosing between Steve Mnuchin, an ex-Goldman Sachs executive who got rich kicking people out of their homes, foreclosing on 36,000 homes,[2] Jamie Dimon, the billionaire CEO of Wall Street giant JPMorgan,[3] and Rep. Jeb Hensarling, who has sought for years to roll back key protections against recklessness and greed on Wall Street, complaining that banks face "regulatory waterboarding."[4]'
 	            ),
+	            React.createElement('div', { className: 'spacer clear' }),
 	            React.createElement(
 	                'div',
 	                { className: 'profile' },
@@ -874,48 +900,25 @@
 	                    { href: 'http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0', target: '_blank' },
 	                    'buying himself a seat in Trump\'s crony cabinet.'
 	                )
+	            ),
+	            React.createElement('div', { className: 'spacer clear' }),
+	            'The Senate will be narrowly divided 52-48 between Republicans and Democrats in 2017 and many key Senate committees will be split 10-9 or 11-10. ',
+	            React.createElement(
+	                'strong',
+	                null,
+	                'If Democrats stick together it could only take one or two principled Republican votes to block many of Trump\u2019s nominees.'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            'Donald Trump may have won the Electoral College, but members of the U.S. Senate should not give any support to Trump appointees espousing racism, xenophobia, misogyny, homophobia, climate denial, and corporate greed.',
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'a',
+	                { href: '#petition', className: 'sign-the-petition' },
+	                'Sign the petition if you agree.'
 	            )
-	        ),
-	        'The Senate will be narrowly divided 52-48 between Republicans and Democrats in 2017 and many key Senate committees will be split 10-9 or 11-10. ',
-	        React.createElement(
-	            'strong',
-	            null,
-	            'If Democrats stick together it could only take one or two principled Republican votes to block many of Trump\u2019s nominees.'
-	        ),
-	        React.createElement('div', { className: 'spacer' }),
-	        'Donald Trump may have won the Electoral College, but members of the U.S. Senate should not give any support to Trump appointees espousing racism, xenophobia, misogyny, homophobia, climate denial, and corporate greed.',
-	        React.createElement('div', { className: 'spacer' }),
-	        React.createElement(
-	            'a',
-	            { href: '#petition', className: 'sign-the-petition' },
-	            'Sign the petition if you agree.'
 	        )
 	    );
 	};
-
-	var CallPages = React.createClass({
-	    displayName: 'CallPages',
-
-	    render: function render() {
-	        return React.createElement(
-	            'div',
-	            { className: 'wrapper' },
-	            React.createElement(Header, null),
-	            React.createElement(Form, null),
-	            React.createElement(Contact, null),
-	            React.createElement(CreativeCommons, null)
-	        );
-	    },
-
-	    imagesToPreload: ['images/phone.svg'],
-
-	    componentDidMount: function componentDidMount() {
-	        for (var i = 0; i < this.imagesToPreload.length; i++) {
-	            var image = new Image();
-	            image.src = this.imagesToPreload[i];
-	        }
-	    }
-	});
 
 	ReactDOM.render(React.createElement(CallPages, null), document.querySelector('#app'));
 
@@ -4078,30 +4081,38 @@
 	// Set.prototype.keys
 	Set.prototype != null && typeof Set.prototype.keys === 'function' && isNative(Set.prototype.keys);
 
+	var setItem;
+	var getItem;
+	var removeItem;
+	var getItemIDs;
+	var addRoot;
+	var removeRoot;
+	var getRootIDs;
+
 	if (canUseCollections) {
 	  var itemMap = new Map();
 	  var rootIDSet = new Set();
 
-	  var setItem = function (id, item) {
+	  setItem = function (id, item) {
 	    itemMap.set(id, item);
 	  };
-	  var getItem = function (id) {
+	  getItem = function (id) {
 	    return itemMap.get(id);
 	  };
-	  var removeItem = function (id) {
+	  removeItem = function (id) {
 	    itemMap['delete'](id);
 	  };
-	  var getItemIDs = function () {
+	  getItemIDs = function () {
 	    return Array.from(itemMap.keys());
 	  };
 
-	  var addRoot = function (id) {
+	  addRoot = function (id) {
 	    rootIDSet.add(id);
 	  };
-	  var removeRoot = function (id) {
+	  removeRoot = function (id) {
 	    rootIDSet['delete'](id);
 	  };
-	  var getRootIDs = function () {
+	  getRootIDs = function () {
 	    return Array.from(rootIDSet.keys());
 	  };
 	} else {
@@ -4117,31 +4128,31 @@
 	    return parseInt(key.substr(1), 10);
 	  };
 
-	  var setItem = function (id, item) {
+	  setItem = function (id, item) {
 	    var key = getKeyFromID(id);
 	    itemByKey[key] = item;
 	  };
-	  var getItem = function (id) {
+	  getItem = function (id) {
 	    var key = getKeyFromID(id);
 	    return itemByKey[key];
 	  };
-	  var removeItem = function (id) {
+	  removeItem = function (id) {
 	    var key = getKeyFromID(id);
 	    delete itemByKey[key];
 	  };
-	  var getItemIDs = function () {
+	  getItemIDs = function () {
 	    return Object.keys(itemByKey).map(getIDFromKey);
 	  };
 
-	  var addRoot = function (id) {
+	  addRoot = function (id) {
 	    var key = getKeyFromID(id);
 	    rootByKey[key] = true;
 	  };
-	  var removeRoot = function (id) {
+	  removeRoot = function (id) {
 	    var key = getKeyFromID(id);
 	    delete rootByKey[key];
 	  };
-	  var getRootIDs = function () {
+	  getRootIDs = function () {
 	    return Object.keys(rootByKey).map(getIDFromKey);
 	  };
 	}
@@ -4922,7 +4933,7 @@
 
 	'use strict';
 
-	module.exports = '15.4.0';
+	module.exports = '15.4.1';
 
 /***/ },
 /* 31 */
@@ -6327,6 +6338,28 @@
 	  return '.' + inst._rootNodeID;
 	};
 
+	function isInteractive(tag) {
+	  return tag === 'button' || tag === 'input' || tag === 'select' || tag === 'textarea';
+	}
+
+	function shouldPreventMouseEvent(name, type, props) {
+	  switch (name) {
+	    case 'onClick':
+	    case 'onClickCapture':
+	    case 'onDoubleClick':
+	    case 'onDoubleClickCapture':
+	    case 'onMouseDown':
+	    case 'onMouseDownCapture':
+	    case 'onMouseMove':
+	    case 'onMouseMoveCapture':
+	    case 'onMouseUp':
+	    case 'onMouseUpCapture':
+	      return !!(props.disabled && isInteractive(type));
+	    default:
+	      return false;
+	  }
+	}
+
 	/**
 	 * This is a unified interface for event plugins to be installed and configured.
 	 *
@@ -6395,7 +6428,12 @@
 	   * @return {?function} The stored callback.
 	   */
 	  getListener: function (inst, registrationName) {
+	    // TODO: shouldPreventMouseEvent is DOM-specific and definitely should not
+	    // live here; needs to be moved to a better place soon
 	    var bankForRegistrationName = listenerBank[registrationName];
+	    if (shouldPreventMouseEvent(registrationName, inst._currentElement.type, inst._currentElement.props)) {
+	      return null;
+	    }
 	    var key = getDictionaryKey(inst);
 	    return bankForRegistrationName && bankForRegistrationName[key];
 	  },
@@ -20485,18 +20523,6 @@
 	  return tag === 'button' || tag === 'input' || tag === 'select' || tag === 'textarea';
 	}
 
-	function shouldPreventMouseEvent(inst) {
-	  if (inst) {
-	    var disabled = inst._currentElement && inst._currentElement.props.disabled;
-
-	    if (disabled) {
-	      return isInteractive(inst._tag);
-	    }
-	  }
-
-	  return false;
-	}
-
 	var SimpleEventPlugin = {
 
 	  eventTypes: eventTypes,
@@ -20567,10 +20593,7 @@
 	      case 'topMouseDown':
 	      case 'topMouseMove':
 	      case 'topMouseUp':
-	        // Disabled elements should not respond to mouse events
-	        if (shouldPreventMouseEvent(targetInst)) {
-	          return null;
-	        }
+	      // TODO: Disabled elements should not respond to mouse events
 	      /* falls through */
 	      case 'topMouseOut':
 	      case 'topMouseOver':
@@ -21932,7 +21955,7 @@
 
 	'use strict';
 
-	module.exports = '15.4.0';
+	module.exports = '15.4.1';
 
 /***/ },
 /* 172 */
