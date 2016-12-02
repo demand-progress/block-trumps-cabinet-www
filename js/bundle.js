@@ -242,7 +242,7 @@
 	                React.createElement(
 	                    'div',
 	                    { className: 'disclaimer' },
-	                    'We do not share your email address without your permission. Demand Progress, Democracy For America, National People\u2019s Action, Other 98, RootsAction, and Rootstrikers may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.'
+	                    'We do not share your email address without your permission. One or more partner groups may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.'
 	                )
 	            ),
 	            React.createElement(BodyCopy, null)
@@ -317,7 +317,7 @@
 	                    React.createElement(
 	                        'button',
 	                        null,
-	                        'CLICK HERE TO CALL TRUMP\'S TRANSITION TEAM',
+	                        'CLICK HERE TO CALL CLINTON\'S TRANSITION TEAM',
 	                        React.createElement('img', { src: 'images/phone.svg' })
 	                    )
 	                ),
@@ -567,14 +567,7 @@
 	        return React.createElement(
 	            'div',
 	            { className: 'thanks' },
-	            'Thanks for making your voice heard!',
-	            React.createElement(
-	                'div',
-	                { className: 'social' },
-	                React.createElement('div', { className: 'facebook' }),
-	                React.createElement('div', { className: 'twitter' }),
-	                React.createElement('div', { className: 'email' })
-	            )
+	            'Thanks for making your voice heard!'
 	        );
 	    }
 	});
@@ -710,6 +703,20 @@
 	                { href: 'http://creativecommons.org/licenses/by-sa/2.0', target: '_blank' },
 	                'CC BY-SA 2.0'
 	            ),
+	            ' license.',
+	            React.createElement('br', null),
+	            'Sessions photo (cropped) via ',
+	            React.createElement(
+	                'a',
+	                { href: 'https://commons.wikimedia.org/wiki/File%3AJeff_Sessions_by_Gage_Skidmore.jpg', target: '_blank' },
+	                'Gage Skidmore'
+	            ),
+	            ' under a ',
+	            React.createElement(
+	                'a',
+	                { href: 'http://creativecommons.org/licenses/by-sa/3.0', target: '_blank' },
+	                'CC BY-SA 3.0'
+	            ),
 	            ' license.'
 	        );
 	    }
@@ -721,29 +728,24 @@
 	    render: function render() {
 	        return React.createElement(
 	            'div',
-	            { className: 'social' },
-	            React.createElement(
-	                'h2',
-	                null,
-	                'Share this page!'
-	            ),
+	            { className: 'midnight-share-train' },
 	            React.createElement(
 	                'div',
-	                { className: 'copy' },
-	                'After making a call, share this page with your friends. The more people that speak out, the better our chance of getting a tough \u2018cop on the beat\u2019 on Wall Street.'
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'buttons' },
-	                React.createElement(
-	                    'a',
-	                    { onClick: this.onClickFacebook, target: '_blank', href: '#Share on Facebook', className: 'facebook' },
-	                    'Facebook'
-	                ),
+	                { className: 'share' },
 	                React.createElement(
 	                    'a',
 	                    { onClick: this.onClickTwitter, target: '_blank', href: '#Share on Twitter', className: 'twitter' },
-	                    'Twitter'
+	                    'Tweet'
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { onClick: this.onClickFacebook, target: '_blank', href: '#Share on Facebook', className: 'facebook' },
+	                    'Share'
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { target: '_blank', href: '#Share via Email', className: 'email' },
+	                    'Email'
 	                )
 	            )
 	        );
@@ -905,6 +907,7 @@
 	            { className: 'wrapper' },
 	            React.createElement(Header, null),
 	            React.createElement(Form, null),
+	            React.createElement(Social, null),
 	            React.createElement(Contact, null),
 	            React.createElement(CreativeCommons, null)
 	        );

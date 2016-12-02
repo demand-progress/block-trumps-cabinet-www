@@ -451,8 +451,63 @@ a:hover {
 #app .organizations a:hover {
     text-decoration: underline;
 }
+#app .midnight-share-train {
+    background-color: #330904;
+    margin: 30px auto 0;
+    max-width: 100%;
+    padding: 18px 16px 0;
+    text-align: center;
+}
 
-#app .social {
+#app .midnight-share-train .share {
+    border-radius: 60px;
+    display: inline-block;
+    margin: 0 0 22px;
+    padding: 10px 10px 0;
+}
+
+#app .midnight-share-train a:hover {
+    color: #fff;
+}
+
+#app .share a {
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px 10px 10px;
+    padding-left: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.16s;
+    width: 120px;
+}
+#app .share a.facebook {
+    background: #3B5999 url(../images/social/fb_white.png) 15px 8px no-repeat;
+    background-size: 25px 25px;
+}
+#app .share a.facebook:hover {
+    background-color: #2B4989;
+}
+#app .share a.twitter {
+    background: #4099FF url(../images/social/tw_white.png) 15px 8px no-repeat;
+    background-size: 25px 25px;
+}
+#app .share a.twitter:hover {
+    background-color: #3089ef;
+}
+#app .share a.email {
+    background: #14ac2b url(../images/social/email_white.png) 15px 8px no-repeat;
+    background-size: 25px 25px;
+}
+#app .share a.email:hover {
+    background-color: #10A526;
+}
+
+/*#app .social {
     background-color: #45619d;
     color: #fff;
     padding: 0 0 48px;
@@ -503,7 +558,7 @@ a:hover {
 
 #app .social .buttons a.twitter {
     background-image: url(../images/social/tw_white.png);
-}
+}*/
 
 #app .contact {
     border-top: 1px solid #eee;

@@ -177,12 +177,7 @@ const EmailForm = React.createClass({
 
                     <div className="disclaimer">
                         We do not share your email address without your permission.
-                        Demand Progress,
-                        Democracy For America,
-                        National People’s Action,
-                        Other 98,
-                        RootsAction, and
-                        Rootstrikers
+                        One or more partner groups
                         may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.
                     </div>
                 </div>
@@ -252,7 +247,7 @@ const PhoneForm = React.createClass({
                     <form onSubmit={ this.onSubmit }>
                         <input placeholder="Your Phone Number" id="field-phone" ref="field-phone" className="phone" name="phone" autoComplete="on" pattern="[\d\(\)\-\+ ]*" autoFocus />
                         <button>
-                            CLICK HERE TO CALL TRUMP'S TRANSITION TEAM
+                            CLICK HERE TO CALL CLINTON'S TRANSITION TEAM
                             <img src="images/phone.svg" />
                         </button>
                     </form>
@@ -444,17 +439,6 @@ const Thanks = React.createClass({
         return (
             <div className="thanks">
                 Thanks for making your voice heard!
-
-                <div className="social">
-                    <div className="facebook">
-                    </div>
-
-                    <div className="twitter">
-                    </div>
-
-                    <div className="email">
-                    </div>
-                </div>
             </div>
         );
     },
@@ -550,6 +534,7 @@ const Organizations = React.createClass({
     },
 });
 
+
 const Contact = React.createClass({
     render: function() {
         return (
@@ -567,6 +552,8 @@ const CreativeCommons = React.createClass({
         return (
             <div className="creative-commons">
                 Trump photo (edited) via <a href="https://commons.wikimedia.org/wiki/File%3ADonald_Trump_(16493063167).jpg" target="_blank">Michael Vadon</a> under a <a href="http://creativecommons.org/licenses/by-sa/2.0" target="_blank">CC BY-SA 2.0</a> license.
+                <br />
+                Sessions photo (cropped) via <a href="https://commons.wikimedia.org/wiki/File%3AJeff_Sessions_by_Gage_Skidmore.jpg" target="_blank">Gage Skidmore</a> under a <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a> license.
             </div>
         );
     },
@@ -575,14 +562,11 @@ const CreativeCommons = React.createClass({
 const Social = React.createClass({
     render: function() {
         return (
-            <div className="social">
-                <h2>Share this page!</h2>
-                <div className="copy">
-                    After making a call, share this page with your friends. The more people that speak out, the better our chance of getting a tough ‘cop on the beat’ on Wall Street.
-                </div>
-                <div className="buttons">
-                    <a onClick={this.onClickFacebook} target="_blank" href="#Share on Facebook" className="facebook">Facebook</a>
-                    <a onClick={this.onClickTwitter} target="_blank" href="#Share on Twitter" className="twitter">Twitter</a>
+            <div className="midnight-share-train">
+                <div className="share">
+                    <a onClick={this.onClickTwitter} target="_blank" href="#Share on Twitter" className="twitter">Tweet</a>
+                    <a onClick={this.onClickFacebook} target="_blank" href="#Share on Facebook" className="facebook">Share</a>
+                    <a target="_blank" href="#Share via Email" className="email">Email</a>
                 </div>
             </div>
         );
@@ -680,6 +664,8 @@ const CallPages = React.createClass({
                 <Header />
 
                 <Form />
+
+                <Social />
 
                 <Contact />
 
