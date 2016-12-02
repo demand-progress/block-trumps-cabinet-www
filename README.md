@@ -1,10 +1,6 @@
-```sh
-# Requirements (after installing Node.js)
-npm install
+# Fix the Electoral College
 
-# Compile JSX
-npm run compile
-
-# Serve webpage
-npm run serve
+```bash
+# Compile JavaScript
+npm start
 ```
