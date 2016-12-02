@@ -1,10 +1,6 @@
 body {
-    /*background-color: #ad2d20;*/
     background-color: #f1f1f1;
-    background-image: url(../images/Trump-WH-header-collage.jpg);
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(../images/background-noise.jpg);
     margin: 0;
 }
 
@@ -43,15 +39,19 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 914px) {
-    body {
-        background-size: 915px auto;
-    }
-}
-
 #app {
+    background-image: url(../images/Trump-WH-header-collage.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
     color: #330904;
     font-family: 'Open Sans', sans-serif;
+}
+@media screen and (max-width: 700px) {
+    #app {
+        background-size: 1031px;
+        background-position: -150px top;
+    }
 }
 
 #app .please-wait {
@@ -69,18 +69,21 @@ a:hover {
     color: #f1f1f1;
     font-size: 44px;
     font-weight: bold;
-    padding: 20px 32px 32px;
+    padding: 32px 32px 60px;
     text-align: center;
+    text-shadow: 0px 0px 17px rgba(50,0,50,0.6);
     text-transform: uppercase;
 }
 #app .title span {
     font-size: 32px;
     color: #3a0c07;
+    text-shadow: none;
 }
 
 @media (max-width: 879px) {
     #app .title {
         font-size: 30px;
+        padding: 20px 32px 32px;
     }
     #app .title span {
         font-size: 22px;
@@ -119,14 +122,38 @@ a:hover {
     padding: 12px 34px;
 }
 
+#app .paragraph .profile {
+    margin: 0 0 22px;
+}
+
 #app .paragraph img {
-    display: none;
     float: left;
     margin: 0 18px 12px 0;
     max-height: 200px;
 }
 #app .paragraph .clear {
     clear: both;
+}
+
+#app .paragraph a.sign-the-petition {
+    background-color: #ffb406;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px auto;
+    padding: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.3s;
+            transition: background-color 0.3s;
+    width: 260px;
+}
+#app .paragraph a.sign-the-petition:hover {
+    background-color: #ffa905;
+    text-decoration: none;
 }
 
 #app .phone-form form {
@@ -213,7 +240,8 @@ a:hover {
 }
 
 #app .phone-script {
-    border: 5px solid #411;
+    border: 1px solid #a9a9a9;
+    background-color: #f1f1f1;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
     margin: 0 auto 32px;
     max-width: 440px;
@@ -251,15 +279,18 @@ a:hover {
 
 #app .email-form .petition {
     background-color: #f1f1f1;
+    border: 1px solid #a9a9a9;
     box-shadow: 1px 1px 15px 2px rgba(65,5,5, 0.3);
+    font-size: 14px;
     font-style: italic;
-    margin-bottom: 22px;
+    margin-bottom: 32px;
+    padding-bottom: 2px;
 }
 
 #app .email-form form {
     border: 1px solid #bdbdbd;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
-    margin: 0 auto 32px;
+    margin: 32px auto 22px;
     max-width: 440px;
     overflow: hidden;
 
@@ -315,10 +346,10 @@ a:hover {
 }
 
 #app .email-form .disclaimer {
-    color: #7d7d7d;
+    color: #969696;
     font-size: 12px;
     font-style: italic;
-    margin: 32px auto;
+    margin: 22px auto;
     max-width: 460px;
     padding: 0 32px;
     text-align: center;
@@ -333,6 +364,24 @@ a:hover {
 
     #app .email-form form input.zip {
         border-bottom: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #app .email-form form {
+        border: none;
+        max-width: 100%;
+    }
+    #app .email-form form input {
+        border: 1px solid #bdbdbd;
+        width: 33.33%;
+    }
+    #app .email-form form input.email {
+        border-left: none;
+        border-right: none;
+    }
+    #app .email-form .disclaimer {
+        max-width: 100%;
     }
 }
 

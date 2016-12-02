@@ -226,24 +226,24 @@
 	                ),
 	                'Donald Trump\u2019s first appointments to cabinet-level roles in his administration are horrifying. Trump nominees and rumored picks range from white nationalists and climate deniers to Wall Street insiders and corporate lobbyists.',
 	                React.createElement('div', { className: 'spacer' }),
-	                'As representatives of all Americans, you must stand up against hatred and greed. Fight to block and resist every Trump nominee who embraces racism, xenophobia, misogyny, homophobia, climate denial, and Wall Street greed.'
-	            ),
-	            React.createElement(
-	                'form',
-	                { onSubmit: this.onSubmit, ref: 'form' },
-	                React.createElement('input', { className: 'name', name: 'name', placeholder: 'Your name', autoFocus: 'autoFocus' }),
-	                React.createElement('input', { className: 'email', name: 'email', placeholder: 'Email', type: 'email' }),
-	                React.createElement('input', { className: 'zip', name: 'zip', placeholder: 'Zip code', type: 'tel' }),
+	                'As representatives of all Americans, you must stand up against hatred and greed. Fight to block and resist every Trump nominee who embraces racism, xenophobia, misogyny, homophobia, climate denial, and Wall Street greed.',
 	                React.createElement(
-	                    'button',
-	                    null,
-	                    'Send Now'
+	                    'form',
+	                    { onSubmit: this.onSubmit, ref: 'form' },
+	                    React.createElement('input', { className: 'name', name: 'name', placeholder: 'Your name', autoFocus: 'autoFocus' }),
+	                    React.createElement('input', { className: 'email', name: 'email', placeholder: 'Email', type: 'email' }),
+	                    React.createElement('input', { className: 'zip', name: 'zip', placeholder: 'Zip code', type: 'tel' }),
+	                    React.createElement(
+	                        'button',
+	                        null,
+	                        'Sign the Petition'
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'disclaimer' },
+	                    'We do not share your email address without your permission. Demand Progress, Democracy For America, National People\u2019s Action, Other 98, RootsAction, and Rootstrikers may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.'
 	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { className: 'disclaimer' },
-	                'We do not share your email address without your permission. Demand Progress, Democracy For America, National People\u2019s Action, Other 98, RootsAction, and Rootstrikers may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.'
 	            ),
 	            React.createElement(BodyCopy, null)
 	        );
@@ -814,58 +814,67 @@
 	        React.createElement(
 	            'div',
 	            { className: 'profiles' },
-	            React.createElement('img', { src: 'images/TrumpHair.png', alt: 'Donald Trump\'s Hair' }),
 	            React.createElement(
-	                'strong',
-	                null,
-	                'Jeff Sessions (Attorney General)'
+	                'div',
+	                { className: 'profile' },
+	                React.createElement('img', { src: 'images/Jeff_Sessions.jpg', alt: 'Jeff Sessions photo' }),
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'Jeff Sessions (Attorney General)'
+	                ),
+	                ' \u2013 The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country\u2019s civil rights laws, despite a history of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html', target: '_blank' },
+	                    'and calling the ACLU and NAACP "un-American."'
+	                )
 	            ),
-	            ' \u2013 The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country\u2019s civil rights laws, despite a history of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, ',
 	            React.createElement(
-	                'a',
-	                { href: 'http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html', target: '_blank' },
-	                'and calling the ACLU and NAACP "un-American."'
+	                'div',
+	                { className: 'profile' },
+	                React.createElement('img', { src: 'images/Jeff_Sessions.jpg', alt: 'Jeff Sessions photo' }),
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'TBD A Wall Street insider as Treasury Secretary'
+	                ),
+	                ' \u2013 TBD Donald Trump is reportedly choosing between Steve Mnuchin, an ex-Goldman Sachs executive who got rich kicking people out of their homes, foreclosing on 36,000 homes,[2] Jamie Dimon, the billionaire CEO of Wall Street giant JPMorgan,[3] and Rep. Jeb Hensarling, who has sought for years to roll back key protections against recklessness and greed on Wall Street, complaining that banks face "regulatory waterboarding."[4]'
 	            ),
-	            React.createElement('div', { className: 'spacer clear' }),
-	            React.createElement('img', { src: 'images/TrumpHair.png', alt: 'Donald Trump\'s Hair' }),
 	            React.createElement(
-	                'strong',
-	                null,
-	                'TBD A Wall Street insider as Treasury Secretary'
-	            ),
-	            ' \u2013 TBD Donald Trump is reportedly choosing between Steve Mnuchin, an ex-Goldman Sachs executive who got rich kicking people out of their homes, foreclosing on 36,000 homes,[2] Jamie Dimon, the billionaire CEO of Wall Street giant JPMorgan,[3] and Rep. Jeb Hensarling, who has sought for years to roll back key protections against recklessness and greed on Wall Street, complaining that banks face "regulatory waterboarding."[4]',
-	            React.createElement('div', { className: 'spacer clear' }),
-	            React.createElement('img', { src: 'images/TrumpHair.png', alt: 'Donald Trump\'s Hair' }),
-	            React.createElement(
-	                'strong',
-	                null,
-	                'Wilbur Ross (Secretary of Commerce)'
-	            ),
-	            ' - Trump\'s reported pick to be Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," ',
-	            React.createElement(
-	                'a',
-	                { href: 'http://www.thedailybeast.com/articles/2016/11/17/could-this-man-be-donald-trump-s-future-secretary-of-outsourcing.html', target: '_blank' },
-	                'he offshored American textile jobs to China and Mexico'
-	            ),
-	            ' and ',
-	            React.createElement(
-	                'a',
-	                { href: 'http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb', target: '_blank' },
-	                '12 coal workers died at his mine in West Virginia.'
-	            ),
-	            ' But he complains that ',
-	            React.createElement(
-	                'a',
-	                { href: 'http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb', target: '_blank' },
-	                '\u201Cthe 1 percent is being picked on for political reasons.\u201D'
-	            ),
-	            ' Ross bailed out Donald Trump\'s failing casinos in Atlantic City, ',
-	            React.createElement(
-	                'a',
-	                { href: 'http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0', target: '_blank' },
-	                'buying himself a seat in Trump\'s crony cabinet.'
-	            ),
-	            React.createElement('div', { className: 'spacer clear' })
+	                'div',
+	                { className: 'profile' },
+	                React.createElement('img', { src: 'images/Jeff_Sessions.jpg', alt: 'Jeff Sessions photo' }),
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'Wilbur Ross (Secretary of Commerce)'
+	                ),
+	                ' - Trump\'s reported pick to be Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.thedailybeast.com/articles/2016/11/17/could-this-man-be-donald-trump-s-future-secretary-of-outsourcing.html', target: '_blank' },
+	                    'he offshored American textile jobs to China and Mexico'
+	                ),
+	                ' and ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb', target: '_blank' },
+	                    '12 coal workers died at his mine in West Virginia.'
+	                ),
+	                ' But he complains that ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb', target: '_blank' },
+	                    '\u201Cthe 1 percent is being picked on for political reasons.\u201D'
+	                ),
+	                ' Ross bailed out Donald Trump\'s failing casinos in Atlantic City, ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0', target: '_blank' },
+	                    'buying himself a seat in Trump\'s crony cabinet.'
+	                )
+	            )
 	        ),
 	        'The Senate will be narrowly divided 52-48 between Republicans and Democrats in 2017 and many key Senate committees will be split 10-9 or 11-10. ',
 	        React.createElement(
@@ -878,12 +887,8 @@
 	        React.createElement('div', { className: 'spacer' }),
 	        React.createElement(
 	            'a',
-	            { href: '#petition' },
-	            React.createElement(
-	                'strong',
-	                null,
-	                'Sign the petition if you agree.'
-	            )
+	            { href: '#petition', className: 'sign-the-petition' },
+	            'Sign the petition if you agree.'
 	        )
 	    );
 	};
