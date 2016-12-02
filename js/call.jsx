@@ -650,25 +650,26 @@ const BodyCopy = () => (
             <div className="spacer clear" />
 
             <div className="profile">
-                <img src="images/Jeff_Sessions.jpg" alt="Jeff Sessions photo" />
+                <img style={{opacity: '0.4',}} src="images/Jeff_Sessions.jpg" alt="Jeff Sessions photo" />
                 <strong>TBD A Wall Street insider as Treasury Secretary</strong> – TBD Donald Trump is reportedly choosing between Steve Mnuchin, an ex-Goldman Sachs executive who got rich kicking people out of their homes, foreclosing on 36,000 homes,[2] Jamie Dimon, the billionaire CEO of Wall Street giant JPMorgan,[3] and Rep. Jeb Hensarling, who has sought for years to roll back key protections against recklessness and greed on Wall Street, complaining that banks face "regulatory waterboarding."[4]
             </div>
             <div className="spacer clear" />
 
             <div className="profile">
-                <img src="images/Jeff_Sessions.jpg" alt="Jeff Sessions photo" />
+                <img style={{opacity: '0.4',}} src="images/Jeff_Sessions.jpg" alt="Jeff Sessions photo" />
                 <strong>Wilbur Ross (Secretary of Commerce)</strong> - Trump's reported pick to be Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," <a href="http://www.thedailybeast.com/articles/2016/11/17/could-this-man-be-donald-trump-s-future-secretary-of-outsourcing.html" target="_blank">he offshored American textile jobs to China and Mexico</a> and <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">12 coal workers died at his mine in West Virginia.</a> But he complains that <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">“the 1 percent is being picked on for political reasons.”</a> Ross bailed out Donald Trump's failing casinos in Atlantic City, <a href="http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0" target="_blank">buying himself a seat in Trump's crony cabinet.</a>
             </div>
             <div className="spacer clear" />
-
-            The Senate will be narrowly divided 52-48 between Republicans and Democrats in 2017 and many key Senate committees will be split 10-9 or 11-10. <strong>If Democrats stick together it could only take one or two principled Republican votes to block many of Trump’s nominees.</strong>
-            <div className="spacer" />
-
-            Donald Trump may have won the Electoral College, but members of the U.S. Senate should not give any support to Trump appointees espousing racism, xenophobia, misogyny, homophobia, climate denial, and corporate greed.
-            <div className="spacer" />
-
-            <a href="#petition" className="sign-the-petition">Sign the petition if you agree.</a>
         </div>
+
+        The Senate will be narrowly divided 52-48 between Republicans and Democrats in 2017 and many key Senate committees will be split 10-9 or 11-10. <strong>If Democrats stick together it could only take one or two principled Republican votes to block many of Trump’s nominees.</strong>
+        <div className="spacer" />
+
+        Donald Trump may have won the Electoral College, but members of the U.S. Senate should not give any support to Trump appointees espousing racism, xenophobia, misogyny, homophobia, climate denial, and corporate greed.
+        <div className="spacer" />
+
+        <a href="#petition" className="sign-the-petition">Sign the petition if you agree.</a>
+
     </div>
 );
 
