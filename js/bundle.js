@@ -780,30 +780,6 @@
 	    }
 	});
 
-	var CallPages = React.createClass({
-	    displayName: 'CallPages',
-
-	    render: function render() {
-	        return React.createElement(
-	            'div',
-	            { className: 'wrapper' },
-	            React.createElement(Header, null),
-	            React.createElement(Form, null),
-	            React.createElement(Contact, null),
-	            React.createElement(CreativeCommons, null)
-	        );
-	    },
-
-	    imagesToPreload: ['images/phone.svg'],
-
-	    componentDidMount: function componentDidMount() {
-	        for (var i = 0; i < this.imagesToPreload.length; i++) {
-	            var image = new Image();
-	            image.src = this.imagesToPreload[i];
-	        }
-	    }
-	});
-
 	var BodyCopy = function BodyCopy() {
 	    return React.createElement(
 	        'div',
@@ -919,6 +895,30 @@
 	        )
 	    );
 	};
+
+	var CallPages = React.createClass({
+	    displayName: 'CallPages',
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { className: 'wrapper' },
+	            React.createElement(Header, null),
+	            React.createElement(Form, null),
+	            React.createElement(Contact, null),
+	            React.createElement(CreativeCommons, null)
+	        );
+	    },
+
+	    imagesToPreload: ['images/phone.svg'],
+
+	    componentDidMount: function componentDidMount() {
+	        for (var i = 0; i < this.imagesToPreload.length; i++) {
+	            var image = new Image();
+	            image.src = this.imagesToPreload[i];
+	        }
+	    }
+	});
 
 	ReactDOM.render(React.createElement(CallPages, null), document.querySelector('#app'));
 

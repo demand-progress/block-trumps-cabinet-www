@@ -8,16 +8,13 @@
     "babel-loader": "^6.2.5",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
-    "http-server": "^0.9.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "webpack": "^1.13.3"
   },
   "devDependencies": {},
   "scripts": {
-    "compile": "webpack --colors --watch",
-    "serve": "http-server -c-1 -o",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm install --loglevel=error & webpack --colors --watch"
   },
   "repository": {
     "type": "git",
