@@ -1,4 +1,4 @@
-# Fix the Electoral College
+# Block Trump's Cabinet
 
 ```bash
 # Compile JavaScript
