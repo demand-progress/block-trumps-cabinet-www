@@ -285,8 +285,10 @@ a:hover {
 }
 
 #app .thanks {
+    background-color: #f1f1f1;
+    background-image: url(../images/background-noise.jpg);
     font-size: 24px;
-    padding: 0 0 32px;
+    padding: 32px;
     text-align: center;
 }
 
@@ -399,7 +401,8 @@ a:hover {
 }
 
 #app .opt-out-form {
-    border: 5px solid #411;
+    border: 1px solid #a9a9a9;
+    background-color: #f1f1f1;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
     margin: 0 auto 32px;
     max-width: 440px;
