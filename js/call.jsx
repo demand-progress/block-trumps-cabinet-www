@@ -2,7 +2,7 @@
 const config = {};
 config.akPage = 'block-trumps-cabinet-www';
 config.callCampaign = 'block-trumps-cabinet';
-config.link = 'https://blocktrumpscabinet.com/';
+config.link = 'https://BlockTrumpsCabinet.com/';
 config.prettyCampaignName = 'Block Trump\'s Cabinet';
 
 
@@ -247,7 +247,7 @@ const PhoneForm = React.createClass({
                     <form onSubmit={ this.onSubmit }>
                         <input placeholder="Your Phone Number" id="field-phone" ref="field-phone" className="phone" name="phone" autoComplete="on" pattern="[\d\(\)\-\+ ]*" autoFocus />
                         <button>
-                            CLICK HERE TO CALL CLINTON'S TRANSITION TEAM
+                            CALL THE SENATE
                             <img src="images/phone.svg" />
                         </button>
                     </form>
@@ -265,7 +265,10 @@ const PhoneForm = React.createClass({
                         maxWidth: '860px',
                     }}
                 >
-                    Please enter your number above and we will give you a script and connect you to key members of Trump's transition team so you can tell them to make sure the administration doesn't hire corporate insiders.
+                    Just enter your number and click “call”
+                    <br/>
+                    <br/>
+                    We’ll connect you with your senators and key party leaders, and give you a script of what you can say.
                 </div>
             </div>
         );
@@ -581,11 +584,11 @@ const Social = React.createClass({
 
         let shareText = document.querySelector('[name="twitter:description"]').content;
 
-        const source = getSource();
-
-        if (source) {
-            shareText += '/?source=' + source;
-        }
+        // const source = getSource();
+        //
+        // if (source) {
+        //     shareText += '/?source=' + source;
+        // }
 
         const url = urls.twitter +
                   encodeURIComponent(shareText) +
@@ -597,13 +600,13 @@ const Social = React.createClass({
     onClickFacebook: function(e) {
         e.preventDefault();
 
-        let url = urls.facebook + encodeURIComponent(config.link);
+        let url = urls.facebook + encodeURIComponent(config.link + '/?source=fb-share');
 
-        const source = getSource();
-
-        if (source) {
-            url += '%3Fsource%3D' + source;
-        }
+        // const source = getSource();
+        //
+        // if (source) {
+        //     url += '%3Fsource%3D' + source;
+        // }
 
         window.open(url);
     },
