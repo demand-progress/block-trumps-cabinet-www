@@ -655,25 +655,25 @@ const BodyCopy = () => (
 
         <div className="profiles">
             <div className="profile">
-                <img src="images/Jeff_Sessions.jpg" alt="Jeff Sessions photo" />
+                <img src="images/profiles/Jeff_Sessions.jpg" alt="Jeff Sessions photo" />
                 <strong>Enemy of civil rights and women's rights Jeff Sessions (Attorney General)</strong> &mdash; The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country’s civil rights laws, despite a history of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, <a href="http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html" target="_blank">and calling the ACLU and NAACP "un-American."</a> His anti-woman record speaks for itself: He said <a href="http://www.weeklystandard.com/jeff-sessions-behavior-described-by-trump-in-grab-them-by-the-p-y-tape-isnt-sexual-assault/article/2004799?custom_click=rss" target="_blank"> "I don't characterize" grabbing women by the genitals "as sexual assault,"</a> voted <a href="https://www.govtrack.us/congress/votes/113-2013/s19" target="_blank">against reauthorizing the Violence Against Women Act</a> and <a href="http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=113&session=2&vote=00059" target="_blank">against bipartisan legislation to curb sexual assault</a> in the military <a href="http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=114&session=1&vote=00211">&ndash; twice.</a>
             </div>
             <div className="spacer clear" />
 
             <div className="profile">
-                <img style={{opacity: '0.4',}} src="images/Jeff_Sessions.jpg" alt="Steve Mnuchin photo" />
+                <img src="images/profiles/Mnuchin.jpg" alt="Steve Mnuchin photo" />
                 <strong>Foreclosure king Steve Mnuchin (Treasury Secretary)</strong> &mdash; Steve Mnuchin is an ultra-wealthy former Goldman Sachs executive who got rich at the expense of working Americans. He ran a bank called a "foreclosure machine" that kicked people out of their houses, <a href="http://prospect.org/article/steve-mnuchin-evictor-forecloser-and-our-new-treasury-secretary" target="_blank">using techniques so coldblooded</a> a federal judge called them “harsh, repugnant, shocking and repulsive,” <a href="http://www.bloomberg.com/politics/articles/2016-11-22/trump-treasury-contender-mnuchin-found-profits-in-mortgage-mess" target="_blank">foreclosing on more than 36,000 homes.</a> He and his family pocketed $3.2 million in <a href="http://www.bloomberg.com/politics/articles/2016-05-06/trump-s-new-finance-chairman-was-sued-over-madoff-fraud-profit" target="_blank">fake profits from notorious Ponzi scheme fraudster Bernie Madoff.</a> Mnuchin will run the Treasury Department to benefit Wall Street, saying his <a href="http://www.politico.com/blogs/donald-trump-administration/2016/11/dodd-frank-targeted-mnuchin-231994" target="_blank">“number one priority on the regulatory side" is attacking Dodd-Frank Wall Street reforms reining in big banks.</a>
             </div>
             <div className="spacer clear" />
 
             <div className="profile">
-                <img style={{opacity: '0.4',}} src="images/Jeff_Sessions.jpg" alt="Wilbur Ross photo" />
+                <img src="images/profiles/WilburRoss.jpg" alt="Wilbur Ross photo" />
                 <strong>Wall Street billionaire Wilbur Ross (Secretary of Commerce)</strong> &mdash; Trump's pick for Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," <a href="http://www.thedailybeast.com/articles/2016/11/17/could-this-man-be-donald-trump-s-future-secretary-of-outsourcing.html" target="_blank">he offshored American textile jobs to China and Mexico</a> and <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">12 coal workers died at his mine in West Virginia.</a> But he complains that <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">“the 1 percent is being picked on for political reasons.”</a> Ross bailed out Donald Trump's failing casinos in Atlantic City, <a href="http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0" target="_blank">buying himself a seat in Trump's crony cabinet.</a>
             </div>
             <div className="spacer clear" />
 
             <div className="profile">
-                <img style={{opacity: '0.4',}} src="images/Jeff_Sessions.jpg" alt="Myron Ebell photo" />
+                <img src="images/profiles/MyronEbell_smaller.jpg" alt="Myron Ebell photo" />
                 <strong>A climate science denier for EPA Administrator</strong> &mdash; Trump has picked Myron Ebell to oversee the EPA’s transition to the Trump administration, <a href="http://www.nytimes.com/2016/11/12/science/myron-ebell-trump-epa.html" target="_blank">who directed environmental and energy policy for an organization funded by the coal industry</a> and who extensively questions climate science. For his EPA Administrator, Trump is reportedly picking between Ebell, <a href="http://www.nytimes.com/2014/12/07/us/politics/energy-firms-in-secretive-alliance-with-attorneys-general.html?_r=1" target="_blank"> Scott Pruitt, a shill for the oil and gas industry,</a> and <a href="https://www.desmogblog.com/kathleen-hartnett-white" target="_blank"> Kathleen Hartnett White, a climate denier who has taken radical positions including arguing that CO2 is not a pollutant.</a>
             </div>
             <div className="spacer clear" />

@@ -943,7 +943,7 @@
 	            React.createElement(
 	                'div',
 	                { className: 'profile' },
-	                React.createElement('img', { src: 'images/Jeff_Sessions.jpg', alt: 'Jeff Sessions photo' }),
+	                React.createElement('img', { src: 'images/profiles/Jeff_Sessions.jpg', alt: 'Jeff Sessions photo' }),
 	                React.createElement(
 	                    'strong',
 	                    null,
@@ -984,7 +984,7 @@
 	            React.createElement(
 	                'div',
 	                { className: 'profile' },
-	                React.createElement('img', { style: { opacity: '0.4' }, src: 'images/Jeff_Sessions.jpg', alt: 'Steve Mnuchin photo' }),
+	                React.createElement('img', { src: 'images/profiles/Mnuchin.jpg', alt: 'Steve Mnuchin photo' }),
 	                React.createElement(
 	                    'strong',
 	                    null,
@@ -1019,7 +1019,7 @@
 	            React.createElement(
 	                'div',
 	                { className: 'profile' },
-	                React.createElement('img', { style: { opacity: '0.4' }, src: 'images/Jeff_Sessions.jpg', alt: 'Wilbur Ross photo' }),
+	                React.createElement('img', { src: 'images/profiles/WilburRoss.jpg', alt: 'Wilbur Ross photo' }),
 	                React.createElement(
 	                    'strong',
 	                    null,
@@ -1054,7 +1054,7 @@
 	            React.createElement(
 	                'div',
 	                { className: 'profile' },
-	                React.createElement('img', { style: { opacity: '0.4' }, src: 'images/Jeff_Sessions.jpg', alt: 'Myron Ebell photo' }),
+	                React.createElement('img', { src: 'images/profiles/MyronEbell_smaller.jpg', alt: 'Myron Ebell photo' }),
 	                React.createElement(
 	                    'strong',
 	                    null,

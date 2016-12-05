@@ -192,7 +192,7 @@ a:hover {
 #app .paragraph img {
     float: left;
     margin: 0 18px 12px 0;
-    max-height: 200px;
+    max-height: 260px;
 }
 #app .paragraph .clear {
     clear: both;
