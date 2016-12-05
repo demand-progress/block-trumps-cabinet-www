@@ -224,7 +224,7 @@
 	                    null,
 	                    'Petition to members of the U.S. Senate:'
 	                ),
-	                'Donald Trump\u2019s first appointments to cabinet-level roles in his administration are horrifying. Trump nominees and rumored picks range from white nationalists and climate deniers to Wall Street insiders and corporate lobbyists.',
+	                'Donald Trump\u2019s first appointments to cabinet-level roles in his administration are horrifying. Trump\u2019s nominees and rumored picks have promoted white nationalism, attacked climate science and used their power as Wall Street insiders and corporate lobbyists to fleece working families.',
 	                React.createElement('div', { className: 'spacer' }),
 	                'As representatives of all Americans, you must stand up against hatred and greed. Fight to block and resist every Trump nominee who embraces racism, xenophobia, misogyny, homophobia, climate denial, and Wall Street greed.',
 	                React.createElement(
@@ -654,39 +654,69 @@
 	    }
 	});
 
-	var Organizations = React.createClass({
-	    displayName: 'Organizations',
-
-	    render: function render() {
-	        var organizations = [];
-	        for (var name in this.organizations) {
-	            organizations.push(React.createElement(
-	                'a',
-	                {
-	                    href: this.organizations[name],
-	                    target: '_blank',
-	                    key: name
-	                },
-	                name
-	            ));
-	        }
-
-	        return React.createElement(
+	var Organizations = function Organizations() {
+	    return React.createElement(
+	        'div',
+	        { className: 'organizations' },
+	        React.createElement(
 	            'div',
-	            { className: 'organizations' },
-	            organizations
-	        );
-	    },
-
-	    organizations: {
-	        'Demand Progress': 'https://demandprogress.org/',
-	        'Democracy For America': 'http://democracyforamerica.com/',
-	        'National People\'s Action': 'http://npa-us.org/',
-	        'Other 98': 'http://other98.com/',
-	        'RootsAction': 'http://www.rootsaction.org/',
-	        'Rootstrikers': 'http://www.rootstrikers.org/'
-	    }
-	});
+	            { 'class': 'clamp' },
+	            React.createElement(
+	                'h4',
+	                null,
+	                'Site created by'
+	            ),
+	            React.createElement(
+	                'div',
+	                { 'class': 'larger' },
+	                React.createElement(
+	                    'a',
+	                    { title: 'Demand Progress', href: 'https://demandprogress.org', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/demand-progress.png' })
+	                )
+	            ),
+	            React.createElement(
+	                'h4',
+	                null,
+	                'In partnership with'
+	            ),
+	            React.createElement(
+	                'div',
+	                { 'class': 'smaller' },
+	                React.createElement(
+	                    'a',
+	                    { title: 'Courage Campaign Super PAC', href: 'http://couragesuperpac.org', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/courage-campaign-super-pac.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'CREDO Action', target: '_blank', href: 'http://credoaction.com' },
+	                    React.createElement('img', { src: 'images/logos/credo.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Daily Kos', href: 'http://www.dailykos.com', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/daily-kos.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Democracy for America', target: '_blank', href: 'http://democracyforamerica.com' },
+	                    React.createElement('img', { src: 'images/logos/dfa.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Social Security Works', target: '_blank', href: 'http://www.socialsecurityworks.org/' },
+	                    React.createElement('img', { src: 'images/logos/social-security-works.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'The Nation', target: '_blank', href: 'https://www.thenation.com/' },
+	                    React.createElement('img', { src: 'images/logos/the-nation.png' })
+	                )
+	            )
+	        )
+	    );
+	};
 
 	var Contact = React.createClass({
 	    displayName: 'Contact',
@@ -845,38 +875,39 @@
 	                React.createElement(
 	                    'strong',
 	                    null,
-	                    'Jeff Sessions (Attorney General)'
+	                    'Enemy of civil rights and women\'s rights Jeff Sessions (Attorney General)'
 	                ),
-	                ' \u2013 The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country\u2019s civil rights laws, despite a history of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, ',
+	                ' \u2014 The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country\u2019s civil rights laws, despite a history of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, ',
 	                React.createElement(
 	                    'a',
 	                    { href: 'http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html', target: '_blank' },
 	                    'and calling the ACLU and NAACP "un-American."'
-	                )
+	                ),
+	                ' His anti-woman record speaks for itself: He said "I don\'t characterize" grabbing women by the genitals "as sexual assault," voted against reauthorizing the Violence Against Women Act and against bipartisan legislation to curb sexual assault in the military \u2013 twice.'
 	            ),
 	            React.createElement('div', { className: 'spacer clear' }),
 	            React.createElement(
 	                'div',
 	                { className: 'profile' },
-	                React.createElement('img', { style: { opacity: '0.4' }, src: 'images/Jeff_Sessions.jpg', alt: 'Jeff Sessions photo' }),
+	                React.createElement('img', { style: { opacity: '0.4' }, src: 'images/Jeff_Sessions.jpg', alt: 'Steve Mnuchin photo' }),
 	                React.createElement(
 	                    'strong',
 	                    null,
-	                    'TBD A Wall Street insider as Treasury Secretary'
+	                    'Foreclosure king Steve Mnuchin (Treasury Secretary)'
 	                ),
-	                ' \u2013 TBD Donald Trump is reportedly choosing between Steve Mnuchin, an ex-Goldman Sachs executive who got rich kicking people out of their homes, foreclosing on 36,000 homes,[2] Jamie Dimon, the billionaire CEO of Wall Street giant JPMorgan,[3] and Rep. Jeb Hensarling, who has sought for years to roll back key protections against recklessness and greed on Wall Street, complaining that banks face "regulatory waterboarding."[4]'
+	                ' \u2014 Steve Mnuchin is an ultra-wealthy former Goldman Sachs executive who got rich at the expense of working Americans. He ran a bank called a "foreclosure machine" that kicked people out of their houses, using techniques so coldblooded a federal judge called them \u201Charsh, repugnant, shocking and repulsive,\u201D[2] foreclosing on more than 36,000 homes.[2.5] He and his family pocketed $3.2 million in fake profits from notorious Ponzi scheme fraudster Bernie Madoff.[3] Mnuchin will run the Treasury Department to benefit Wall Street, saying his \u201Cnumber one priority on the regulatory side" is attacking Dodd-Frank Wall Street reforms reining in big banks.[4]'
 	            ),
 	            React.createElement('div', { className: 'spacer clear' }),
 	            React.createElement(
 	                'div',
 	                { className: 'profile' },
-	                React.createElement('img', { style: { opacity: '0.4' }, src: 'images/Jeff_Sessions.jpg', alt: 'Jeff Sessions photo' }),
+	                React.createElement('img', { style: { opacity: '0.4' }, src: 'images/Jeff_Sessions.jpg', alt: 'Wilbur Ross photo' }),
 	                React.createElement(
 	                    'strong',
 	                    null,
-	                    'Wilbur Ross (Secretary of Commerce)'
+	                    'Wall Street billionaire Wilbur Ross (Secretary of Commerce)'
 	                ),
-	                ' - Trump\'s reported pick to be Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," ',
+	                ' \u2014 Trump\'s pick for Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," ',
 	                React.createElement(
 	                    'a',
 	                    { href: 'http://www.thedailybeast.com/articles/2016/11/17/could-this-man-be-donald-trump-s-future-secretary-of-outsourcing.html', target: '_blank' },
@@ -899,6 +930,35 @@
 	                    'a',
 	                    { href: 'http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0', target: '_blank' },
 	                    'buying himself a seat in Trump\'s crony cabinet.'
+	                )
+	            ),
+	            React.createElement('div', { className: 'spacer clear' }),
+	            React.createElement(
+	                'div',
+	                { className: 'profile' },
+	                React.createElement('img', { style: { opacity: '0.4' }, src: 'images/Jeff_Sessions.jpg', alt: 'Myron Ebell photo' }),
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'A climate science denier for EPA Administrator'
+	                ),
+	                ' \u2014 Trump has picked Myron Ebell to oversee the EPA\u2019s transition to the Trump administration, ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.nytimes.com/2016/11/12/science/myron-ebell-trump-epa.html', target: '_blank' },
+	                    'who directed environmental and energy policy for an organization funded by the coal industry'
+	                ),
+	                ' and who extensively questions climate science. For his EPA Administrator, Trump is reportedly picking between Ebell, ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.nytimes.com/2014/12/07/us/politics/energy-firms-in-secretive-alliance-with-attorneys-general.html?_r=1', target: '_blank' },
+	                    ' Scott Pruitt, a shill for the oil and gas industry,'
+	                ),
+	                ' and ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'https://www.desmogblog.com/kathleen-hartnett-white', target: '_blank' },
+	                    ' Kathleen Hartnett White, a climate denier who has taken radical positions including arguing that CO2 is not a pollutant.'
 	                )
 	            ),
 	            React.createElement('div', { className: 'spacer clear' })
@@ -930,6 +990,7 @@
 	            React.createElement(Header, null),
 	            React.createElement(Form, null),
 	            React.createElement(Social, null),
+	            React.createElement(Organizations, null),
 	            React.createElement(Contact, null),
 	            React.createElement(CreativeCommons, null)
 	        );
@@ -4106,38 +4167,30 @@
 	// Set.prototype.keys
 	Set.prototype != null && typeof Set.prototype.keys === 'function' && isNative(Set.prototype.keys);
 
-	var setItem;
-	var getItem;
-	var removeItem;
-	var getItemIDs;
-	var addRoot;
-	var removeRoot;
-	var getRootIDs;
-
 	if (canUseCollections) {
 	  var itemMap = new Map();
 	  var rootIDSet = new Set();
 
-	  setItem = function (id, item) {
+	  var setItem = function (id, item) {
 	    itemMap.set(id, item);
 	  };
-	  getItem = function (id) {
+	  var getItem = function (id) {
 	    return itemMap.get(id);
 	  };
-	  removeItem = function (id) {
+	  var removeItem = function (id) {
 	    itemMap['delete'](id);
 	  };
-	  getItemIDs = function () {
+	  var getItemIDs = function () {
 	    return Array.from(itemMap.keys());
 	  };
 
-	  addRoot = function (id) {
+	  var addRoot = function (id) {
 	    rootIDSet.add(id);
 	  };
-	  removeRoot = function (id) {
+	  var removeRoot = function (id) {
 	    rootIDSet['delete'](id);
 	  };
-	  getRootIDs = function () {
+	  var getRootIDs = function () {
 	    return Array.from(rootIDSet.keys());
 	  };
 	} else {
@@ -4153,31 +4206,31 @@
 	    return parseInt(key.substr(1), 10);
 	  };
 
-	  setItem = function (id, item) {
+	  var setItem = function (id, item) {
 	    var key = getKeyFromID(id);
 	    itemByKey[key] = item;
 	  };
-	  getItem = function (id) {
+	  var getItem = function (id) {
 	    var key = getKeyFromID(id);
 	    return itemByKey[key];
 	  };
-	  removeItem = function (id) {
+	  var removeItem = function (id) {
 	    var key = getKeyFromID(id);
 	    delete itemByKey[key];
 	  };
-	  getItemIDs = function () {
+	  var getItemIDs = function () {
 	    return Object.keys(itemByKey).map(getIDFromKey);
 	  };
 
-	  addRoot = function (id) {
+	  var addRoot = function (id) {
 	    var key = getKeyFromID(id);
 	    rootByKey[key] = true;
 	  };
-	  removeRoot = function (id) {
+	  var removeRoot = function (id) {
 	    var key = getKeyFromID(id);
 	    delete rootByKey[key];
 	  };
-	  getRootIDs = function () {
+	  var getRootIDs = function () {
 	    return Object.keys(rootByKey).map(getIDFromKey);
 	  };
 	}
@@ -4958,7 +5011,7 @@
 
 	'use strict';
 
-	module.exports = '15.4.1';
+	module.exports = '15.4.0';
 
 /***/ },
 /* 31 */
@@ -6363,28 +6416,6 @@
 	  return '.' + inst._rootNodeID;
 	};
 
-	function isInteractive(tag) {
-	  return tag === 'button' || tag === 'input' || tag === 'select' || tag === 'textarea';
-	}
-
-	function shouldPreventMouseEvent(name, type, props) {
-	  switch (name) {
-	    case 'onClick':
-	    case 'onClickCapture':
-	    case 'onDoubleClick':
-	    case 'onDoubleClickCapture':
-	    case 'onMouseDown':
-	    case 'onMouseDownCapture':
-	    case 'onMouseMove':
-	    case 'onMouseMoveCapture':
-	    case 'onMouseUp':
-	    case 'onMouseUpCapture':
-	      return !!(props.disabled && isInteractive(type));
-	    default:
-	      return false;
-	  }
-	}
-
 	/**
 	 * This is a unified interface for event plugins to be installed and configured.
 	 *
@@ -6453,12 +6484,7 @@
 	   * @return {?function} The stored callback.
 	   */
 	  getListener: function (inst, registrationName) {
-	    // TODO: shouldPreventMouseEvent is DOM-specific and definitely should not
-	    // live here; needs to be moved to a better place soon
 	    var bankForRegistrationName = listenerBank[registrationName];
-	    if (shouldPreventMouseEvent(registrationName, inst._currentElement.type, inst._currentElement.props)) {
-	      return null;
-	    }
 	    var key = getDictionaryKey(inst);
 	    return bankForRegistrationName && bankForRegistrationName[key];
 	  },
@@ -20548,6 +20574,18 @@
 	  return tag === 'button' || tag === 'input' || tag === 'select' || tag === 'textarea';
 	}
 
+	function shouldPreventMouseEvent(inst) {
+	  if (inst) {
+	    var disabled = inst._currentElement && inst._currentElement.props.disabled;
+
+	    if (disabled) {
+	      return isInteractive(inst._tag);
+	    }
+	  }
+
+	  return false;
+	}
+
 	var SimpleEventPlugin = {
 
 	  eventTypes: eventTypes,
@@ -20618,7 +20656,10 @@
 	      case 'topMouseDown':
 	      case 'topMouseMove':
 	      case 'topMouseUp':
-	      // TODO: Disabled elements should not respond to mouse events
+	        // Disabled elements should not respond to mouse events
+	        if (shouldPreventMouseEvent(targetInst)) {
+	          return null;
+	        }
 	      /* falls through */
 	      case 'topMouseOut':
 	      case 'topMouseOver':
@@ -21980,7 +22021,7 @@
 
 	'use strict';
 
-	module.exports = '15.4.1';
+	module.exports = '15.4.0';
 
 /***/ },
 /* 172 */

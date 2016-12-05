@@ -439,22 +439,45 @@ a:hover {
 }
 
 #app .organizations {
-    background-color: #09f;
-    font-size: 16px;
+    background-color: #fff;
     padding: 32px 16px;
     text-align: center;
 }
 
-#app .organizations a {
-    color: #fff;
-    display: block;
+#app .organizations .clamp {
     margin: 0 auto;
-    max-width: 268px;
+    max-width: 970px;
+    padding: 0 16px;
 }
 
-#app .organizations a:hover {
-    text-decoration: underline;
+#app .organizations h4 {
+    font-size: 24px;
+    line-height: 1.4;
+    padding: 0 0 16px;
 }
+
+#app .organizations a {
+    text-decoration: none;
+}
+
+#app .organizations img {
+    background-color: #fff;
+    height: auto;
+    margin: 0 20px 32px;
+    max-width: 280px;
+    vertical-align: middle;
+}
+
+#app .organizations .larger img {
+    max-width: 320px;
+    width: 85%;
+}
+
+#app .organizations .smaller img {
+    max-height: 180px;
+    max-width: 210px;
+}
+
 #app .midnight-share-train {
     background-color: #330904;
     margin: 30px auto 0;
