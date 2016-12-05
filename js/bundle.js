@@ -312,7 +312,19 @@
 	    render: function render() {
 	        return React.createElement(
 	            'div',
-	            null,
+	            { className: 'phone-form-wrapper' },
+	            React.createElement(
+	                'h2',
+	                null,
+	                'Thanks for signing. ',
+	                React.createElement('br', null),
+	                ' Now, could you make a call?'
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'paragraph' },
+	                'It\u2019s the single most effective thing you can do.'
+	            ),
 	            React.createElement(
 	                'div',
 	                { className: 'phone-form' },
@@ -353,12 +365,7 @@
 	            ),
 	            React.createElement(
 	                'div',
-	                {
-	                    className: 'paragraph',
-	                    style: {
-	                        maxWidth: '860px'
-	                    }
-	                },
+	                { className: 'paragraph' },
 	                'Just enter your number and click \u201Ccall\u201D',
 	                React.createElement('br', null),
 	                React.createElement('br', null),
@@ -523,21 +530,53 @@
 	            'div',
 	            { className: 'phone-script' },
 	            React.createElement(
-	                'h2',
+	                'em',
 	                null,
-	                'Awesome. Making a few calls now will help us change the way the government runs for years to come.'
+	                'We\u2019re calling you now. ',
+	                React.createElement('br', null),
+	                ' After the conversation, you can ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'press *'
+	                ),
+	                ' and we\u2019ll connect you to the next office.'
 	            ),
-	            'We are going to connect you to people have have power over who Trump will appoint to his administration. Some of them might be surprised to hear from you: They\'re not all used to getting calls from the public \u2014 even as they are making decisions RIGHT NOW that will affect the lives of millions of people.',
 	            React.createElement('div', { className: 'spacer' }),
-	            'Please be polite and say:',
+	            React.createElement(
+	                'em',
+	                null,
+	                'Here\u2019s what you can say:'
+	            ),
 	            React.createElement('div', { className: 'spacer' }),
 	            React.createElement(
 	                'div',
 	                { className: 'suggestion' },
-	                '\u201CI am calling because I want you to know how important it is that the people Donald Trump appoints to his administration care about the public interest \u2014 and are not just more Wall Street executives and other corporate insiders.\u201D'
+	                '\u201CWith his cabinet nominations, Donald Trump is breaking his promises to be a president for all Americans and to make the economy work for ordinary people, not just wealthy elites.',
+	                React.createElement('div', { className: 'spacer' }),
+	                'Please fight to block and resist every Trump nominee who embraces hatred and Wall Street greed.',
+	                React.createElement('div', { className: 'spacer' }),
+	                'In particular, please vote AGAINST enemy of civil rights ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'Jeff Sessions'
+	                ),
+	                ' for Attorney General, foreclosure king ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'Steve Mnuchin'
+	                ),
+	                ' (mi-NOO-chin) for Treasury Secretary, and Wall Street billionaire ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'Wilbur Ross'
+	                ),
+	                ' for Commerce Secretary. Thank you."'
 	            ),
 	            React.createElement('div', { className: 'spacer' }),
-	            'If you reach an answering machine, please leave a message. After each call is over, please hit the * key, and we will connect you to somebody else.',
 	            React.createElement(
 	                'div',
 	                { className: 'calling-wrapper' },

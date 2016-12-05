@@ -227,6 +227,24 @@ a:hover {
     text-decoration: none;
 }
 
+#app .phone-form-wrapper {
+    background-color: #f1f1f1;
+    border: 1px solid #a9a9a9;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
+    margin: 0 auto 32px;
+    max-width: 700px;
+    padding: 32px;
+    text-align: center;
+    -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+}
+
+#app .phone-form-wrapper h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 24px;
+}
+
 #app .phone-form form {
     border: 5px solid #411;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
@@ -242,6 +260,7 @@ a:hover {
 }
 
 #app .phone-form form h2 {
+    font-size: 22px;
     font-weight: 600;
     margin: 32px 32px 16px;
     text-align: center;
@@ -315,7 +334,7 @@ a:hover {
     background-color: #f1f1f1;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
     margin: 0 auto 32px;
-    max-width: 440px;
+    max-width: 700px;
     padding: 32px;
     text-align: center;
 
@@ -328,14 +347,17 @@ a:hover {
 }
 
 #app .phone-script h2 {
+    font-size: 22px;
     font-weight: 600;
-    text-transform: uppercase;
     margin: 0 0 24px;
+    text-transform: uppercase;
 }
 
 #app .phone-script .suggestion {
-    color: #09f;
-    font-weight: 600;
+    color: #9a1606;
+    margin: 10px auto;
+    max-width: 460px;
+    text-align: left;
 }
 
 #app .phone-script .spacer {
@@ -475,8 +497,10 @@ a:hover {
 }
 
 #app .opt-out-form .suggestion {
-    color: #09f;
-    font-weight: 600;
+    color: #9a1606;
+    margin: 10px auto;
+    max-width: 340px;
+    text-align: left;
 }
 
 #app .opt-out-form .numbers .number {
@@ -727,7 +751,6 @@ a:hover {
 #app .calling-wrapper h3 {
     font-weight: 600;
     margin: 0 auto;
-    max-width: 360px;
 }
 #app .calling-wrapper form {
     background-color: #45619d;

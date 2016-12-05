@@ -248,7 +248,12 @@ const EmailForm = React.createClass({
 const PhoneForm = React.createClass({
     render: function() {
         return (
-            <div>
+            <div className="phone-form-wrapper">
+                <h2>Thanks for signing. <br/> Now, could you make a call?</h2>
+                <div className="paragraph">
+                    It’s the single most effective thing you can do.
+                </div>
+
                 <div className="phone-form">
                     <form onSubmit={ this.onSubmit }>
                         <input placeholder="Your Phone Number" id="field-phone" ref="field-phone" className="phone" name="phone" autoComplete="on" pattern="[\d\(\)\-\+ ]*" autoFocus />
@@ -267,12 +272,7 @@ const PhoneForm = React.createClass({
                     </div>
                 </div>
 
-                <div
-                    className="paragraph"
-                    style={{
-                        maxWidth: '860px',
-                    }}
-                >
+                <div className="paragraph">
                     Just enter your number and click “call”
                     <br/>
                     <br/>
@@ -420,20 +420,20 @@ const PhoneScript = React.createClass({
     render: function() {
         return (
             <div className="phone-script">
-                <h2>Awesome. Making a few calls now will help us change the way the government runs for years to come.</h2>
-
-                We are going to connect you to people have have power over who Trump will appoint to his administration. Some of them might be surprised to hear from you: They're not all used to getting calls from the public &mdash; even as they are making decisions RIGHT NOW that will affect the lives of millions of people.
+                <em>We’re calling you now. <br /> After the conversation, you can <strong>press *</strong> and we’ll connect you to the next office.</em>
                 <div className="spacer" />
 
-                Please be polite and say:
+                <em>Here’s what you can say:</em>
                 <div className="spacer" />
 
                 <div className="suggestion">
-                    “I am calling because I want you to know how important it is that the people Donald Trump appoints to his administration care about the public interest &mdash; and are not just more Wall Street executives and other corporate insiders.”
+                    “With his cabinet nominations, Donald Trump is breaking his promises to be a president for all Americans and to make the economy work for ordinary people, not just wealthy elites.
+                    <div className="spacer" />
+                    Please fight to block and resist every Trump nominee who embraces hatred and Wall Street greed.
+                    <div className="spacer" />
+                    In particular, please vote AGAINST enemy of civil rights <strong>Jeff Sessions</strong> for Attorney General, foreclosure king <strong>Steve Mnuchin</strong> (mi-NOO-chin) for Treasury Secretary, and Wall Street billionaire <strong>Wilbur Ross</strong> for Commerce Secretary. Thank you."
                 </div>
                 <div className="spacer" />
-
-                If you reach an answering machine, please leave a message. After each call is over, please hit the * key, and we will connect you to somebody else.
 
                 <div className="calling-wrapper">
                     <h3>After your call(s), use the form to let us know how it went!</h3>
