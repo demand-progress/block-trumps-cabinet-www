@@ -261,7 +261,9 @@ const PhoneForm = React.createClass({
                     <div className="privacy">
                         This tool uses <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio</a>’s APIs.
                         <br />
+                        <div className="hide-temporarily">
                         If you prefer not to use our call tool, <a href="#opt-out" onClick={ this.onClickOptOut }>click here</a>.
+                        </div>
                     </div>
                 </div>
 
@@ -577,6 +579,8 @@ const CreativeCommons = React.createClass({
                 Trump photo (edited) via <a href="https://commons.wikimedia.org/wiki/File%3ADonald_Trump_(16493063167).jpg" target="_blank">Michael Vadon</a> under a <a href="http://creativecommons.org/licenses/by-sa/2.0" target="_blank">CC BY-SA 2.0</a> license.
                 <br />
                 Sessions photo (cropped) via <a href="https://commons.wikimedia.org/wiki/File%3AJeff_Sessions_by_Gage_Skidmore.jpg" target="_blank">Gage Skidmore</a> under a <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a> license.
+                <br />
+                Ross photo (edited) via Cyprus Business Press under a <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">CC BY-NC-ND 3.0</a> license.
             </div>
         );
     },

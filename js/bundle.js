@@ -338,13 +338,17 @@
 	                    ),
 	                    '\u2019s APIs.',
 	                    React.createElement('br', null),
-	                    'If you prefer not to use our call tool, ',
 	                    React.createElement(
-	                        'a',
-	                        { href: '#opt-out', onClick: this.onClickOptOut },
-	                        'click here'
-	                    ),
-	                    '.'
+	                        'div',
+	                        { className: 'hide-temporarily' },
+	                        'If you prefer not to use our call tool, ',
+	                        React.createElement(
+	                            'a',
+	                            { href: '#opt-out', onClick: this.onClickOptOut },
+	                            'click here'
+	                        ),
+	                        '.'
+	                    )
 	                )
 	            ),
 	            React.createElement(
@@ -828,6 +832,14 @@
 	                'a',
 	                { href: 'http://creativecommons.org/licenses/by-sa/3.0', target: '_blank' },
 	                'CC BY-SA 3.0'
+	            ),
+	            ' license.',
+	            React.createElement('br', null),
+	            'Ross photo (edited) via Cyprus Business Press under a ',
+	            React.createElement(
+	                'a',
+	                { href: 'https://creativecommons.org/licenses/by-nc-nd/3.0/', target: '_blank' },
+	                'CC BY-NC-ND 3.0'
 	            ),
 	            ' license.'
 	        );

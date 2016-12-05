@@ -107,6 +107,10 @@ a:hover {
     }
 }
 
+#app .hide-temporarily {
+    display: none;
+}
+
 #app .please-wait {
     color: #eee;
     text-align: center;
