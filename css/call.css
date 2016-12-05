@@ -46,8 +46,7 @@ a:hover {
     background-size: contain;
     color: #330904;
     font-family: 'Open Sans', sans-serif;
-    min-height: 100%;
-    width: 100%;
+    min-height: 100vh;
 }
 @media screen and (max-width: 700px) {
     #app {
