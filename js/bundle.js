@@ -883,7 +883,30 @@
 	                    { href: 'http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html', target: '_blank' },
 	                    'and calling the ACLU and NAACP "un-American."'
 	                ),
-	                ' His anti-woman record speaks for itself: He said "I don\'t characterize" grabbing women by the genitals "as sexual assault," voted against reauthorizing the Violence Against Women Act and against bipartisan legislation to curb sexual assault in the military \u2013 twice.'
+	                ' His anti-woman record speaks for itself: He said ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.weeklystandard.com/jeff-sessions-behavior-described-by-trump-in-grab-them-by-the-p-y-tape-isnt-sexual-assault/article/2004799?custom_click=rss', target: '_blank' },
+	                    ' "I don\'t characterize" grabbing women by the genitals "as sexual assault,"'
+	                ),
+	                ' voted ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'https://www.govtrack.us/congress/votes/113-2013/s19', target: '_blank' },
+	                    'against reauthorizing the Violence Against Women Act'
+	                ),
+	                ' and ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=113&session=2&vote=00059', target: '_blank' },
+	                    'against bipartisan legislation to curb sexual assault'
+	                ),
+	                ' in the military ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=114&session=1&vote=00211' },
+	                    '\u2013 twice.'
+	                )
 	            ),
 	            React.createElement('div', { className: 'spacer clear' }),
 	            React.createElement(
@@ -895,7 +918,30 @@
 	                    null,
 	                    'Foreclosure king Steve Mnuchin (Treasury Secretary)'
 	                ),
-	                ' \u2014 Steve Mnuchin is an ultra-wealthy former Goldman Sachs executive who got rich at the expense of working Americans. He ran a bank called a "foreclosure machine" that kicked people out of their houses, using techniques so coldblooded a federal judge called them \u201Charsh, repugnant, shocking and repulsive,\u201D[2] foreclosing on more than 36,000 homes.[2.5] He and his family pocketed $3.2 million in fake profits from notorious Ponzi scheme fraudster Bernie Madoff.[3] Mnuchin will run the Treasury Department to benefit Wall Street, saying his \u201Cnumber one priority on the regulatory side" is attacking Dodd-Frank Wall Street reforms reining in big banks.[4]'
+	                ' \u2014 Steve Mnuchin is an ultra-wealthy former Goldman Sachs executive who got rich at the expense of working Americans. He ran a bank called a "foreclosure machine" that kicked people out of their houses, ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://prospect.org/article/steve-mnuchin-evictor-forecloser-and-our-new-treasury-secretary', target: '_blank' },
+	                    'using techniques so coldblooded'
+	                ),
+	                ' a federal judge called them \u201Charsh, repugnant, shocking and repulsive,\u201D ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.bloomberg.com/politics/articles/2016-11-22/trump-treasury-contender-mnuchin-found-profits-in-mortgage-mess', target: '_blank' },
+	                    'foreclosing on more than 36,000 homes.'
+	                ),
+	                ' He and his family pocketed $3.2 million in ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.bloomberg.com/politics/articles/2016-05-06/trump-s-new-finance-chairman-was-sued-over-madoff-fraud-profit', target: '_blank' },
+	                    'fake profits from notorious Ponzi scheme fraudster Bernie Madoff.'
+	                ),
+	                ' Mnuchin will run the Treasury Department to benefit Wall Street, saying his ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.politico.com/blogs/donald-trump-administration/2016/11/dodd-frank-targeted-mnuchin-231994', target: '_blank' },
+	                    '\u201Cnumber one priority on the regulatory side" is attacking Dodd-Frank Wall Street reforms reining in big banks.'
+	                )
 	            ),
 	            React.createElement('div', { className: 'spacer clear' }),
 	            React.createElement(
