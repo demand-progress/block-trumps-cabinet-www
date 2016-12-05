@@ -219,6 +219,12 @@ const EmailForm = React.createClass({
             return;
         }
 
+        try {
+            sessionStorage.zip = zip.value.trim();
+        } catch (err) {
+            // Oh well
+        }
+
         const fields = {
             'action_user_agent': navigator.userAgent,
             'country': 'United States',
@@ -286,7 +292,16 @@ const PhoneForm = React.createClass({
         }
 
         const request = new XMLHttpRequest();
-        const url = `https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=${config.callCampaign}&userPhone=${number}&source_id=${getSource()}`;
+        let url = `https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=${config.callCampaign}&userPhone=${number}&source_id=${getSource()}`;
+
+        try {
+            if ('zip' in sessionStorage) {
+                url += `&zipcode=${sessionStorage.zip}`;
+            }
+        } catch (err) {
+            // Oh well
+        }
+
         request.open('GET', url, true);
         request.send();
 

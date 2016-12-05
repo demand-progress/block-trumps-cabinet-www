@@ -280,6 +280,12 @@
 	            return;
 	        }
 
+	        try {
+	            sessionStorage.zip = zip.value.trim();
+	        } catch (err) {
+	            // Oh well
+	        }
+
 	        var fields = {
 	            'action_user_agent': navigator.userAgent,
 	            'country': 'United States',
@@ -370,6 +376,15 @@
 
 	        var request = new XMLHttpRequest();
 	        var url = 'https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=' + config.callCampaign + '&userPhone=' + number + '&source_id=' + getSource();
+
+	        try {
+	            if ('zip' in sessionStorage) {
+	                url += '&zipcode=' + sessionStorage.zip;
+	            }
+	        } catch (err) {
+	            // Oh well
+	        }
+
 	        request.open('GET', url, true);
 	        request.send();
 
