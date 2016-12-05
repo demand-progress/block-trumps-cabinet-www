@@ -660,7 +660,7 @@
 	        { className: 'organizations' },
 	        React.createElement(
 	            'div',
-	            { 'class': 'clamp' },
+	            { className: 'clamp' },
 	            React.createElement(
 	                'h4',
 	                null,
@@ -668,11 +668,11 @@
 	            ),
 	            React.createElement(
 	                'div',
-	                { 'class': 'larger' },
+	                { className: 'larger' },
 	                React.createElement(
 	                    'a',
 	                    { title: 'Demand Progress', href: 'https://demandprogress.org', target: '_blank' },
-	                    React.createElement('img', { src: 'images/logos/demand-progress.png' })
+	                    React.createElement('img', { src: 'images/logos/demandprogress-logo-new-stacked.png' })
 	                )
 	            ),
 	            React.createElement(
@@ -682,36 +682,96 @@
 	            ),
 	            React.createElement(
 	                'div',
-	                { 'class': 'smaller' },
+	                { className: 'smaller' },
 	                React.createElement(
 	                    'a',
-	                    { title: 'Courage Campaign Super PAC', href: 'http://couragesuperpac.org', target: '_blank' },
-	                    React.createElement('img', { src: 'images/logos/courage-campaign-super-pac.png' })
+	                    { title: 'American Family Voices', href: 'http://www.americanfamilyvoices.org', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/afv.jpg' })
 	                ),
 	                React.createElement(
 	                    'a',
-	                    { title: 'CREDO Action', target: '_blank', href: 'http://credoaction.com' },
-	                    React.createElement('img', { src: 'images/logos/credo.png' })
+	                    { title: 'Catholics in Alliance', href: 'http://www.catholicsinalliance.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/CatholicsInAlliance.jpg' })
 	                ),
 	                React.createElement(
 	                    'a',
-	                    { title: 'Daily Kos', href: 'http://www.dailykos.com', target: '_blank' },
-	                    React.createElement('img', { src: 'images/logos/daily-kos.png' })
+	                    { title: 'Courage Campaign', href: 'https://couragecampaign.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/Courage-Logo-Color-High-Rez.jpg' })
 	                ),
 	                React.createElement(
 	                    'a',
-	                    { title: 'Democracy for America', target: '_blank', href: 'http://democracyforamerica.com' },
-	                    React.createElement('img', { src: 'images/logos/dfa.png' })
+	                    { title: 'CPD Action', href: 'https://cpdaction.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/cpd-action-logo.png' })
 	                ),
 	                React.createElement(
 	                    'a',
-	                    { title: 'Social Security Works', target: '_blank', href: 'http://www.socialsecurityworks.org/' },
-	                    React.createElement('img', { src: 'images/logos/social-security-works.jpg' })
+	                    { title: 'Daily Kos', href: 'http://www.dailykos.com/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/dk_logo_400dpi_1024.jpg' })
 	                ),
 	                React.createElement(
 	                    'a',
-	                    { title: 'The Nation', target: '_blank', href: 'https://www.thenation.com/' },
-	                    React.createElement('img', { src: 'images/logos/the-nation.png' })
+	                    { title: 'Rootstrikers', href: 'http://www.rootstrikers.org/#!/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/logo-rootstrikers-blacktext_900px.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Democracy for America', href: 'https://www.democracyforamerica.com/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/DFA_logo_bottom_200.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Friends of the Earth', href: 'http://www.foe.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/FOE_logo_color.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'HedgeClippers', href: 'http://hedgeclippers.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/HedgeClippers.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'League of Conservation Votes', href: 'http://www.lcv.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/lcv_horizontal_url_large.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'NY Communities for Change', href: 'http://nycommunities.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/ny-communities-for-change.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'People for the American Way', href: 'http://www.pfaw.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/pfaw-logo.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Presente Action', href: 'http://www.presente.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/PresenteActionLogo.jpeg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Public Citizen', href: 'http://www.citizen.org/Page.aspx?pid=183', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/publiccitizen.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'RootsAction', href: 'http://rootsaction.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/RootsAction_transparent300.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'SumOfUs', href: 'https://www.sumofus.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/SumOfUs_horiz-logo-color.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'The Nation', href: 'https://www.thenation.com/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/THENATION_150_LOGO_RegularTAGLINE-Pantone.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Working Families Party', href: 'http://workingfamilies.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/wfp.jpg' })
 	                )
 	            )
 	        )

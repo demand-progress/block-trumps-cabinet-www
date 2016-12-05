@@ -526,20 +526,32 @@ const Form = React.createClass({
 
 const Organizations = () => (
     <div className="organizations">
-        <div class="clamp">
+        <div className="clamp">
             <h4>Site created by</h4>
-            <div class="larger">
-                <a title="Demand Progress" href="https://demandprogress.org" target="_blank"><img src="images/logos/demand-progress.png" /></a>
+            <div className="larger">
+                <a title="Demand Progress" href="https://demandprogress.org" target="_blank"><img src="images/logos/demandprogress-logo-new-stacked.png" /></a>
             </div>
 
             <h4>In partnership with</h4>
-            <div class="smaller">
-                <a title="Courage Campaign Super PAC" href="http://couragesuperpac.org" target="_blank"><img src="images/logos/courage-campaign-super-pac.png" /></a>
-                <a title="CREDO Action" target="_blank" href="http://credoaction.com"><img src="images/logos/credo.png" /></a>
-                <a title="Daily Kos" href="http://www.dailykos.com" target="_blank"><img src="images/logos/daily-kos.png" /></a>
-                <a title="Democracy for America" target="_blank" href="http://democracyforamerica.com"><img src="images/logos/dfa.png" /></a>
-                <a title="Social Security Works" target="_blank" href="http://www.socialsecurityworks.org/"><img src="images/logos/social-security-works.jpg" /></a>
-                <a title="The Nation" target="_blank" href="https://www.thenation.com/"><img src="images/logos/the-nation.png" /></a>
+            <div className="smaller">
+                <a title="American Family Voices" href="http://www.americanfamilyvoices.org" target="_blank"><img src="images/logos/afv.jpg" /></a>
+                <a title="Catholics in Alliance" href="http://www.catholicsinalliance.org/" target="_blank"><img src="images/logos/CatholicsInAlliance.jpg" /></a>
+                <a title="Courage Campaign" href="https://couragecampaign.org/" target="_blank"><img src="images/logos/Courage-Logo-Color-High-Rez.jpg" /></a>
+                <a title="CPD Action" href="https://cpdaction.org/" target="_blank"><img src="images/logos/cpd-action-logo.png" /></a>
+                <a title="Daily Kos" href="http://www.dailykos.com/" target="_blank"><img src="images/logos/dk_logo_400dpi_1024.jpg" /></a>
+                <a title="Rootstrikers" href="http://www.rootstrikers.org/#!/" target="_blank"><img src="images/logos/logo-rootstrikers-blacktext_900px.png" /></a>
+                <a title="Democracy for America" href="https://www.democracyforamerica.com/" target="_blank"><img src="images/logos/DFA_logo_bottom_200.png" /></a>
+                <a title="Friends of the Earth" href="http://www.foe.org/" target="_blank"><img src="images/logos/FOE_logo_color.jpg" /></a>
+                <a title="HedgeClippers" href="http://hedgeclippers.org/" target="_blank"><img src="images/logos/HedgeClippers.jpg" /></a>
+                <a title="League of Conservation Votes" href="http://www.lcv.org/" target="_blank"><img src="images/logos/lcv_horizontal_url_large.jpg" /></a>
+                <a title="NY Communities for Change" href="http://nycommunities.org/" target="_blank"><img src="images/logos/ny-communities-for-change.png" /></a>
+                <a title="People for the American Way" href="http://www.pfaw.org/" target="_blank"><img src="images/logos/pfaw-logo.jpg" /></a>
+                <a title="Presente Action" href="http://www.presente.org/" target="_blank"><img src="images/logos/PresenteActionLogo.jpeg" /></a>
+                <a title="Public Citizen" href="http://www.citizen.org/Page.aspx?pid=183" target="_blank"><img src="images/logos/publiccitizen.jpg" /></a>
+                <a title="RootsAction" href="http://rootsaction.org/" target="_blank"><img src="images/logos/RootsAction_transparent300.png" /></a>
+                <a title="SumOfUs" href="https://www.sumofus.org/" target="_blank"><img src="images/logos/SumOfUs_horiz-logo-color.jpg" /></a>
+                <a title="The Nation" href="https://www.thenation.com/" target="_blank"><img src="images/logos/THENATION_150_LOGO_RegularTAGLINE-Pantone.jpg" /></a>
+                <a title="Working Families Party" href="http://workingfamilies.org/" target="_blank"><img src="images/logos/wfp.jpg" /></a>
             </div>
         </div>
     </div>
