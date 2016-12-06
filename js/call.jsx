@@ -388,7 +388,7 @@ const PhoneScript = React.createClass({
         e.preventDefault();
 
         const data = {
-            callCampaign: config.callCampaign,
+            campaign: config.callCampaign,
             subject: 'Feedback from ' + (config.prettyCampaignName || config.callCampaign),
             text: '',
         };
