@@ -80,6 +80,7 @@ function sendFormToActionKit(fields) {
     form.setAttribute('action', urls.actionkit);
     form.setAttribute('method', 'post');
     form.setAttribute('target', 'actionkit-iframe');
+    document.body.appendChild(form);
 
     Object.keys(fields).forEach(function(key) {
         const input = document.createElement('input');
@@ -504,6 +505,10 @@ const Form = React.createClass({
 
         if (getSource() === 'mpower') {
             form = 'phone';
+        }
+
+        if (state.query.phase) {
+            form = state.query.phase;
         }
 
         if (state.query.debugState) {
