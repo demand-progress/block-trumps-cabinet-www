@@ -532,7 +532,7 @@ a:hover {
 
 #app .organizations {
     background-color: #fff;
-    padding: 32px 16px;
+    padding: 42px 16px;
     text-align: center;
 }
 
@@ -574,7 +574,7 @@ a:hover {
     background-color: #330904;
     margin: 30px auto 0;
     max-width: 100%;
-    padding: 18px 16px 0;
+    padding: 38px 16px 20px;
     text-align: center;
 }
 
