@@ -266,9 +266,7 @@ const PhoneForm = React.createClass({
                     <div className="privacy">
                         This tool uses <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio</a>’s APIs.
                         <br />
-                        <div className="hide-temporarily">
-                        If you prefer not to use our call tool, <a href="#opt-out" onClick={ this.onClickOptOut }>click here</a>.
-                        </div>
+                        Or dial <a href="tel:+12023350610">(202) 335-0610</a> to connect.
                     </div>
                 </div>
 
@@ -336,7 +334,8 @@ const OptOutForm = React.createClass({
         // 'The Domestic Policy Council': '202-456-6515',
         // 'The Office of Administration': '202-456-2861',
         // 'The Council of Economic Advisers': '202-395-5084',
-        'Hillary Clinton\'s Campaign': '646-854-1432',
+        // 'Hillary Clinton\'s Campaign': '646-854-1432',
+        'Call the Senate:': '202-335-0610',
     },
 
     renderNumbers: function() {
@@ -365,7 +364,15 @@ const OptOutForm = React.createClass({
         return (
             <div className="opt-out-form">
                 <div className="script">
-                    Tell them: <span className="suggestion">“I am calling because I want you to know how important it is that the people Donald Trump appoints to his administration care about the public interest &mdash; and are not just more Wall Street executives and other corporate insiders.”</span>
+                    Tell them:
+                    <div className="spacer" />
+                    <div className="suggestion">
+                        “With his cabinet nominations, Donald Trump is breaking his promises to be a president for all Americans and to make the economy work for ordinary people, not just wealthy elites.
+                        <div className="spacer" />
+                        Please fight to block and resist every Trump nominee who embraces hatred and Wall Street greed.
+                        <div className="spacer" />
+                        In particular, please vote AGAINST enemy of civil rights <strong>Jeff Sessions</strong> for Attorney General, foreclosure king <strong>Steve Mnuchin</strong> (mi-NOO-chin) for Treasury Secretary, and Wall Street billionaire <strong>Wilbur Ross</strong> for Commerce Secretary. Thank you."
+                    </div>
                 </div>
 
                 <div className="numbers">

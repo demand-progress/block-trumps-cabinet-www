@@ -363,17 +363,13 @@
 	                    ),
 	                    '\u2019s APIs.',
 	                    React.createElement('br', null),
+	                    'Or dial ',
 	                    React.createElement(
-	                        'div',
-	                        { className: 'hide-temporarily' },
-	                        'If you prefer not to use our call tool, ',
-	                        React.createElement(
-	                            'a',
-	                            { href: '#opt-out', onClick: this.onClickOptOut },
-	                            'click here'
-	                        ),
-	                        '.'
-	                    )
+	                        'a',
+	                        { href: 'tel:+12023350610' },
+	                        '(202) 335-0610'
+	                    ),
+	                    ' to connect.'
 	                )
 	            ),
 	            React.createElement(
@@ -443,7 +439,8 @@
 	        // 'The Domestic Policy Council': '202-456-6515',
 	        // 'The Office of Administration': '202-456-2861',
 	        // 'The Council of Economic Advisers': '202-395-5084',
-	        'Hillary Clinton\'s Campaign': '646-854-1432'
+	        // 'Hillary Clinton\'s Campaign': '646-854-1432',
+	        'Call the Senate:': '202-335-0610'
 	    },
 
 	    renderNumbers: function renderNumbers() {
@@ -482,11 +479,34 @@
 	            React.createElement(
 	                'div',
 	                { className: 'script' },
-	                'Tell them: ',
+	                'Tell them:',
+	                React.createElement('div', { className: 'spacer' }),
 	                React.createElement(
-	                    'span',
+	                    'div',
 	                    { className: 'suggestion' },
-	                    '\u201CI am calling because I want you to know how important it is that the people Donald Trump appoints to his administration care about the public interest \u2014 and are not just more Wall Street executives and other corporate insiders.\u201D'
+	                    '\u201CWith his cabinet nominations, Donald Trump is breaking his promises to be a president for all Americans and to make the economy work for ordinary people, not just wealthy elites.',
+	                    React.createElement('div', { className: 'spacer' }),
+	                    'Please fight to block and resist every Trump nominee who embraces hatred and Wall Street greed.',
+	                    React.createElement('div', { className: 'spacer' }),
+	                    'In particular, please vote AGAINST enemy of civil rights ',
+	                    React.createElement(
+	                        'strong',
+	                        null,
+	                        'Jeff Sessions'
+	                    ),
+	                    ' for Attorney General, foreclosure king ',
+	                    React.createElement(
+	                        'strong',
+	                        null,
+	                        'Steve Mnuchin'
+	                    ),
+	                    ' (mi-NOO-chin) for Treasury Secretary, and Wall Street billionaire ',
+	                    React.createElement(
+	                        'strong',
+	                        null,
+	                        'Wilbur Ross'
+	                    ),
+	                    ' for Commerce Secretary. Thank you."'
 	                )
 	            ),
 	            React.createElement(
