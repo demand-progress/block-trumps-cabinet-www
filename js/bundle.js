@@ -748,6 +748,11 @@
 	                ),
 	                React.createElement(
 	                    'a',
+	                    { title: 'CWA', href: 'http://www.cwa-union.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/CWA-blue-line.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
 	                    { title: 'Daily Kos', href: 'http://www.dailykos.com/', target: '_blank' },
 	                    React.createElement('img', { src: 'images/logos/dk_logo_400dpi_1024.jpg' })
 	                ),
@@ -768,18 +773,18 @@
 	                ),
 	                React.createElement(
 	                    'a',
-	                    { title: 'HedgeClippers', href: 'http://hedgeclippers.org/', target: '_blank' },
-	                    React.createElement('img', { src: 'images/logos/HedgeClippers.jpg' })
-	                ),
-	                React.createElement(
-	                    'a',
 	                    { title: 'League of Conservation Votes', href: 'http://www.lcv.org/', target: '_blank' },
 	                    React.createElement('img', { src: 'images/logos/lcv_horizontal_url_large.jpg' })
 	                ),
 	                React.createElement(
 	                    'a',
-	                    { title: 'NY Communities for Change', href: 'http://nycommunities.org/', target: '_blank' },
+	                    { title: 'NYCC', href: 'http://nycommunities.org/', target: '_blank' },
 	                    React.createElement('img', { src: 'images/logos/ny-communities-for-change.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Other 98% Action', href: 'http://other98.com/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/o98-black-horizontal.png' })
 	                ),
 	                React.createElement(
 	                    'a',
@@ -810,6 +815,11 @@
 	                    'a',
 	                    { title: 'The Nation', href: 'https://www.thenation.com/', target: '_blank' },
 	                    React.createElement('img', { src: 'images/logos/THENATION_150_LOGO_RegularTAGLINE-Pantone.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'UltraViolet', href: 'https://weareultraviolet.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/ultraviolet.jpg' })
 	                ),
 	                React.createElement(
 	                    'a',
