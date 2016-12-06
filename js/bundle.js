@@ -236,7 +236,7 @@
 	                    null,
 	                    'Petition to members of the U.S. Senate:'
 	                ),
-	                'Donald Trump\u2019s first appointments to cabinet-level roles in his administration are horrifying. Trump\u2019s nominees and rumored picks have promoted white nationalism, attacked climate science and used their power as Wall Street insiders and corporate lobbyists to fleece working families.',
+	                'Donald Trump\u2019s first appointments to cabinet-level roles in his administration are horrifying. Trump\u2019s nominees and rumored picks have promoted white nationalism, attacked climate science, and used their power as Wall Street insiders and corporate lobbyists to fleece working families.',
 	                React.createElement('div', { className: 'spacer' }),
 	                'As representatives of all Americans, you must stand up against hatred and greed. Fight to block and resist every Trump nominee who embraces racism, xenophobia, misogyny, homophobia, climate denial, and Wall Street greed.',
 	                React.createElement(
@@ -254,7 +254,7 @@
 	                React.createElement(
 	                    'div',
 	                    { className: 'disclaimer' },
-	                    'We do not share your email address without your permission. One or more partner groups may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.'
+	                    'One or more partner groups may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.'
 	                )
 	            ),
 	            React.createElement(BodyCopy, null)
@@ -929,7 +929,7 @@
 	                ),
 	                React.createElement(
 	                    'a',
-	                    { href: 'mailto:?subject= I%20just%20signed%20this%3A &body= Hi%20-%20I%20just%20took%20action%20against%20Donald%20Trump\u2019s%20horrifying%20picks%20for%20cabinet-level%20roles%20in%20his%20administrations. %0A%0A Trump\u2019s%20nominees%20have%20promoted%20white%20nationalism%2C%20attacked%20climate%20science%20and%20used%20their%20power%20as%20Wall%20Street%20insiders%20to%20fleece%20working%20families. %0A%0A I%20just%20signed%20a%20petition%20urging%20the%20Senate%20to%20block%20and%20resist%20any%20Trump%20nominee%20embracing%20hatred%20and%20greed.%20Could%20you%20sign%20too%3F %0A%0A https%3A%2F%2Fwww.BlockTrumpsCabinet.com%2F%3Fsource%3Dtw-share',
+	                    { href: 'mailto:?subject= I%20just%20signed%20this%3A &body= Hi%20-%20I%20just%20took%20action%20against%20Donald%20Trump\u2019s%20horrifying%20picks%20for%20cabinet-level%20roles%20in%20his%20administration. %0A%0A Trump\u2019s%20nominees%20have%20promoted%20white%20nationalism%2C%20attacked%20climate%20science%20and%20used%20their%20power%20as%20Wall%20Street%20insiders%20to%20fleece%20working%20families. %0A%0A I%20just%20signed%20a%20petition%20urging%20the%20Senate%20to%20block%20and%20resist%20any%20Trump%20nominee%20embracing%20hatred%20and%20greed.%20Could%20you%20sign%20too%3F %0A%0A https%3A%2F%2Fwww.BlockTrumpsCabinet.com%2F%3Fsource%3Demail-share',
 	                        target: '_blank', className: 'email' },
 	                    'Email'
 	                )
@@ -977,16 +977,16 @@
 	        React.createElement(
 	            'h3',
 	            null,
-	            'Trump\u2019s Broken Promises:'
+	            'Trump\u2019s Broken Promises'
 	        ),
-	        'Despite his campaign, Trump promised in election night to be \u201Ca president for all Americans.\u201D But the parade of horribles that Trump has nominated to his administration show he is welcoming hate right into the White House.',
+	        'Trump promised on election night to be \u201Ca president for all Americans.\u201D But the parade of horribles that Trump has nominated to his administration show he is welcoming hate right into the White House.',
 	        React.createElement('div', { className: 'spacer' }),
-	        'And his pledge to \u201Cdrain the swamp\u201D and make Washington work for ordinary Americans instead of powerful elites? Forget about it. Trump\u2019s cabinet is so pro-corporate it\u2019s called \u201Can investment banker\u2019s dream.\u201D',
+	        'And his pledge during the campaign to \u201Cdrain the swamp\u201D and make Washington work for ordinary Americans instead of powerful elites? Forget about it. Trump\u2019s cabinet is so pro-corporate it\u2019s called \u201Can investment banker\u2019s dream.\u201D',
 	        React.createElement('div', { className: 'spacer' }),
 	        React.createElement(
 	            'h3',
 	            null,
-	            'Who the Trump Cabinet Really Works For:'
+	            'Who the Trump Cabinet Really Works For'
 	        ),
 	        'Wall Street bankers and Trump\u2019s corporate cronies are cheering the Trump agenda. It\u2019s a corporate wish list that would eliminate protections for working people and our environment, and eviscerate strong rules reining in Wall Street.',
 	        React.createElement('div', { className: 'spacer' }),
@@ -1011,13 +1011,13 @@
 	                    null,
 	                    'Enemy of civil rights and women\'s rights Jeff Sessions (Attorney General)'
 	                ),
-	                ' \u2014 The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country\u2019s civil rights laws, despite a history of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, ',
+	                ' \u2014 The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country\u2019s civil rights laws, despite ',
 	                React.createElement(
 	                    'a',
 	                    { href: 'http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html', target: '_blank' },
-	                    'and calling the ACLU and NAACP "un-American."'
+	                    'a history'
 	                ),
-	                ' His anti-woman record speaks for itself: He said ',
+	                ' of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, and calling the ACLU and NAACP "un-American." His anti-woman record speaks for itself: He said ',
 	                React.createElement(
 	                    'a',
 	                    { href: 'http://www.weeklystandard.com/jeff-sessions-behavior-described-by-trump-in-grab-them-by-the-p-y-tape-isnt-sexual-assault/article/2004799?custom_click=rss', target: '_blank' },
@@ -1097,7 +1097,7 @@
 	                React.createElement(
 	                    'a',
 	                    { href: 'http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb', target: '_blank' },
-	                    '12 coal workers died at his mine in West Virginia.'
+	                    '12 coal workers controversially died at his mine in West Virginia.'
 	                ),
 	                ' But he complains that ',
 	                React.createElement(

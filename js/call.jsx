@@ -161,7 +161,7 @@ const EmailForm = React.createClass({
                 <div className="petition" id="petition">
                     <h3>Petition to members of the U.S. Senate:</h3>
 
-                    Donald Trump’s first appointments to cabinet-level roles in his administration are horrifying. Trump’s nominees and rumored picks have promoted white nationalism, attacked climate science and used their power as Wall Street insiders and corporate lobbyists to fleece working families.
+                    Donald Trump’s first appointments to cabinet-level roles in his administration are horrifying. Trump’s nominees and rumored picks have promoted white nationalism, attacked climate science, and used their power as Wall Street insiders and corporate lobbyists to fleece working families.
                     <div className="spacer" />
 
                     As representatives of all Americans, you must stand up against hatred and greed. Fight to block and resist every Trump nominee who embraces racism, xenophobia, misogyny, homophobia, climate denial, and Wall Street greed.
@@ -176,7 +176,6 @@ const EmailForm = React.createClass({
                     </form>
 
                     <div className="disclaimer">
-                        We do not share your email address without your permission.
                         One or more partner groups
                         may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.
                     </div>
@@ -598,13 +597,13 @@ const Social = React.createClass({
                     <a href="mailto:?subject=
                         I%20just%20signed%20this%3A
                         &body=
-                        Hi%20-%20I%20just%20took%20action%20against%20Donald%20Trump’s%20horrifying%20picks%20for%20cabinet-level%20roles%20in%20his%20administrations.
+                        Hi%20-%20I%20just%20took%20action%20against%20Donald%20Trump’s%20horrifying%20picks%20for%20cabinet-level%20roles%20in%20his%20administration.
                         %0A%0A
                         Trump’s%20nominees%20have%20promoted%20white%20nationalism%2C%20attacked%20climate%20science%20and%20used%20their%20power%20as%20Wall%20Street%20insiders%20to%20fleece%20working%20families.
                         %0A%0A
                         I%20just%20signed%20a%20petition%20urging%20the%20Senate%20to%20block%20and%20resist%20any%20Trump%20nominee%20embracing%20hatred%20and%20greed.%20Could%20you%20sign%20too%3F
                         %0A%0A
-                        https%3A%2F%2Fwww.BlockTrumpsCabinet.com%2F%3Fsource%3Dtw-share"
+                        https%3A%2F%2Fwww.BlockTrumpsCabinet.com%2F%3Fsource%3Demail-share"
                         target="_blank" className="email">Email</a>
                 </div>
             </div>
@@ -649,13 +648,13 @@ const BodyCopy = () => (
         <hr />
         Trump rose to power with a divisive campaign that showed he was willing to embrace every fringe ideology from xenophobia to sexism to flat-out racism in order to gain power.
 
-        <h3>Trump’s Broken Promises:</h3>
-        Despite his campaign, Trump promised in election night to be “a president for all Americans.” But the parade of horribles that Trump has nominated to his administration show he is welcoming hate right into the White House.
+        <h3>Trump’s Broken Promises</h3>
+        Trump promised on election night to be “a president for all Americans.” But the parade of horribles that Trump has nominated to his administration show he is welcoming hate right into the White House.
         <div className="spacer" />
-        And his pledge to “drain the swamp” and make Washington work for ordinary Americans instead of powerful elites? Forget about it. Trump’s cabinet is so pro-corporate it’s called “an investment banker’s dream.”
+        And his pledge during the campaign to “drain the swamp” and make Washington work for ordinary Americans instead of powerful elites? Forget about it. Trump’s cabinet is so pro-corporate it’s called “an investment banker’s dream.”
         <div className="spacer" />
 
-        <h3>Who the Trump Cabinet Really Works For:</h3>
+        <h3>Who the Trump Cabinet Really Works For</h3>
         Wall Street bankers and Trump’s corporate cronies are cheering the Trump agenda. It’s a corporate wish list that would eliminate protections for working people and our environment, and eviscerate strong rules reining in Wall Street.
         <div className="spacer" />
         The Trump administration is shaping up to benefit Donald Trump and his family’s business empire in a big way, with massive conflicts of interest posed by Trump’s continued stake in the Trump Organization.
@@ -668,7 +667,7 @@ const BodyCopy = () => (
         <div className="profiles">
             <div className="profile">
                 <img src="images/profiles/Jeff_Sessions.jpg" alt="Jeff Sessions photo" />
-                <strong>Enemy of civil rights and women's rights Jeff Sessions (Attorney General)</strong> &mdash; The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country’s civil rights laws, despite a history of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, <a href="http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html" target="_blank">and calling the ACLU and NAACP "un-American."</a> His anti-woman record speaks for itself: He said <a href="http://www.weeklystandard.com/jeff-sessions-behavior-described-by-trump-in-grab-them-by-the-p-y-tape-isnt-sexual-assault/article/2004799?custom_click=rss" target="_blank"> "I don't characterize" grabbing women by the genitals "as sexual assault,"</a> voted <a href="https://www.govtrack.us/congress/votes/113-2013/s19" target="_blank">against reauthorizing the Violence Against Women Act</a> and <a href="http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=113&session=2&vote=00059" target="_blank">against bipartisan legislation to curb sexual assault</a> in the military <a href="http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=114&session=1&vote=00211">&ndash; twice.</a>
+                <strong>Enemy of civil rights and women's rights Jeff Sessions (Attorney General)</strong> &mdash; The same Jeff Sessions who was deemed too racist to confirm to a federal judgeship by a Republican Judiciary Committee in 1986 would be in charge of the Department of Justice. If confirmed, he would be responsible for enforcing the country’s civil rights laws, despite <a href="http://www.cnn.com/2016/11/17/politics/jeff-sessions-racism-allegations/index.html" target="_blank">a history</a> of calling a black subordinate "boy," "joking" about supporting the Ku Klux Klan, and calling the ACLU and NAACP "un-American." His anti-woman record speaks for itself: He said <a href="http://www.weeklystandard.com/jeff-sessions-behavior-described-by-trump-in-grab-them-by-the-p-y-tape-isnt-sexual-assault/article/2004799?custom_click=rss" target="_blank"> "I don't characterize" grabbing women by the genitals "as sexual assault,"</a> voted <a href="https://www.govtrack.us/congress/votes/113-2013/s19" target="_blank">against reauthorizing the Violence Against Women Act</a> and <a href="http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=113&session=2&vote=00059" target="_blank">against bipartisan legislation to curb sexual assault</a> in the military <a href="http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=114&session=1&vote=00211">&ndash; twice.</a>
             </div>
             <div className="spacer clear" />
 
@@ -680,7 +679,7 @@ const BodyCopy = () => (
 
             <div className="profile">
                 <img src="images/profiles/WilburRoss.jpg" alt="Wilbur Ross photo" />
-                <strong>Wall Street billionaire Wilbur Ross (Secretary of Commerce)</strong> &mdash; Trump's pick for Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," <a href="http://www.thedailybeast.com/articles/2016/11/17/could-this-man-be-donald-trump-s-future-secretary-of-outsourcing.html" target="_blank">he offshored American textile jobs to China and Mexico</a> and <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">12 coal workers died at his mine in West Virginia.</a> But he complains that <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">“the 1 percent is being picked on for political reasons.”</a> Ross bailed out Donald Trump's failing casinos in Atlantic City, <a href="http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0" target="_blank">buying himself a seat in Trump's crony cabinet.</a>
+                <strong>Wall Street billionaire Wilbur Ross (Secretary of Commerce)</strong> &mdash; Trump's pick for Secretary of Commerce, Wilbur Ross, is a Wall Street billionaire who made his money as a notorious "vulture investor." The so-called "king of bankruptcy," <a href="http://www.thedailybeast.com/articles/2016/11/17/could-this-man-be-donald-trump-s-future-secretary-of-outsourcing.html" target="_blank">he offshored American textile jobs to China and Mexico</a> and <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">12 coal workers controversially died at his mine in West Virginia.</a> But he complains that <a href="http://www.huffingtonpost.com/entry/trump-wilbur-ross_us_582b4c04e4b01d8a014abacb" target="_blank">“the 1 percent is being picked on for political reasons.”</a> Ross bailed out Donald Trump's failing casinos in Atlantic City, <a href="http://www.nytimes.com/2016/11/25/business/dealbook/wilbur-ross-commerce-secretary-donald-trump.html?ref=business&_r=0" target="_blank">buying himself a seat in Trump's crony cabinet.</a>
             </div>
             <div className="spacer clear" />
 
