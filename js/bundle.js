@@ -200,11 +200,23 @@
 	            { className: 'title' },
 	            React.createElement(
 	                'span',
-	                null,
+	                { className: 'first-line' },
 	                'Tell the Senate:'
 	            ),
 	            React.createElement('br', null),
-	            'Block Trump\u2019s Cabinet of Hate and Wall Street Greed'
+	            'Block Trump\u2019s Cabinet ',
+	            React.createElement(
+	                'span',
+	                { className: 'single-word' },
+	                'of'
+	            ),
+	            ' Hate ',
+	            React.createElement(
+	                'span',
+	                { className: 'single-word' },
+	                'and'
+	            ),
+	            ' Wall Street Greed'
 	        )
 	    );
 	};
