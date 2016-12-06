@@ -132,8 +132,9 @@ a:hover {
     text-transform: uppercase;
 }
 #app .title span.first-line {
-    font-size: 32px;
     color: #3a0c07;
+    font-family: "Arvo", serif;
+    font-size: 28px;
     text-shadow: none;
 }
 #app .title span.single-word {
@@ -147,7 +148,7 @@ a:hover {
         font-size: 30px;
         padding: 20px 32px 32px;
     }
-    #app .title span {
+    #app .title span.first-line {
         font-size: 22px;
     }
 }
@@ -162,9 +163,14 @@ a:hover {
 
 #app .petition h3,
 #app .paragraph h3 {
+    font-family: "Arvo", serif;
     font-size: 24px;
     font-weight: bold;
     margin: 24px 0 8px;
+    text-align: center;
+}
+#app .paragraph h3 {
+    color: #9a1606
 }
 
 #app .petition .spacer,
