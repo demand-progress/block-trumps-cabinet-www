@@ -559,6 +559,7 @@ const Organizations = () => (
                 <a title="League of Conservation Votes" href="http://www.lcv.org/" target="_blank"><img src="images/logos/lcv_horizontal_url_large.jpg" /></a>
                 <a title="NYCC" href="http://nycommunities.org/" target="_blank"><img src="images/logos/ny-communities-for-change.png" /></a>
                 <a title="Other 98% Action" href="http://other98.com/" target="_blank"><img src="images/logos/o98-black-horizontal.png" /></a>
+                <a title="People's Action" href="https://peoplesaction.org/" target="_blank"><img src="images/logos/PeoplesAction.png" /></a>
                 <a title="People for the American Way" href="http://www.pfaw.org/" target="_blank"><img src="images/logos/pfaw-logo.jpg" /></a>
                 <a title="Presente Action" href="http://www.presente.org/" target="_blank"><img src="images/logos/PresenteActionLogo.jpeg" /></a>
                 <a title="Public Citizen" href="http://www.citizen.org/Page.aspx?pid=183" target="_blank"><img src="images/logos/publiccitizen.jpg" /></a>
