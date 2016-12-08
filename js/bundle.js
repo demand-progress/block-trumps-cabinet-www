@@ -810,8 +810,18 @@
 	                ),
 	                React.createElement(
 	                    'a',
+	                    { title: 'Hedge Clippers', href: 'http://hedgeclippers.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/HedgeClippers.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
 	                    { title: 'League of Conservation Votes', href: 'http://www.lcv.org/', target: '_blank' },
 	                    React.createElement('img', { src: 'images/logos/lcv_horizontal_url_large.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'MPower Change', href: 'https://mpowerchange.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/MPower Change Action v2.png' })
 	                ),
 	                React.createElement(
 	                    'a',
@@ -912,7 +922,7 @@
 	            ),
 	            ' license.',
 	            React.createElement('br', null),
-	            'Sessions photo (cropped) via ',
+	            'Sessions photo (edited) via ',
 	            React.createElement(
 	                'a',
 	                { href: 'https://commons.wikimedia.org/wiki/File%3AJeff_Sessions_by_Gage_Skidmore.jpg', target: '_blank' },
@@ -931,6 +941,20 @@
 	                'a',
 	                { href: 'https://creativecommons.org/licenses/by-nc-nd/3.0/', target: '_blank' },
 	                'CC BY-NC-ND 3.0'
+	            ),
+	            ' license.',
+	            React.createElement('br', null),
+	            'Pruitt photo (edited) via ',
+	            React.createElement(
+	                'a',
+	                { href: 'https://www.flickr.com/photos/gageskidmore/16503867219/in/photolist-r9oCJP-rqQHPX-r9heYS-eac2U8-ERurNv-rqKgqb-E3i1cr-p1nWhb-nsVqj3-nbGwQY-nbGtUu-nbGqz2-nbGnqM-nteJif-nte9nu-r9g9xm-nbH1aX-qu4gpp-nbH3D4-nsV2gZ-qu49w6-2QuBHv-nbGEPe-9mXmBW-6LaCys-nsUuWa-nr9pGw-nbGtX2-nsVpdW-roxxSu-nbGWWL-nbGpWD-r7w9jM-roxzyL-9mXnoy-nsVe6S-ntbZYR-8sDtvi-r9hceU-9mUjLk-nbGZRS-nbGJ5d-nteqzj-nuY8Px-8vGwz2-nsUsTT-8sGwmo-nsVi6A-roxGE9-nr9QVs', target: '_blank' },
+	                'Gage Skidmore'
+	            ),
+	            ' under a ',
+	            React.createElement(
+	                'a',
+	                { href: 'https://creativecommons.org/licenses/by-sa/2.0/', target: '_blank' },
+	                'CC BY-SA 2.0'
 	            ),
 	            ' license.'
 	        );
@@ -1146,30 +1170,43 @@
 	            React.createElement(
 	                'div',
 	                { className: 'profile' },
-	                React.createElement('img', { src: 'images/profiles/MyronEbell_smaller.jpg', alt: 'Myron Ebell photo' }),
+	                React.createElement('img', { src: 'images/profiles/Pruitt.jpg', alt: 'Scott Pruitt photo' }),
 	                React.createElement(
 	                    'strong',
 	                    null,
-	                    'A climate science denier for EPA Administrator'
+	                    'Climate science denier Scott Pruitt (EPA Administrator)'
 	                ),
-	                ' \u2014 Trump has picked Myron Ebell to oversee the EPA\u2019s transition to the Trump administration, ',
+	                ' \u2014 Scott Pruitt is a notorious shill for the polluting fossil fuel industry \u2013 ',
 	                React.createElement(
 	                    'a',
-	                    { href: 'http://www.nytimes.com/2016/11/12/science/myron-ebell-trump-epa.html', target: '_blank' },
-	                    'who directed environmental and energy policy for an organization funded by the coal industry'
+	                    { href: 'http://www.followthemoney.org/show-me?d-cci=36%2C33&c-t-eid=6583668&d-ccb=95%2C98%2C97#[%7B1%7Cgro=y', target: '_blank' },
+	                    'which has given him more than $300,000 since 2002.'
 	                ),
-	                ' and who extensively questions climate science. For his EPA Administrator, Trump is reportedly picking between Ebell, ',
+	                ' Pruitt ',
 	                React.createElement(
 	                    'a',
-	                    { href: 'http://www.nytimes.com/2014/12/07/us/politics/energy-firms-in-secretive-alliance-with-attorneys-general.html?_r=1', target: '_blank' },
-	                    ' Scott Pruitt, a shill for the oil and gas industry,'
+	                    { href: 'http://www.cnn.com/2016/12/07/politics/trump-picks-scott-pruitt-to-head-epa/index.html', target: '_blank' },
+	                    'erroneously claims climate change is \u201Cfar from settled\u201D among scientists'
 	                ),
-	                ' and ',
+	                ' and brags he has ',
 	                React.createElement(
 	                    'a',
-	                    { href: 'https://www.desmogblog.com/kathleen-hartnett-white', target: '_blank' },
-	                    ' Kathleen Hartnett White, a climate denier who has taken radical positions including arguing that CO2 is not a pollutant.'
-	                )
+	                    { href: 'https://www.linkedin.com/in/e-scott-pruitt-3b771653', target: '_blank' },
+	                    '\u201Cled the charge\u2026 against the U.S. Environmental Protection Agency.\u201D'
+	                ),
+	                ' As Oklahoma Attorney General, he has ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://thehill.com/policy/energy-environment/309373-trump-confirms-epa-pick', target: '_blank' },
+	                    'repeatedly sued the EPA'
+	                ),
+	                ' to attack the Clean Power Plan and Clean Water Rule, ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'https://www.nytimes.com/2014/12/07/us/politics/energy-firms-in-secretive-alliance-with-attorneys-general.html?_r=0&smid=tw-share', target: '_blank' },
+	                    'even passing off as his own'
+	                ),
+	                ' a letter criticizing the EPA written and delivered to him by a big oil company\u2019s top lobbyist.'
 	            ),
 	            React.createElement('div', { className: 'spacer clear' })
 	        ),
