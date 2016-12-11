@@ -12,7 +12,7 @@ const ReactDOM = require('react-dom');
 
 // Checking for outdated browsers
 (function() {
-    const isIE = /MSIE (\d+)\./.test(navigator.userAgent);
+    const isIE = navigator.userAgent.match(/MSIE (\d+)\./);
     if (isIE) {
         const version = +isIE[1];
         if (version < 10) {
@@ -28,12 +28,15 @@ const ReactDOM = require('react-dom');
 // URLs
 const urls = {};
 urls.actionkit = 'https://act.demandprogress.org/act/';
+urls.count = 'https://act.demandprogress.org/progress/' + config.akPage + '?callback=onFetchSignatureCounts';
 urls.facebook = 'https://www.facebook.com/sharer.php?u=';
 urls.feedback = 'https://dp-feedback-tool.herokuapp.com/api/v1/feedback?';
 urls.twitter = 'https://twitter.com/intent/tweet?text=';
 
+
 // State
 const state = {};
+state.count = 0;
 state.isMobile = /mobile/i.test(navigator.userAgent);
 state.isIE = /trident/i.test(navigator.userAgent);
 state.query = getQueryVariables();
@@ -66,6 +69,20 @@ const ajax = {
         xhr.send(formData);
     },
 };
+
+function fetchSignatureCounts() {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = urls.count;
+    document.body.appendChild(script);
+}
+
+function onFetchSignatureCounts(data) {
+    state.count = data.total.actions;
+    render();
+}
+
+window.onFetchSignatureCounts = onFetchSignatureCounts;
 
 function sendFormToActionKit(fields) {
     // iFrame
@@ -180,6 +197,8 @@ const EmailForm = React.createClass({
                         One or more partner groups
                         may send you updates on this and other important campaigns by email. If at any time you would like to unsubscribe from any of these email lists, you may do so.
                     </div>
+
+                    <Counter />
                 </div>
 
                 <BodyCopy />
@@ -244,6 +263,28 @@ const EmailForm = React.createClass({
         this.props.changeForm('phone');
     },
 });
+
+function Counter() {
+    let className = 'counter';
+
+    if (state.count > 0) {
+        className += ' loaded';
+    }
+
+    const signatures = numberWithCommas(state.count);
+
+    return (
+        <div className={className}>
+            <hr />
+            <div className="number-of-signatures">{signatures}</div>
+            <div className="number-of-signatures-label">signatures are in</div>
+        </div>
+    );
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 const PhoneForm = React.createClass({
     render: function() {
@@ -749,10 +790,15 @@ const CallPages = React.createClass({
     },
 });
 
-ReactDOM.render(
-    <CallPages />,
-    document.querySelector('#app')
-);
+function render() {
+    ReactDOM.render(
+        <CallPages />,
+        document.querySelector('#app')
+    );
+}
+
+render();
+fetchSignatureCounts();
 
 // Google Analytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

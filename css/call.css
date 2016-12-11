@@ -461,6 +461,56 @@ a:hover {
     text-align: center;
 }
 
+#app .email-form .counter {
+    margin: 0 auto;
+    max-width: 413px;
+    position: relative;
+    text-align: center;
+    z-index: 9;
+}
+#app .email-form .counter .number-of-signatures {
+    color: #ffb406;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 16px 0 4px;
+}
+#app .email-form .counter .number-of-signatures-label {
+    clear: both;
+    color: #969696;
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 16px 24px;
+}
+#app .email-form .counter hr {
+    background-color: #ddd;
+    border: none;
+    height: 1px;
+    margin: 24px auto 0;
+    max-width: 200px;
+    width: 100%;
+}
+#app .email-form .counter .number-of-signatures-label,
+#app .email-form .counter .number-of-signatures {
+    opacity: 0;
+    transition: opacity .32s;
+}
+#app .email-form .counter.loaded .number-of-signatures-label,
+#app .email-form .counter.loaded .number-of-signatures {
+    opacity: 1;
+}
+#app .email-form .counter .signatures-needed {
+    color: #f1f1f1;
+    font-size: 34px;
+    padding: 28px 0 4px;
+}
+#app .email-form .counter .signatures-needed-label {
+    color: #5c87d5;
+    font-size: 28px;
+    line-height: 1.2;
+    padding: 0 0 32px;
+}
+
 @media (max-width: 460px) {
     #app .email-form form input {
         border-bottom: 1px solid #ccc;
