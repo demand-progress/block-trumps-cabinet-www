@@ -597,6 +597,7 @@ const Organizations = () => (
                 <a title="Rootstrikers" href="http://www.rootstrikers.org/#!/" target="_blank"><img src="images/logos/logo-rootstrikers-blacktext_900px.png" /></a>
                 <a title="Democracy for America" href="https://www.democracyforamerica.com/" target="_blank"><img src="images/logos/DFA_logo_bottom_200.png" /></a>
                 <a title="Friends of the Earth" href="http://www.foe.org/" target="_blank"><img src="images/logos/FOE_logo_color.jpg" /></a>
+                <a title="Greenpeace" href="http://www.greenpeace.org/usa/" target="_blank"><img src="images/logos/Greenpeace-Logo.jpg" /></a>
                 <a title="Hedge Clippers" href="http://hedgeclippers.org/" target="_blank"><img src="images/logos/HedgeClippers.jpg" /></a>
                 <a title="League of Conservation Votes" href="http://www.lcv.org/" target="_blank"><img src="images/logos/lcv_horizontal_url_large.jpg" /></a>
                 <a title="MPower Change" href="https://mpowerchange.org/" target="_blank"><img src="images/logos/MPower Change Action v2.png" /></a>
