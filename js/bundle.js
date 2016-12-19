@@ -918,7 +918,7 @@
 	                React.createElement(
 	                    'a',
 	                    { title: 'The Nation', href: 'https://www.thenation.com/', target: '_blank' },
-	                    React.createElement('img', { src: 'images/logos/THENATION_150_LOGO_RegularTAGLINE-Pantone.jpg' })
+	                    React.createElement('img', { src: 'images/logos/NewNationLogo07.jpg' })
 	                ),
 	                React.createElement(
 	                    'a',
@@ -985,6 +985,20 @@
 	                'a',
 	                { href: 'http://creativecommons.org/licenses/by-sa/3.0', target: '_blank' },
 	                'CC BY-SA 3.0'
+	            ),
+	            ' license.',
+	            React.createElement('br', null),
+	            'Tillerson photo (edited) via ',
+	            React.createElement(
+	                'a',
+	                { href: 'https://www.flickr.com/photos/worldeconomicforum/3488866258/', target: '_blank' },
+	                'World Economic Forum'
+	            ),
+	            ' under a ',
+	            React.createElement(
+	                'a',
+	                { href: 'https://creativecommons.org/licenses/by-nc-sa/2.0/', target: '_blank' },
+	                'CC BY-NC-SA 2.0'
 	            ),
 	            ' license.',
 	            React.createElement('br', null),
@@ -1182,6 +1196,36 @@
 	                    { href: 'http://www.politico.com/blogs/donald-trump-administration/2016/11/dodd-frank-targeted-mnuchin-231994', target: '_blank' },
 	                    '\u201Cnumber one priority on the regulatory side" is attacking Dodd-Frank Wall Street reforms reining in big banks.'
 	                )
+	            ),
+	            React.createElement('div', { className: 'spacer clear' }),
+	            React.createElement(
+	                'div',
+	                { className: 'profile' },
+	                React.createElement('img', { src: 'images/profiles/Tillerson.jpg', alt: 'Rex Tillerson photo' }),
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'Big Oil crony Rex Tillerson (Secretary of State)'
+	                ),
+	                ' \u2014 As CEO of Exxon, Tillerson has specialized in ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.usatoday.com/story/opinion/2016/12/13/tillerson-trump-secretary-state-russia-oil-column/95371462/', target: '_blank' },
+	                    'partnering with dictators and human rights abusers'
+	                ),
+	                ' from Equatorial Guinea to Qatar to Kazakhstan. But his closest ties are with Russia, where after billions of dollars in oil deals Vladimir Putin awarded Tillerson ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://money.cnn.com/2016/12/11/investing/rex-tillerson-exxon-russia-putin/index.html', target: '_blank' },
+	                    'Russia\'s Order of Friendship.'
+	                ),
+	                ' Exxon even complained international sanctions against Russia cost the company $1 billion. Under Tillerson\'s leadership, Exxon has ',
+	                React.createElement(
+	                    'a',
+	                    { href: 'http://www.latimes.com/business/la-fi-exxon-global-warming-20160120-story.html', target: '_blank' },
+	                    'faced securities fraud investigations'
+	                ),
+	                ' for lying to investors and funding climate deniers decades after it knew the truth about climate change.'
 	            ),
 	            React.createElement('div', { className: 'spacer clear' }),
 	            React.createElement(
