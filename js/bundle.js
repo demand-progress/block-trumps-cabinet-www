@@ -812,6 +812,11 @@
 	                { className: 'smaller' },
 	                React.createElement(
 	                    'a',
+	                    { title: '350.org', href: 'https://350.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/350-logo-org.png' })
+	                ),
+	                React.createElement(
+	                    'a',
 	                    { title: 'American Family Voices', href: 'http://www.americanfamilyvoices.org', target: '_blank' },
 	                    React.createElement('img', { src: 'images/logos/afv.jpg' })
 	                ),
