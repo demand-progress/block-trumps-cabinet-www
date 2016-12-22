@@ -612,6 +612,7 @@ const Organizations = () => (
                 <a title="SumOfUs" href="https://www.sumofus.org/" target="_blank"><img src="images/logos/SumOfUs_horiz-logo-color.jpg" /></a>
                 <a title="The Nation" href="https://www.thenation.com/" target="_blank"><img src="images/logos/NewNationLogo07.jpg" /></a>
                 <a title="UltraViolet" href="https://weareultraviolet.org/" target="_blank"><img src="images/logos/ultraviolet.jpg" /></a>
+                <a title="Win Without War" href="http://winwithoutwar.org/" target="_blank"><img src="images/logos/WWW Logo_Stacked_Color_LARGE-1.jpg" /></a>
                 <a title="Working Families Party" href="http://workingfamilies.org/" target="_blank"><img src="images/logos/wfp.jpg" /></a>
             </div>
         </div>

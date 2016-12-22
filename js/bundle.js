@@ -932,6 +932,11 @@
 	                ),
 	                React.createElement(
 	                    'a',
+	                    { title: 'Win Without War', href: 'http://winwithoutwar.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/WWW Logo_Stacked_Color_LARGE-1.jpg' })
+	                ),
+	                React.createElement(
+	                    'a',
 	                    { title: 'Working Families Party', href: 'http://workingfamilies.org/', target: '_blank' },
 	                    React.createElement('img', { src: 'images/logos/wfp.jpg' })
 	                )
