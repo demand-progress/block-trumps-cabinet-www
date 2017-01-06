@@ -256,6 +256,63 @@ a:hover {
     margin: 0 0 24px;
 }
 
+#app .phone-form-wrapper.stop-sessions .paragraph {
+    text-align: left;
+}
+
+#app .stop-sessions-wrapper > .paragraph {
+    max-width: 700px;
+}
+
+#app .stop-sessions-wrapper .paragraph ul {
+    list-style: disc;
+    margin: 0 42px;
+}
+
+#app .stop-sessions-wrapper .paragraph ul li {
+    margin-bottom: 12px;
+}
+
+#app .stop-sessions-wrapper .paragraph a.call-the-senate {
+    background-color: #ffb406;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px auto 40px;
+    max-width: 100%;
+    padding: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.3s;
+            transition: background-color 0.3s;
+    width: 330px;
+}
+#app .stop-sessions-wrapper .paragraph a.call-the-senate:hover {
+    background-color: #ffa905;
+    text-decoration: none;
+}
+
+#app .stop-sessions-wrapper .paragraph a.call-the-senate img {
+    height: 32px;
+    line-height: 1;
+    margin: 0px 0 0 12px;
+    position: absolute;
+
+    -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+
+    -webkit-transform: translate3d(0, 0, 0) rotate(0);
+            transform: translate3d(0, 0, 0) rotate(0);
+}
+
+#app .stop-sessions-wrapper .paragraph a.call-the-senate:hover img{
+    -webkit-transform: translate3d(0, 0, 0) rotate(6deg);
+            transform: translate3d(0, 0, 0) rotate(6deg);
+}
+
 #app .phone-form form {
     border: 5px solid #411;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);

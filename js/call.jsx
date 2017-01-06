@@ -2,8 +2,10 @@
 const config = {};
 config.akPage = 'block-trumps-cabinet-www';
 config.callCampaign = 'block-trumps-cabinet';
+config.callCampaignSessions = 'block-trumps-cabinet-stop-sessions';
 config.link = 'https://BlockTrumpsCabinet.com/';
 config.prettyCampaignName = 'Block Trump\'s Cabinet';
+config.prettyCampaignNameSessions = 'Block Trump\'s Cabinet - Stop Sessions';
 
 
 // Modules
@@ -356,6 +358,109 @@ const PhoneForm = React.createClass({
     },
 });
 
+const StopSessionsPhoneForm = React.createClass({
+    render: function() {
+        return (
+            <div className="stop-sessions-wrapper">
+                <div className="phone-form-wrapper stop-sessions">
+                    <div className="paragraph">
+                        <strong>
+                        Hearings on Trump's appointment of Jeff Sessions to be Attorney General start in a few days.
+                        <br />
+                        <br />
+                        Senate Democrats need to get their backbones and block the appointment of this authoritarian, corporatist, racist, and sexist to run our law enforcement apparatus.
+                        </strong>
+                    </div>
+
+                    <div className="phone-form" id="phone-form">
+                        <form onSubmit={ this.onSubmit }>
+                            <input placeholder="Your Phone Number" id="field-phone" ref="field-phone" className="phone" name="phone" autoComplete="on" pattern="[\d\(\)\-\+ ]*" autoFocus />
+                            <button>
+                                CALL THE SENATE
+                                <img src="images/phone.svg" />
+                            </button>
+                        </form>
+
+                        <div className="privacy">
+                            This tool uses <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio</a>’s APIs.
+                            <br />
+                            Or dial <a href="tel:+12023350610">NEED TO UPDATE</a> to connect.
+                        </div>
+                    </div>
+
+                    <div className="paragraph">
+                        Click here to call key senators to tell them to block Jeff Sessions for Attorney General.
+                        <br />
+                        <br />
+                        We make it easy by giving you a script and connecting you directly to key offices.
+                    </div>
+                </div>
+
+                <div className="paragraph" >
+                    <hr />
+                    <h3>Why do we need to block Sessions?</h3>
+                    He has a longstanding voting record in opposition to important civil liberties and civil rights legislation.  And beyond that, Sessions:
+                    <br />
+                    <br />
+                    <ul>
+                        <li>said the KKK was “okay, until [he] found out they smoked pot”</li>
+                        <li>has suggested freedom of religion might not apply to immigrants, and it might be time to consider Trump’s call for a ban on Muslims</li>
+                        <li>is so anti-immigrant he has even challenged birthright citizenship</li>
+                        <li>has called the NAACP and the ACLU “un-American”</li>
+                        <li>once called a white civil rights attorney a “disgrace to his race,” and repeatedly called a Black lawyer “boy"</li>
+                        <li>characterized the Voting Rights Act as "a piece of intrusive legislation” and has refused to support legislation to restore it after it was gutted by the Supreme Court</li>
+                        <li>stood up for the banking industry when the banks were melting down in 2008</li>
+                        <li>pressured Attorney General Janet Reno not to pursue anti-trust charges against Microsoft in the 1990s</li>
+                        <li>and defended Donald Trump’s recorded bragging about grabbing women by their genitals by saying, “I don't characterize that as sexual assault."</li>
+                    </ul>
+                </div>
+
+                <div className="paragraph">
+                    <a href="#phone-form" className="call-the-senate">CALL THE SENATE<img src="images/phone.svg" /></a>
+                    Click here to call key senators to tell them to block Jeff Sessions for Attorney General.
+                    <br />
+                    <br />
+                    We make it easy by giving you a script and connecting you directly to key offices.
+                </div>
+            </div>
+        );
+    },
+
+    onSubmit: function(e) {
+        e.preventDefault();
+
+        const phoneField = this.refs['field-phone'];
+        const number = phoneField.value.replace(/[^\d]/g, '');
+
+        if (number.length !== 10) {
+            phoneField.focus();
+            return alert('Please enter your 10 digit phone number.');
+        }
+
+        const request = new XMLHttpRequest();
+        let url = `https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=${config.callCampaignSessions}&userPhone=${number}&source_id=${getSource()}`;
+
+        try {
+            if ('zip' in sessionStorage) {
+                url += `&zipcode=${sessionStorage.zip}`;
+            }
+        } catch (err) {
+            // Oh well
+        }
+
+        request.open('GET', url, true);
+        request.send();
+
+        this.props.changeForm('scriptsessions');
+    },
+
+    onClickOptOut: function(e) {
+        e.preventDefault();
+
+        this.props.changeForm('opt-out');
+    },
+});
+
 const OptOutForm = React.createClass({
     numbers: {
         // 'The Office of the Treasury Secretary': '202-622-1100',
@@ -502,6 +607,82 @@ const PhoneScript = React.createClass({
     },
 });
 
+const StopSessionsPhoneScript = React.createClass({
+    onClickSendFeedback: function(e) {
+        e.preventDefault();
+
+        const data = {
+            campaign: config.callCampaignSessions,
+            subject: 'Feedback from ' + (config.prettyCampaignNameSessions || config.callCampaignSessions),
+            text: '',
+        };
+
+        const fields = [
+            document.querySelector('#who'),
+            document.querySelector('#how'),
+        ];
+
+        fields.forEach(field => {
+            data.text += `${field.name}:\n${field.value}\n\n`;
+        });
+
+        let url = urls.feedback;
+
+        for (let key in data) {
+            url += key;
+            url += '=';
+            url += encodeURIComponent(data[key]);
+            url += '&';
+        }
+
+        ajax.get(url);
+
+        this.setState({
+            sent: true,
+        });
+    },
+
+    getInitialState: function() {
+        return {
+            sent: false,
+        };
+    },
+
+    render: function() {
+        return (
+            <div className="phone-script">
+                <em>We’re calling you now. <br /> After the conversation, you can <strong>press *</strong> and we’ll connect you to the next office.</em>
+                <div className="spacer" />
+
+                <em>Here’s what you can say:</em>
+                <div className="spacer" />
+
+                <div className="suggestion">
+                    “Please publicly <strong>OPPOSE Jeff Sessions for Attorney General.</strong> His history is far too racist, sexist, and pro-corporate to trust him in charge of the Justice Department.
+                    <div className="spacer" />
+                    Additionally, please demand that Sessions answers <strong>tough questions</strong> during his hearing & insist on the <strong>full 30 hours of debate</strong> for his nomination.”
+                </div>
+                <div className="spacer" />
+
+                <div className="calling-wrapper">
+                    <h3>After your call(s), use the form to let us know how it went and what you heard!</h3>
+                    <form action="#" method="get" className={this.state.sent ? 'sent' : false}>
+                        <div className="wrapper">
+                            <h4>Who did you speak with?</h4>
+                            <input required="required" type="text" name="Who did you speak with?" id="who" />
+                            <h4>How did it go?</h4>
+                            <input required="required" type="text" name="How did it go?" id="how" />
+                            <br />
+                            <div id="thanks">Thank you!</div>
+                            <button onClick={this.onClickSendFeedback} type="submit" name="submit">Send Feedback</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        );
+    },
+});
+
 const Thanks = React.createClass({
     render: function() {
         return (
@@ -524,8 +705,16 @@ const Form = React.createClass({
             form = <PhoneForm changeForm={ this.changeForm } />;
             break;
 
+            case 'stopsessions':
+            form = <StopSessionsPhoneForm changeForm={ this.changeForm } />;
+            break;
+
             case 'script':
             form = <PhoneScript />;
+            break;
+
+            case 'scriptsessions':
+            form = <StopSessionsPhoneScript />;
             break;
 
             case 'thanks':

@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = [{
     // devServer: {
     //     inline: true
     // },
@@ -17,4 +17,4 @@ module.exports = {
             }
         }]
     }
-};
+}];

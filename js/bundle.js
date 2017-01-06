@@ -50,8 +50,10 @@
 	var config = {};
 	config.akPage = 'block-trumps-cabinet-www';
 	config.callCampaign = 'block-trumps-cabinet';
+	config.callCampaignSessions = 'block-trumps-cabinet-stop-sessions';
 	config.link = 'https://BlockTrumpsCabinet.com/';
 	config.prettyCampaignName = 'Block Trump\'s Cabinet';
+	config.prettyCampaignNameSessions = 'Block Trump\'s Cabinet - Stop Sessions';
 
 	// Modules
 	var React = __webpack_require__(1);
@@ -465,6 +467,185 @@
 	    }
 	});
 
+	var StopSessionsPhoneForm = React.createClass({
+	    displayName: 'StopSessionsPhoneForm',
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { className: 'stop-sessions-wrapper' },
+	            React.createElement(
+	                'div',
+	                { className: 'phone-form-wrapper stop-sessions' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'paragraph' },
+	                    React.createElement(
+	                        'strong',
+	                        null,
+	                        'Hearings on Trump\'s appointment of Jeff Sessions to be Attorney General start in a few days.',
+	                        React.createElement('br', null),
+	                        React.createElement('br', null),
+	                        'Senate Democrats need to get their backbones and block the appointment of this authoritarian, corporatist, racist, and sexist to run our law enforcement apparatus.'
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'phone-form', id: 'phone-form' },
+	                    React.createElement(
+	                        'form',
+	                        { onSubmit: this.onSubmit },
+	                        React.createElement('input', { placeholder: 'Your Phone Number', id: 'field-phone', ref: 'field-phone', className: 'phone', name: 'phone', autoComplete: 'on', pattern: '[\\d\\(\\)\\-\\+ ]*', autoFocus: true }),
+	                        React.createElement(
+	                            'button',
+	                            null,
+	                            'CALL THE SENATE',
+	                            React.createElement('img', { src: 'images/phone.svg' })
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'privacy' },
+	                        'This tool uses ',
+	                        React.createElement(
+	                            'a',
+	                            { href: 'https://www.twilio.com/legal/privacy', target: '_blank' },
+	                            'Twilio'
+	                        ),
+	                        '\u2019s APIs.',
+	                        React.createElement('br', null),
+	                        'Or dial ',
+	                        React.createElement(
+	                            'a',
+	                            { href: 'tel:+12023350610' },
+	                            'NEED TO UPDATE'
+	                        ),
+	                        ' to connect.'
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'paragraph' },
+	                    'Click here to call key senators to tell them to block Jeff Sessions for Attorney General.',
+	                    React.createElement('br', null),
+	                    React.createElement('br', null),
+	                    'We make it easy by giving you a script and connecting you directly to key offices.'
+	                )
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'paragraph' },
+	                React.createElement('hr', null),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    'Why do we need to block Sessions?'
+	                ),
+	                'He has a longstanding voting record in opposition to important civil liberties and civil rights legislation.  And beyond that, Sessions:',
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement(
+	                    'ul',
+	                    null,
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        'said the KKK was \u201Cokay, until [he] found out they smoked pot\u201D'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        'has suggested freedom of religion might not apply to immigrants, and it might be time to consider Trump\u2019s call for a ban on Muslims'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        'is so anti-immigrant he has even challenged birthright citizenship'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        'has called the NAACP and the ACLU \u201Cun-American\u201D'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        'once called a white civil rights attorney a \u201Cdisgrace to his race,\u201D and repeatedly called a Black lawyer \u201Cboy"'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        'characterized the Voting Rights Act as "a piece of intrusive legislation\u201D and has refused to support legislation to restore it after it was gutted by the Supreme Court'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        'stood up for the banking industry when the banks were melting down in 2008'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        'pressured Attorney General Janet Reno not to pursue anti-trust charges against Microsoft in the 1990s'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        'and defended Donald Trump\u2019s recorded bragging about grabbing women by their genitals by saying, \u201CI don\'t characterize that as sexual assault."'
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'paragraph' },
+	                React.createElement(
+	                    'a',
+	                    { href: '#phone-form', className: 'call-the-senate' },
+	                    'CALL THE SENATE',
+	                    React.createElement('img', { src: 'images/phone.svg' })
+	                ),
+	                'Click here to call key senators to tell them to block Jeff Sessions for Attorney General.',
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                'We make it easy by giving you a script and connecting you directly to key offices.'
+	            )
+	        );
+	    },
+
+	    onSubmit: function onSubmit(e) {
+	        e.preventDefault();
+
+	        var phoneField = this.refs['field-phone'];
+	        var number = phoneField.value.replace(/[^\d]/g, '');
+
+	        if (number.length !== 10) {
+	            phoneField.focus();
+	            return alert('Please enter your 10 digit phone number.');
+	        }
+
+	        var request = new XMLHttpRequest();
+	        var url = 'https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=' + config.callCampaignSessions + '&userPhone=' + number + '&source_id=' + getSource();
+
+	        try {
+	            if ('zip' in sessionStorage) {
+	                url += '&zipcode=' + sessionStorage.zip;
+	            }
+	        } catch (err) {
+	            // Oh well
+	        }
+
+	        request.open('GET', url, true);
+	        request.send();
+
+	        this.props.changeForm('scriptsessions');
+	    },
+
+	    onClickOptOut: function onClickOptOut(e) {
+	        e.preventDefault();
+
+	        this.props.changeForm('opt-out');
+	    }
+	});
+
 	var OptOutForm = React.createClass({
 	    displayName: 'OptOutForm',
 
@@ -701,6 +882,140 @@
 	    }
 	});
 
+	var StopSessionsPhoneScript = React.createClass({
+	    displayName: 'StopSessionsPhoneScript',
+
+	    onClickSendFeedback: function onClickSendFeedback(e) {
+	        e.preventDefault();
+
+	        var data = {
+	            campaign: config.callCampaignSessions,
+	            subject: 'Feedback from ' + (config.prettyCampaignNameSessions || config.callCampaignSessions),
+	            text: ''
+	        };
+
+	        var fields = [document.querySelector('#who'), document.querySelector('#how')];
+
+	        fields.forEach(function (field) {
+	            data.text += field.name + ':\n' + field.value + '\n\n';
+	        });
+
+	        var url = urls.feedback;
+
+	        for (var key in data) {
+	            url += key;
+	            url += '=';
+	            url += encodeURIComponent(data[key]);
+	            url += '&';
+	        }
+
+	        ajax.get(url);
+
+	        this.setState({
+	            sent: true
+	        });
+	    },
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            sent: false
+	        };
+	    },
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { className: 'phone-script' },
+	            React.createElement(
+	                'em',
+	                null,
+	                'We\u2019re calling you now. ',
+	                React.createElement('br', null),
+	                ' After the conversation, you can ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'press *'
+	                ),
+	                ' and we\u2019ll connect you to the next office.'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'em',
+	                null,
+	                'Here\u2019s what you can say:'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'div',
+	                { className: 'suggestion' },
+	                '\u201CPlease publicly ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'OPPOSE Jeff Sessions for Attorney General.'
+	                ),
+	                ' His history is far too racist, sexist, and pro-corporate to trust him in charge of the Justice Department.',
+	                React.createElement('div', { className: 'spacer' }),
+	                'Additionally, please demand that Sessions answers ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'tough questions'
+	                ),
+	                ' during his hearing & insist on the ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'full 30 hours of debate'
+	                ),
+	                ' for his nomination.\u201D'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'div',
+	                { className: 'calling-wrapper' },
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    'After your call(s), use the form to let us know how it went and what you heard!'
+	                ),
+	                React.createElement(
+	                    'form',
+	                    { action: '#', method: 'get', className: this.state.sent ? 'sent' : false },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'wrapper' },
+	                        React.createElement(
+	                            'h4',
+	                            null,
+	                            'Who did you speak with?'
+	                        ),
+	                        React.createElement('input', { required: 'required', type: 'text', name: 'Who did you speak with?', id: 'who' }),
+	                        React.createElement(
+	                            'h4',
+	                            null,
+	                            'How did it go?'
+	                        ),
+	                        React.createElement('input', { required: 'required', type: 'text', name: 'How did it go?', id: 'how' }),
+	                        React.createElement('br', null),
+	                        React.createElement(
+	                            'div',
+	                            { id: 'thanks' },
+	                            'Thank you!'
+	                        ),
+	                        React.createElement(
+	                            'button',
+	                            { onClick: this.onClickSendFeedback, type: 'submit', name: 'submit' },
+	                            'Send Feedback'
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
 	var Thanks = React.createClass({
 	    displayName: 'Thanks',
 
@@ -727,8 +1042,16 @@
 	                form = React.createElement(PhoneForm, { changeForm: this.changeForm });
 	                break;
 
+	            case 'stopsessions':
+	                form = React.createElement(StopSessionsPhoneForm, { changeForm: this.changeForm });
+	                break;
+
 	            case 'script':
 	                form = React.createElement(PhoneScript, null);
+	                break;
+
+	            case 'scriptsessions':
+	                form = React.createElement(StopSessionsPhoneScript, null);
 	                break;
 
 	            case 'thanks':
