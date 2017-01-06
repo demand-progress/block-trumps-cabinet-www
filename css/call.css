@@ -273,7 +273,7 @@ a:hover {
     margin-bottom: 12px;
 }
 
-#app .stop-sessions-wrapper .paragraph a.call-the-senate {
+#app .stop-sessions-wrapper a.call-the-senate {
     background-color: #ffb406;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.216);
     color: #fff;
@@ -281,7 +281,7 @@ a:hover {
     display: block;
     font-size: 22px;
     font-weight: 700;
-    margin: 10px auto 40px;
+    margin: 0 auto 65px;
     max-width: 100%;
     padding: 16px;
     text-align: center;
@@ -290,12 +290,12 @@ a:hover {
             transition: background-color 0.3s;
     width: 330px;
 }
-#app .stop-sessions-wrapper .paragraph a.call-the-senate:hover {
+#app .stop-sessions-wrapper a.call-the-senate:hover {
     background-color: #ffa905;
     text-decoration: none;
 }
 
-#app .stop-sessions-wrapper .paragraph a.call-the-senate img {
+#app .stop-sessions-wrapper a.call-the-senate img {
     height: 32px;
     line-height: 1;
     margin: 0px 0 0 12px;
@@ -308,7 +308,7 @@ a:hover {
             transform: translate3d(0, 0, 0) rotate(0);
 }
 
-#app .stop-sessions-wrapper .paragraph a.call-the-senate:hover img{
+#app .stop-sessions-wrapper a.call-the-senate:hover img{
     -webkit-transform: translate3d(0, 0, 0) rotate(6deg);
             transform: translate3d(0, 0, 0) rotate(6deg);
 }

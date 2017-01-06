@@ -384,7 +384,7 @@ const StopSessionsPhoneForm = React.createClass({
                         <div className="privacy">
                             This tool uses <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio</a>’s APIs.
                             <br />
-                            Or dial <a href="tel:+12023350610">NEED TO UPDATE</a> to connect.
+                            Or dial <a href="tel:+16282227668">(628) 222-7668</a> to connect.
                         </div>
                     </div>
 
@@ -415,13 +415,8 @@ const StopSessionsPhoneForm = React.createClass({
                     </ul>
                 </div>
 
-                <div className="paragraph">
-                    <a href="#phone-form" className="call-the-senate">CALL THE SENATE<img src="images/phone.svg" /></a>
-                    Click here to call key senators to tell them to block Jeff Sessions for Attorney General.
-                    <br />
-                    <br />
-                    We make it easy by giving you a script and connecting you directly to key offices.
-                </div>
+                <a href="#phone-form" className="call-the-senate">CALL THE SENATE<img src="images/phone.svg" /></a>
+
             </div>
         );
     },

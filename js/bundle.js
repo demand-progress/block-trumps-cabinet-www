@@ -517,8 +517,8 @@
 	                        'Or dial ',
 	                        React.createElement(
 	                            'a',
-	                            { href: 'tel:+12023350610' },
-	                            'NEED TO UPDATE'
+	                            { href: 'tel:+16282227668' },
+	                            '(628) 222-7668'
 	                        ),
 	                        ' to connect.'
 	                    )
@@ -595,18 +595,10 @@
 	                )
 	            ),
 	            React.createElement(
-	                'div',
-	                { className: 'paragraph' },
-	                React.createElement(
-	                    'a',
-	                    { href: '#phone-form', className: 'call-the-senate' },
-	                    'CALL THE SENATE',
-	                    React.createElement('img', { src: 'images/phone.svg' })
-	                ),
-	                'Click here to call key senators to tell them to block Jeff Sessions for Attorney General.',
-	                React.createElement('br', null),
-	                React.createElement('br', null),
-	                'We make it easy by giving you a script and connecting you directly to key offices.'
+	                'a',
+	                { href: '#phone-form', className: 'call-the-senate' },
+	                'CALL THE SENATE',
+	                React.createElement('img', { src: 'images/phone.svg' })
 	            )
 	        );
 	    },
