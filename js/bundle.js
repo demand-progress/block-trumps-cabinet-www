@@ -526,10 +526,7 @@
 	                React.createElement(
 	                    'div',
 	                    { className: 'paragraph' },
-	                    'Click here to call key senators to tell them to block Jeff Sessions for Attorney General.',
-	                    React.createElement('br', null),
-	                    React.createElement('br', null),
-	                    'We make it easy by giving you a script and connecting you directly to key offices.'
+	                    'Enter your number above to call key senators to tell them to block Jeff Sessions for Attorney General.'
 	                )
 	            ),
 	            React.createElement(
@@ -921,15 +918,25 @@
 	            React.createElement(
 	                'em',
 	                null,
-	                'We\u2019re calling you now. ',
-	                React.createElement('br', null),
-	                ' After the conversation, you can ',
+	                'We\'re calling you now.'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'em',
+	                null,
+	                'First we will connect you to your own senators, and then we will connect you to other key senators who will help decide if Jeff Sessions becomes Attorney General.'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'em',
+	                null,
+	                'After each conversation, you can ',
 	                React.createElement(
 	                    'strong',
 	                    null,
 	                    'press *'
 	                ),
-	                ' and we\u2019ll connect you to the next office.'
+	                ' and we\u2019ll connect you to the next office. Each conversation you have will make us stronger and increase the chances we win this fight.'
 	            ),
 	            React.createElement('div', { className: 'spacer' }),
 	            React.createElement(
@@ -1169,6 +1176,11 @@
 	                    'a',
 	                    { title: 'Democracy for America', href: 'https://www.democracyforamerica.com/', target: '_blank' },
 	                    React.createElement('img', { src: 'images/logos/DFA_logo_bottom_200.png' })
+	                ),
+	                React.createElement(
+	                    'a',
+	                    { title: 'Free Press Action Fund', href: 'https://www.freepress.net/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/fp-actionfund.png' })
 	                ),
 	                React.createElement(
 	                    'a',

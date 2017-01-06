@@ -389,10 +389,7 @@ const StopSessionsPhoneForm = React.createClass({
                     </div>
 
                     <div className="paragraph">
-                        Click here to call key senators to tell them to block Jeff Sessions for Attorney General.
-                        <br />
-                        <br />
-                        We make it easy by giving you a script and connecting you directly to key offices.
+                        Enter your number above to call key senators to tell them to block Jeff Sessions for Attorney General.
                     </div>
                 </div>
 
@@ -646,7 +643,12 @@ const StopSessionsPhoneScript = React.createClass({
     render: function() {
         return (
             <div className="phone-script">
-                <em>We’re calling you now. <br /> After the conversation, you can <strong>press *</strong> and we’ll connect you to the next office.</em>
+                <em>We're calling you now.</em>
+                <div className="spacer" />
+                <em>First we will connect you to your own senators, and then we will connect you to other key senators who will help decide if Jeff Sessions becomes Attorney General.</em>
+                <div className="spacer" />
+
+                <em>After each conversation, you can <strong>press *</strong> and we’ll connect you to the next office. Each conversation you have will make us stronger and increase the chances we win this fight.</em>
                 <div className="spacer" />
 
                 <em>Here’s what you can say:</em>
@@ -781,6 +783,7 @@ const Organizations = () => (
                 <a title="Daily Kos" href="http://www.dailykos.com/" target="_blank"><img src="images/logos/dk_logo_400dpi_1024.jpg" /></a>
                 <a title="Rootstrikers" href="http://www.rootstrikers.org/#!/" target="_blank"><img src="images/logos/logo-rootstrikers-blacktext_900px.png" /></a>
                 <a title="Democracy for America" href="https://www.democracyforamerica.com/" target="_blank"><img src="images/logos/DFA_logo_bottom_200.png" /></a>
+                <a title="Free Press Action Fund" href="https://www.freepress.net/" target="_blank"><img src="images/logos/fp-actionfund.png" /></a>
                 <a title="Friends of the Earth" href="http://www.foe.org/" target="_blank"><img src="images/logos/FOE_logo_color.jpg" /></a>
                 <a title="Greenpeace" href="http://www.greenpeace.org/usa/" target="_blank"><img src="images/logos/Greenpeace-Logo.jpg" /></a>
                 <a title="Hedge Clippers" href="http://hedgeclippers.org/" target="_blank"><img src="images/logos/HedgeClippers.jpg" /></a>
