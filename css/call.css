@@ -256,6 +256,10 @@ a:hover {
     margin: 0 0 24px;
 }
 
+#app .phone-form-wrapper.stop-sessions {
+    max-width: 640px;
+}
+
 #app .phone-form-wrapper.stop-sessions .paragraph {
     text-align: left;
 }
