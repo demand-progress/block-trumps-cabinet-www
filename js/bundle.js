@@ -483,7 +483,7 @@
 	                    React.createElement(
 	                        'strong',
 	                        null,
-	                        'Hearings on Trump\'s appointment of Jeff Sessions to be Attorney General start in a few days.',
+	                        'Hearings on Trump\'s appointment of Jeff Sessions to be Attorney General have already begun.',
 	                        React.createElement('br', null),
 	                        React.createElement('br', null),
 	                        'Senate Democrats need to get their backbones and block the appointment of this authoritarian, corporatist, racist, and sexist to run our law enforcement apparatus.'

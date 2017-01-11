@@ -365,7 +365,7 @@ const StopSessionsPhoneForm = React.createClass({
                 <div className="phone-form-wrapper stop-sessions">
                     <div className="paragraph">
                         <strong>
-                        Hearings on Trump's appointment of Jeff Sessions to be Attorney General start in a few days.
+                        Hearings on Trump's appointment of Jeff Sessions to be Attorney General have already begun.
                         <br />
                         <br />
                         Senate Democrats need to get their backbones and block the appointment of this authoritarian, corporatist, racist, and sexist to run our law enforcement apparatus.
