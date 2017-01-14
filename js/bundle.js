@@ -635,6 +635,209 @@
 	    }
 	});
 
+	var BlockMnuchinPhoneForm = React.createClass({
+	    displayName: 'BlockMnuchinPhoneForm',
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { className: 'stop-sessions-wrapper' },
+	            React.createElement(
+	                'div',
+	                { className: 'phone-form-wrapper stop-sessions' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'paragraph' },
+	                    React.createElement(
+	                        'strong',
+	                        null,
+	                        'Hearings on Trump\'s appointment of Steve Mnuchin to be Treasury Secretary begin Thursday, Jan. 19.',
+	                        React.createElement('br', null),
+	                        React.createElement('br', null),
+	                        'Senate Democrats and Republicans alike need to fight to block the appointment of this notorious foreclosure king to perhaps the most important economic position in the country.'
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'phone-form', id: 'phone-form' },
+	                    React.createElement(
+	                        'form',
+	                        { onSubmit: this.onSubmit },
+	                        React.createElement('input', { placeholder: 'Your Phone Number', id: 'field-phone', ref: 'field-phone', className: 'phone', name: 'phone', autoComplete: 'on', pattern: '[\\d\\(\\)\\-\\+ ]*', autoFocus: true }),
+	                        React.createElement(
+	                            'button',
+	                            null,
+	                            'CALL THE SENATE',
+	                            React.createElement('img', { src: 'images/phone.svg' })
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'privacy' },
+	                        'This tool uses ',
+	                        React.createElement(
+	                            'a',
+	                            { href: 'https://www.twilio.com/legal/privacy', target: '_blank' },
+	                            'Twilio'
+	                        ),
+	                        '\u2019s APIs.',
+	                        React.createElement('br', null),
+	                        'Or dial ',
+	                        React.createElement(
+	                            'a',
+	                            { href: 'tel:+16282227668' },
+	                            '(628) 222-7668'
+	                        ),
+	                        ' to connect.'
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'paragraph' },
+	                    'Enter your number above to call key senators to tell them to block foreclosure king Steve Mnuchin for Treasury Secretary.'
+	                )
+	            ),
+	            React.createElement(
+	                'div',
+	                { className: 'paragraph' },
+	                React.createElement('hr', null),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    'Why do we need to block Mnuchin?'
+	                ),
+	                'Mnuchin is a heartless foreclosure king who got rich at the expense of ordinary Americans. He cannot be trusted to look out for anyone\u2019s interest but his own \u2014 and that of the big banks. Just consider some of the lowlights:',
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement(
+	                    'ul',
+	                    null,
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        React.createElement(
+	                            'strong',
+	                            null,
+	                            'Mnuchin made a fortune off the foreclosure crisis.'
+	                        ),
+	                        ' He ran a bank called a \u201Cforeclosure machine\u201D for foreclosing on well over 36,000 homes \u2014 and later sold it for $3.4 billion.'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        React.createElement(
+	                            'strong',
+	                            null,
+	                            'Mnuchin would run the Treasury Department to benefit Wall Street.'
+	                        ),
+	                        ' He\u2019s promised to attack the Dodd-Frank reforms reining in abuse by big banks, calling it is his \u201Cnumber one priority on the regulatory side.\u201D'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        React.createElement(
+	                            'strong',
+	                            null,
+	                            'Mnuchin\u2019s bank foreclosed on families using techniques so coldblooded a federal judge called them \u201Charsh, repugnant, shocking and repulsive.\u201D'
+	                        ),
+	                        ' He even foreclosed on a 90-year-old woman over a payment error of 27 cents.'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        React.createElement(
+	                            'strong',
+	                            null,
+	                            'A leaked state attorney general\u2019s office memo revealed evidence of \u201Cwidespread misconduct\u201D Mnuchin\u2019s bank,'
+	                        ),
+	                        ' OneWest, and thousands of illegal actions like forging documents.'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        React.createElement(
+	                            'strong',
+	                            null,
+	                            'Mnuchin is the ultimate Wall Street insider.'
+	                        ),
+	                        ' He spent 17 years at Goldman Sachs, peddling the types of risky derivatives that caused the financial crisis, and left with $46 million. His father was a Goldman banker, too.'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        React.createElement(
+	                            'strong',
+	                            null,
+	                            'Until December 2016, Mnuchin sat on the board of CIT Group, a bank that\u2019s been designated \u201Ctoo big to fail\u201D'
+	                        ),
+	                        ' and lost $2.3 billion in taxpayer bailout dollars. He earned $4.5 million a year there.'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        React.createElement(
+	                            'strong',
+	                            null,
+	                            'Another Mnuchin company, Relativity Media is apparently undergoing federal investigation.'
+	                        ),
+	                        ' Mnuchin resigned as Co-Chair of Relativity Media under shady circumstances \u2013 cashing out with $50 million just two months before Relativity declared bankruptcy.'
+	                    ),
+	                    React.createElement(
+	                        'li',
+	                        null,
+	                        React.createElement(
+	                            'strong',
+	                            null,
+	                            'Mnuchin and his family pocketed $3.2 million from the Bernie Madoff ponzi scheme'
+	                        ),
+	                        ' and never returned a dime to victims of Madoff\u2019s crimes.'
+	                    )
+	                )
+	            ),
+	            React.createElement(
+	                'a',
+	                { href: '#phone-form', className: 'call-the-senate' },
+	                'CALL THE SENATE',
+	                React.createElement('img', { src: 'images/phone.svg' })
+	            )
+	        );
+	    },
+
+	    onSubmit: function onSubmit(e) {
+	        e.preventDefault();
+
+	        var phoneField = this.refs['field-phone'];
+	        var number = phoneField.value.replace(/[^\d]/g, '');
+
+	        if (number.length !== 10) {
+	            phoneField.focus();
+	            return alert('Please enter your 10 digit phone number.');
+	        }
+
+	        var request = new XMLHttpRequest();
+	        var url = 'https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=' + config.callCampaignSessions + '&userPhone=' + number + '&source_id=' + getSource();
+
+	        try {
+	            if ('zip' in sessionStorage) {
+	                url += '&zipcode=' + sessionStorage.zip;
+	            }
+	        } catch (err) {
+	            // Oh well
+	        }
+
+	        request.open('GET', url, true);
+	        request.send();
+
+	        this.props.changeForm('scriptsessions');
+	    },
+
+	    onClickOptOut: function onClickOptOut(e) {
+	        e.preventDefault();
+
+	        this.props.changeForm('opt-out');
+	    }
+	});
+
 	var OptOutForm = React.createClass({
 	    displayName: 'OptOutForm',
 
@@ -1015,6 +1218,150 @@
 	    }
 	});
 
+	var BlockMnuchinPhoneScript = React.createClass({
+	    displayName: 'BlockMnuchinPhoneScript',
+
+	    onClickSendFeedback: function onClickSendFeedback(e) {
+	        e.preventDefault();
+
+	        var data = {
+	            campaign: config.callCampaignSessions,
+	            subject: 'Feedback from ' + (config.prettyCampaignNameSessions || config.callCampaignSessions),
+	            text: ''
+	        };
+
+	        var fields = [document.querySelector('#who'), document.querySelector('#how')];
+
+	        fields.forEach(function (field) {
+	            data.text += field.name + ':\n' + field.value + '\n\n';
+	        });
+
+	        var url = urls.feedback;
+
+	        for (var key in data) {
+	            url += key;
+	            url += '=';
+	            url += encodeURIComponent(data[key]);
+	            url += '&';
+	        }
+
+	        ajax.get(url);
+
+	        this.setState({
+	            sent: true
+	        });
+	    },
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            sent: false
+	        };
+	    },
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            { className: 'phone-script' },
+	            React.createElement(
+	                'em',
+	                null,
+	                'We\'re calling you now.'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'em',
+	                null,
+	                'First we will connect you to your own senators, and then we will connect you to other key senators who will help decide if Steve Mnuchin becomes Treasury Secretary.'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'em',
+	                null,
+	                'After each conversation, you can ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'press *'
+	                ),
+	                ' and we\u2019ll connect you to the next office. Each conversation you have will make us stronger and increase the chances we win this fight.'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'em',
+	                null,
+	                'Here\u2019s what you can say:'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'div',
+	                { className: 'suggestion' },
+	                '\u201CPlease publicly ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'OPPOSE Steve Mnuchin (Mi-NEW-chin) for Treasury Secretary.'
+	                ),
+	                ' His history as a notorious \u201Cforeclosure king\u201D \u2014 who got rich at the expense of ordinary people \u2014 makes him unfit for such a critical position.',
+	                React.createElement('div', { className: 'spacer' }),
+	                'Additionally, please demand that Mnuchin answers ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'tough questions'
+	                ),
+	                ' during his hearing & insist on the ',
+	                React.createElement(
+	                    'strong',
+	                    null,
+	                    'full 30 hours of debate'
+	                ),
+	                ' for his nomination.\u201D'
+	            ),
+	            React.createElement('div', { className: 'spacer' }),
+	            React.createElement(
+	                'div',
+	                { className: 'calling-wrapper' },
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    'After your call(s), use the form to let us know how it went and what you heard!'
+	                ),
+	                React.createElement(
+	                    'form',
+	                    { action: '#', method: 'get', className: this.state.sent ? 'sent' : false },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'wrapper' },
+	                        React.createElement(
+	                            'h4',
+	                            null,
+	                            'Who did you speak with?'
+	                        ),
+	                        React.createElement('input', { required: 'required', type: 'text', name: 'Who did you speak with?', id: 'who' }),
+	                        React.createElement(
+	                            'h4',
+	                            null,
+	                            'How did it go?'
+	                        ),
+	                        React.createElement('input', { required: 'required', type: 'text', name: 'How did it go?', id: 'how' }),
+	                        React.createElement('br', null),
+	                        React.createElement(
+	                            'div',
+	                            { id: 'thanks' },
+	                            'Thank you!'
+	                        ),
+	                        React.createElement(
+	                            'button',
+	                            { onClick: this.onClickSendFeedback, type: 'submit', name: 'submit' },
+	                            'Send Feedback'
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
 	var Thanks = React.createClass({
 	    displayName: 'Thanks',
 
@@ -1045,12 +1392,20 @@
 	                form = React.createElement(StopSessionsPhoneForm, { changeForm: this.changeForm });
 	                break;
 
+	            case 'blockmnuchin':
+	                form = React.createElement(BlockMnuchinPhoneForm, { changeForm: this.changeForm });
+	                break;
+
 	            case 'script':
 	                form = React.createElement(PhoneScript, null);
 	                break;
 
 	            case 'scriptsessions':
 	                form = React.createElement(StopSessionsPhoneScript, null);
+	                break;
+
+	            case 'scriptmnuchin':
+	                form = React.createElement(BlockMnuchinPhoneScript, null);
 	                break;
 
 	            case 'thanks':
