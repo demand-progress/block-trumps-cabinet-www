@@ -3,9 +3,11 @@ const config = {};
 config.akPage = 'block-trumps-cabinet-www';
 config.callCampaign = 'block-trumps-cabinet';
 config.callCampaignSessions = 'block-trumps-cabinet-stop-sessions';
+config.callCampaignMnuchin = 'block-trumps-cabinet-block-mnuchin';
 config.link = 'https://BlockTrumpsCabinet.com/';
 config.prettyCampaignName = 'Block Trump\'s Cabinet';
 config.prettyCampaignNameSessions = 'Block Trump\'s Cabinet - Stop Sessions';
+config.prettyCampaignNameMnuchin = 'Block Trump\'s Cabinet - Stop Mnuchin';
 
 
 // Modules
@@ -384,7 +386,7 @@ const StopSessionsPhoneForm = React.createClass({
                         <div className="privacy">
                             This tool uses <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio</a>’s APIs.
                             <br />
-                            Or dial <a href="tel:+16282227668">(628) 222-7668</a> to connect.
+                            Or dial <a href="tel:+16825876214">(682) 587-6214</a> to connect.
                         </div>
                     </div>
 
@@ -430,7 +432,7 @@ const StopSessionsPhoneForm = React.createClass({
         }
 
         const request = new XMLHttpRequest();
-        let url = `https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=${config.callCampaignSessions}&userPhone=${number}&source_id=${getSource()}`;
+        let url = `https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=${config.callCampaignMnuchin}&userPhone=${number}&source_id=${getSource()}`;
 
         try {
             if ('zip' in sessionStorage) {
@@ -524,7 +526,7 @@ const BlockMnuchinPhoneForm = React.createClass({
         }
 
         const request = new XMLHttpRequest();
-        let url = `https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=${config.callCampaignSessions}&userPhone=${number}&source_id=${getSource()}`;
+        let url = `https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=${config.callCampaignMnuchin}&userPhone=${number}&source_id=${getSource()}`;
 
         try {
             if ('zip' in sessionStorage) {
@@ -537,7 +539,7 @@ const BlockMnuchinPhoneForm = React.createClass({
         request.open('GET', url, true);
         request.send();
 
-        this.props.changeForm('scriptsessions');
+        this.props.changeForm('scriptmnuchin');
     },
 
     onClickOptOut: function(e) {
@@ -780,8 +782,8 @@ const BlockMnuchinPhoneScript = React.createClass({
         e.preventDefault();
 
         const data = {
-            campaign: config.callCampaignSessions,
-            subject: 'Feedback from ' + (config.prettyCampaignNameSessions || config.callCampaignSessions),
+            campaign: config.callCampaignMnuchin,
+            subject: 'Feedback from ' + (config.prettyCampaignNameMnuchin || config.callCampaignMnuchin),
             text: '',
         };
 
@@ -933,6 +935,10 @@ const Form = React.createClass({
             form = state.query.debugState;
         }
 
+        if ('embeddedConfiguration' in window) {
+            form = embeddedConfiguration.phase || 'email';
+        }
+
         return {
             form: form,
         };
@@ -1028,16 +1034,7 @@ const Social = React.createClass({
                 <div className="share">
                     <a onClick={this.onClickTwitter} target="_blank" href="#Share on Twitter" className="twitter">Tweet</a>
                     <a onClick={this.onClickFacebook} target="_blank" href="#Share on Facebook" className="facebook">Share</a>
-                    <a href="mailto:?subject=
-                        I%20just%20signed%20this%3A
-                        &body=
-                        Hi%20-%20I%20just%20took%20action%20against%20Donald%20Trump’s%20horrifying%20picks%20for%20cabinet-level%20roles%20in%20his%20administration.
-                        %0A%0A
-                        Trump’s%20nominees%20have%20promoted%20white%20nationalism%2C%20attacked%20climate%20science%20and%20used%20their%20power%20as%20Wall%20Street%20insiders%20to%20fleece%20working%20families.
-                        %0A%0A
-                        I%20just%20signed%20a%20petition%20urging%20the%20Senate%20to%20block%20and%20resist%20any%20Trump%20nominee%20embracing%20hatred%20and%20greed.%20Could%20you%20sign%20too%3F
-                        %0A%0A
-                        https%3A%2F%2Fwww.BlockTrumpsCabinet.com%2F%3Fsource%3Demail-share"
+                    <a href="mailto:?subject=I%20just%20signed%20this%3A&body=Hi%20-%20I%20just%20took%20action%20against%20Donald%20Trump’s%20horrifying%20picks%20for%20cabinet-level%20roles%20in%20his%20administration.%0A%0ATrump’s%20nominees%20have%20promoted%20white%20nationalism%2C%20attacked%20climate%20science%20and%20used%20their%20power%20as%20Wall%20Street%20insiders%20to%20fleece%20working%20families.%0A%0AI%20just%20signed%20a%20petition%20urging%20the%20Senate%20to%20block%20and%20resist%20any%20Trump%20nominee%20embracing%20hatred%20and%20greed.%20Could%20you%20sign%20too%3F%0A%0Ahttps%3A%2F%2Fwww.BlockTrumpsCabinet.com%2F%3Fsource%3Demail-share"
                         target="_blank" className="email">Email</a>
                 </div>
             </div>
