@@ -519,8 +519,8 @@
 	                        'Or dial ',
 	                        React.createElement(
 	                            'a',
-	                            { href: 'tel:+16825876214' },
-	                            '(682) 587-6214'
+	                            { href: 'tel:+16282227668' },
+	                            '(628) 222-7668'
 	                        ),
 	                        ' to connect.'
 	                    )
@@ -687,8 +687,8 @@
 	                        'Or dial ',
 	                        React.createElement(
 	                            'a',
-	                            { href: 'tel:+16282227668' },
-	                            '(628) 222-7668'
+	                            { href: 'tel:+16825876214' },
+	                            '(682) 587-6214'
 	                        ),
 	                        ' to connect.'
 	                    )

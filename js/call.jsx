@@ -386,7 +386,7 @@ const StopSessionsPhoneForm = React.createClass({
                         <div className="privacy">
                             This tool uses <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio</a>’s APIs.
                             <br />
-                            Or dial <a href="tel:+16825876214">(682) 587-6214</a> to connect.
+                            Or dial <a href="tel:+16282227668">(628) 222-7668</a> to connect.
                         </div>
                     </div>
 
@@ -481,7 +481,7 @@ const BlockMnuchinPhoneForm = React.createClass({
                         <div className="privacy">
                             This tool uses <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio</a>’s APIs.
                             <br />
-                            Or dial <a href="tel:+16282227668">(628) 222-7668</a> to connect.
+                            Or dial <a href="tel:+16825876214">(682) 587-6214</a> to connect.
                         </div>
                     </div>
 
