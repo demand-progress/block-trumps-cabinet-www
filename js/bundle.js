@@ -1774,7 +1774,15 @@
 	    onClickFacebook: function onClickFacebook(e) {
 	        e.preventDefault();
 
-	        var url = urls.facebook + encodeURIComponent(config.link + '/?source=fb-share');
+	        var shareUrl = config.link;
+
+	        if ('embeddedConfiguration' in window) {
+	            if (embeddedConfiguration.link) {
+	                shareUrl = embeddedConfiguration.link;
+	            }
+	        }
+
+	        var url = urls.facebook + encodeURIComponent(shareUrl + '?source=fb-share');
 
 	        // const source = getSource();
 	        //

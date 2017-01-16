@@ -1062,7 +1062,15 @@ const Social = React.createClass({
     onClickFacebook: function(e) {
         e.preventDefault();
 
-        let url = urls.facebook + encodeURIComponent(config.link + '/?source=fb-share');
+        var shareUrl = config.link;
+
+        if ('embeddedConfiguration' in window) {
+            if (embeddedConfiguration.link) {
+                shareUrl = embeddedConfiguration.link;
+            }
+        }
+
+        let url = urls.facebook + encodeURIComponent(shareUrl + '?source=fb-share');
 
         // const source = getSource();
         //
