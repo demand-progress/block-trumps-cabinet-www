@@ -29,6 +29,15 @@ const ReactDOM = require('react-dom');
     }
 })();
 
+// Email
+let emailHref = "mailto:?subject=I%20just%20signed%20this%3A&body=Hi%20-%20I%20just%20took%20action%20against%20Donald%20Trump’s%20horrifying%20picks%20for%20cabinet-level%20roles%20in%20his%20administration.%0A%0ATrump’s%20nominees%20have%20promoted%20white%20nationalism%2C%20attacked%20climate%20science%20and%20used%20their%20power%20as%20Wall%20Street%20insiders%20to%20fleece%20working%20families.%0A%0AI%20just%20signed%20a%20petition%20urging%20the%20Senate%20to%20block%20and%20resist%20any%20Trump%20nominee%20embracing%20hatred%20and%20greed.%20Could%20you%20sign%20too%3F%0A%0Ahttps%3A%2F%2Fwww.BlockTrumpsCabinet.com%2F%3Fsource%3Demail-share";
+try {
+    // These HTML elements are optional
+    const emailSubject = encodeURIComponent(document.querySelector('#email-share-subject').textContent.trim());
+    const emailBody = encodeURIComponent(document.querySelector('#email-share-body').textContent.trim());
+    emailHref = `mailto:?subject=${emailSubject}&body=${emailBody}`;
+} catch (err) { }
+
 // URLs
 const urls = {};
 urls.actionkit = 'https://act.demandprogress.org/act/';
@@ -500,7 +509,7 @@ const BlockMnuchinPhoneForm = React.createClass({
                         <li><strong>Mnuchin made a fortune off the foreclosure crisis.</strong> He ran a bank called a “foreclosure machine” for foreclosing on well over 36,000 homes &mdash; and later sold it for $3.4 billion.</li>
                         <li><strong>Mnuchin would run the Treasury Department to benefit Wall Street.</strong> He’s promised to attack the Dodd-Frank reforms reining in abuse by big banks, calling it is his “number one priority on the regulatory side.”</li>
                         <li><strong>Mnuchin’s bank foreclosed on families using techniques so coldblooded a federal judge called them “harsh, repugnant, shocking and repulsive.”</strong> He even foreclosed on a 90-year-old woman over a payment error of 27 cents.</li>
-                        <li><strong>A leaked state attorney general’s office memo revealed evidence of “widespread misconduct” Mnuchin’s bank,</strong> OneWest, and thousands of illegal actions like forging documents.</li>
+                        <li><strong>A leaked state attorney general’s office memo revealed evidence of “widespread misconduct” by Mnuchin’s bank,</strong> OneWest, and thousands of illegal actions like forging documents.</li>
                         <li><strong>Mnuchin is the ultimate Wall Street insider.</strong> He spent 17 years at Goldman Sachs, peddling the types of risky derivatives that caused the financial crisis, and left with $46 million. His father was a Goldman banker, too.</li>
                         <li><strong>Until December 2016, Mnuchin sat on the board of CIT Group, a bank that’s been designated “too big to fail”</strong> and lost $2.3 billion in taxpayer bailout dollars. He earned $4.5 million a year there.</li>
                         <li><strong>Another Mnuchin company, Relativity Media is apparently undergoing federal investigation.</strong> Mnuchin resigned as Co-Chair of Relativity Media under shady circumstances – cashing out with $50 million just two months before Relativity declared bankruptcy.</li>
@@ -1034,7 +1043,7 @@ const Social = React.createClass({
                 <div className="share">
                     <a onClick={this.onClickTwitter} target="_blank" href="#Share on Twitter" className="twitter">Tweet</a>
                     <a onClick={this.onClickFacebook} target="_blank" href="#Share on Facebook" className="facebook">Share</a>
-                    <a href="mailto:?subject=I%20just%20signed%20this%3A&body=Hi%20-%20I%20just%20took%20action%20against%20Donald%20Trump’s%20horrifying%20picks%20for%20cabinet-level%20roles%20in%20his%20administration.%0A%0ATrump’s%20nominees%20have%20promoted%20white%20nationalism%2C%20attacked%20climate%20science%20and%20used%20their%20power%20as%20Wall%20Street%20insiders%20to%20fleece%20working%20families.%0A%0AI%20just%20signed%20a%20petition%20urging%20the%20Senate%20to%20block%20and%20resist%20any%20Trump%20nominee%20embracing%20hatred%20and%20greed.%20Could%20you%20sign%20too%3F%0A%0Ahttps%3A%2F%2Fwww.BlockTrumpsCabinet.com%2F%3Fsource%3Demail-share"
+                    <a href={emailHref}
                         target="_blank" className="email">Email</a>
                 </div>
             </div>
