@@ -759,7 +759,7 @@
 	                        React.createElement(
 	                            'strong',
 	                            null,
-	                            'A leaked state attorney general\u2019s office memo revealed evidence of \u201Cwidespread misconduct\u201D Mnuchin\u2019s bank,'
+	                            'A leaked state attorney general\u2019s office memo revealed evidence of \u201Cwidespread misconduct\u201D by Mnuchin\u2019s bank,'
 	                        ),
 	                        ' OneWest, and thousands of illegal actions like forging documents.'
 	                    ),
