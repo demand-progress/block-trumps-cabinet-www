@@ -655,17 +655,17 @@
 	            { className: 'stop-sessions-wrapper' },
 	            React.createElement(
 	                'div',
-	                { className: 'phone-form-wrapper stop-sessions' },
+	                { className: 'phone-form-wrapper stop-sessions block-mnuchin' },
 	                React.createElement(
 	                    'div',
 	                    { className: 'paragraph' },
 	                    React.createElement(
 	                        'strong',
 	                        null,
-	                        'Hearings on Trump\'s appointment of Steve Mnuchin to be Treasury Secretary begin Thursday, Jan. 19.',
+	                        'Tell the Senate: Reject Trump\'s appointment of notorious "foreclosure king" Steve Mnuchin to be Treasury Secretary.',
 	                        React.createElement('br', null),
 	                        React.createElement('br', null),
-	                        'Senate Democrats and Republicans alike need to fight to block the appointment of this notorious foreclosure king to perhaps the most important economic position in the country.'
+	                        'Enter your phone number to be connected with the Senate.'
 	                    )
 	                ),
 	                React.createElement(
@@ -701,11 +701,6 @@
 	                        ),
 	                        ' to connect.'
 	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'paragraph' },
-	                    'Enter your number above to call key senators to tell them to block foreclosure king Steve Mnuchin for Treasury Secretary.'
 	                )
 	            ),
 	            React.createElement(
@@ -1502,6 +1497,11 @@
 	            React.createElement(
 	                'div',
 	                { className: 'smaller' },
+	                React.createElement(
+	                    'a',
+	                    { title: '18 Million Rising', href: 'http://18millionrising.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/18mr_logo_short.png' })
+	                ),
 	                React.createElement(
 	                    'a',
 	                    { title: '350.org', href: 'https://350.org/', target: '_blank' },

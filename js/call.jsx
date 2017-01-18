@@ -468,13 +468,13 @@ const BlockMnuchinPhoneForm = React.createClass({
     render: function() {
         return (
             <div className="stop-sessions-wrapper">
-                <div className="phone-form-wrapper stop-sessions">
+                <div className="phone-form-wrapper stop-sessions block-mnuchin">
                     <div className="paragraph">
                         <strong>
-                        Hearings on Trump's appointment of Steve Mnuchin to be Treasury Secretary begin Thursday, Jan. 19.
+                        Tell the Senate: Reject Trump's appointment of notorious "foreclosure king" Steve Mnuchin to be Treasury Secretary.
                         <br />
                         <br />
-                        Senate Democrats and Republicans alike need to fight to block the appointment of this notorious foreclosure king to perhaps the most important economic position in the country.
+                        Enter your phone number to be connected with the Senate.
                         </strong>
                     </div>
 
@@ -492,10 +492,6 @@ const BlockMnuchinPhoneForm = React.createClass({
                             <br />
                             Or dial <a href="tel:+16825876214">(682) 587-6214</a> to connect.
                         </div>
-                    </div>
-
-                    <div className="paragraph">
-                        Enter your number above to call key senators to tell them to block foreclosure king Steve Mnuchin for Treasury Secretary.
                     </div>
                 </div>
 
@@ -973,6 +969,7 @@ const Organizations = () => (
 
             <h4>In partnership with</h4>
             <div className="smaller">
+                <a title="18 Million Rising" href="http://18millionrising.org/" target="_blank"><img src="images/logos/18mr_logo_short.png" /></a>
                 <a title="350.org" href="https://350.org/" target="_blank"><img src="images/logos/350-logo-org.png" /></a>
                 <a title="American Family Voices" href="http://www.americanfamilyvoices.org" target="_blank"><img src="images/logos/afv.jpg" /></a>
                 <a title="Catholics in Alliance" href="http://www.catholicsinalliance.org/" target="_blank"><img src="images/logos/CatholicsInAlliance.jpg" /></a>

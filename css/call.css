@@ -264,6 +264,10 @@ a:hover {
     text-align: left;
 }
 
+#app .phone-form-wrapper.block-mnuchin .paragraph {
+    text-align: center;
+}
+
 #app .stop-sessions-wrapper > .paragraph {
     max-width: 700px;
 }
@@ -642,6 +646,10 @@ a:hover {
     font-style: italic;
     padding: 0 0 32px;
     text-align: center;
+}
+
+#app .phone-form-wrapper.block-mnuchin .privacy {
+    padding-bottom: 0;
 }
 
 #app .organizations {
