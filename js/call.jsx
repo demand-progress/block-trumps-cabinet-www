@@ -472,10 +472,10 @@ const BlockMnuchinPhoneForm = React.createClass({
                     <div className="paragraph">
                         <strong>
                         Tell the Senate: Reject Trump's appointment of notorious "foreclosure king" Steve Mnuchin to be Treasury Secretary.
+                        </strong>
                         <br />
                         <br />
                         Enter your phone number to be connected with the Senate.
-                        </strong>
                     </div>
 
                     <div className="phone-form" id="phone-form">

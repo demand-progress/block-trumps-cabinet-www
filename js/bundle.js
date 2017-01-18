@@ -662,11 +662,11 @@
 	                    React.createElement(
 	                        'strong',
 	                        null,
-	                        'Tell the Senate: Reject Trump\'s appointment of notorious "foreclosure king" Steve Mnuchin to be Treasury Secretary.',
-	                        React.createElement('br', null),
-	                        React.createElement('br', null),
-	                        'Enter your phone number to be connected with the Senate.'
-	                    )
+	                        'Tell the Senate: Reject Trump\'s appointment of notorious "foreclosure king" Steve Mnuchin to be Treasury Secretary.'
+	                    ),
+	                    React.createElement('br', null),
+	                    React.createElement('br', null),
+	                    'Enter your phone number to be connected with the Senate.'
 	                ),
 	                React.createElement(
 	                    'div',
