@@ -623,7 +623,7 @@
 	        }
 
 	        var request = new XMLHttpRequest();
-	        var url = 'https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=' + config.callCampaignMnuchin + '&userPhone=' + number + '&source_id=' + getSource();
+	        var url = 'https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=' + config.callCampaignSessions + '&userPhone=' + number + '&source_id=' + getSource();
 
 	        try {
 	            if ('zip' in sessionStorage) {
