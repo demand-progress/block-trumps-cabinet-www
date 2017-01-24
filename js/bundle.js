@@ -1514,6 +1514,11 @@
 	                ),
 	                React.createElement(
 	                    'a',
+	                    { title: 'Americans for Tax Fairness Action Fund', href: 'http://atfactionfund.org/', target: '_blank' },
+	                    React.createElement('img', { src: 'images/logos/ATFAF.png' })
+	                ),
+	                React.createElement(
+	                    'a',
 	                    { title: 'Catholics in Alliance', href: 'http://www.catholicsinalliance.org/', target: '_blank' },
 	                    React.createElement('img', { src: 'images/logos/CatholicsInAlliance.jpg' })
 	                ),
