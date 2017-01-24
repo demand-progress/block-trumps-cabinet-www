@@ -15,7 +15,7 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 
 // Checking for outdated browsers
-(function() {
+(() => {
     const isIE = navigator.userAgent.match(/MSIE (\d+)\./);
     if (isIE) {
         const version = +isIE[1];
@@ -264,7 +264,7 @@ const EmailForm = React.createClass({
             'form_name': 'act-petition',
             'js': 1,
             'name': name.value.trim(),
-            'opt_in': 1,
+            // 'opt_in': 1,
             'page': config.akPage,
             'source': getSource(),
             'want_progress': 1,
