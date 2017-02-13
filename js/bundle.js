@@ -1301,27 +1301,12 @@
 	            React.createElement(
 	                'div',
 	                { className: 'suggestion' },
-	                '\u201CPlease publicly ',
 	                React.createElement(
 	                    'strong',
 	                    null,
-	                    'OPPOSE Steve Mnuchin (Mi-NEW-chin) for Treasury Secretary.'
+	                    '\u201CPlease vote AGAINST making Steve Mnuchin (Mi-NEW-chin) the Treasury Secretary.'
 	                ),
-	                ' His history as a notorious \u201Cforeclosure king\u201D \u2014 who got rich at the expense of ordinary people \u2014 makes him unfit for such a critical position.',
-	                React.createElement('div', { className: 'spacer' }),
-	                'Additionally, please demand that Mnuchin answers ',
-	                React.createElement(
-	                    'strong',
-	                    null,
-	                    'tough questions'
-	                ),
-	                ' during his hearing & insist on the ',
-	                React.createElement(
-	                    'strong',
-	                    null,
-	                    'full 30 hours of debate'
-	                ),
-	                ' for his nomination.\u201D'
+	                ' His history as a notorious \u201Cforeclosure king\u201D \u2014 who got rich at the expense of ordinary people \u2014 makes him unfit for such a critical position.'
 	            ),
 	            React.createElement('div', { className: 'spacer' }),
 	            React.createElement(

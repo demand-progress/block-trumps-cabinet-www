@@ -836,9 +836,7 @@ const BlockMnuchinPhoneScript = React.createClass({
                 <div className="spacer" />
 
                 <div className="suggestion">
-                    “Please publicly <strong>OPPOSE Steve Mnuchin (Mi-NEW-chin) for Treasury Secretary.</strong> His history as a notorious “foreclosure king” &mdash; who got rich at the expense of ordinary people &mdash; makes him unfit for such a critical position.
-                    <div className="spacer" />
-                    Additionally, please demand that Mnuchin answers <strong>tough questions</strong> during his hearing & insist on the <strong>full 30 hours of debate</strong> for his nomination.”
+                    <strong>“Please vote AGAINST making Steve Mnuchin (Mi-NEW-chin) the Treasury Secretary.</strong> His history as a notorious “foreclosure king” &mdash; who got rich at the expense of ordinary people &mdash; makes him unfit for such a critical position.
                 </div>
                 <div className="spacer" />
 
