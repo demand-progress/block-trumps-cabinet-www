@@ -552,6 +552,156 @@ const BlockMnuchinPhoneForm = React.createClass({
     },
 });
 
+const DemoPhoneForm = React.createClass({
+    render: function() {
+        return (
+            <div className="stop-sessions-wrapper">
+                <div className="phone-form-wrapper stop-sessions block-mnuchin">
+                    <div className="paragraph">
+                        <strong>Tell the Senate: Lorem ipsum!</strong>
+                        <br />
+                        <br />
+                        Enter your phone number to be connected with the Senate.
+                    </div>
+
+                    <div className="phone-form" id="phone-form">
+                        <form onSubmit={ this.onSubmit }>
+                            <input placeholder="Your Phone Number" id="field-phone" ref="field-phone" className="phone" name="phone" autoComplete="on" pattern="[\d\(\)\-\+ ]*" autoFocus />
+                            <button>
+                                CALL THE SENATE
+                                <img src="images/phone.svg" />
+                            </button>
+                        </form>
+
+                        <div className="privacy">
+                            This tool uses <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio</a>’s APIs.
+                        </div>
+                    </div>
+                </div>
+
+                <div className="paragraph" >
+                    <hr />
+                    <h3>Why do we need to lorem ipsum?</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                    <br />
+                    <br />
+                    <ul>
+                        <li><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
+                        <li><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
+                        <li><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
+                    </ul>
+                </div>
+
+                <a href="#phone-form" className="call-the-senate">CALL THE SENATE<img src="images/phone.svg" /></a>
+
+            </div>
+        );
+    },
+
+    onSubmit: function(e) {
+        e.preventDefault();
+
+        const callCampaign = 'lorem-ipsum';
+
+        const phoneField = this.refs['field-phone'];
+        const number = phoneField.value.replace(/[^\d]/g, '');
+
+        if (number.length !== 10) {
+            phoneField.focus();
+            return alert('Please enter your 10 digit phone number.');
+        }
+
+        const request = new XMLHttpRequest();
+        let url = `https://dp-call-congress.herokuapp.com/create?db=cwd&campaignId=${callCampaign}&userPhone=${number}&source_id=${getSource()}`;
+
+        try {
+            if ('zip' in sessionStorage) {
+                url += `&zipcode=${sessionStorage.zip}`;
+            }
+        } catch (err) {
+            // Zip is optional.
+        }
+
+        request.open('GET', url, true);
+        request.send();
+
+        this.props.changeForm('demoscript');
+    },
+});
+
+const DemoPhoneScript = React.createClass({
+    onClickSendFeedback: function(e) {
+        e.preventDefault();
+
+        const data = {
+            campaign: 'lorem-ipsum',
+            subject: 'Feedback from Lorem Ipsum',
+            text: '',
+        };
+
+        const fields = [
+            document.querySelector('#who'),
+            document.querySelector('#how'),
+        ];
+
+        fields.forEach(field => {
+            data.text += `${field.name}:\n${field.value}\n\n`;
+        });
+
+        let url = urls.feedback;
+
+        for (let key in data) {
+            url += key;
+            url += '=';
+            url += encodeURIComponent(data[key]);
+            url += '&';
+        }
+
+        ajax.get(url);
+
+        this.setState({
+            sent: true,
+        });
+    },
+
+    getInitialState: function() {
+        return {
+            sent: false,
+        };
+    },
+
+    render: function() {
+        return (
+            <div className="phone-script">
+                <em>We’re calling you now. <br /> After the conversation, you can <strong>press *</strong> and we’ll connect you to the next office.</em>
+                <div className="spacer" />
+
+                <em>Here’s what you can say:</em>
+                <div className="spacer" />
+
+                <div className="suggestion">
+                    "Lorem to the ipsum"
+                </div>
+                <div className="spacer" />
+
+                <div className="calling-wrapper">
+                    <h3>After your call(s), use the form to let us know how it went!</h3>
+                    <form action="#" method="get" className={this.state.sent ? 'sent' : false}>
+                        <div className="wrapper">
+                            <h4>Who did you speak with?</h4>
+                            <input required="required" type="text" name="Who did you speak with?" id="who" />
+                            <h4>How did it go?</h4>
+                            <input required="required" type="text" name="How did it go?" id="how" />
+                            <br />
+                            <div id="thanks">Thank you!</div>
+                            <button onClick={this.onClickSendFeedback} type="submit" name="submit">Send Feedback</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        );
+    },
+});
 
 const OptOutForm = React.createClass({
     numbers: {
@@ -881,24 +1031,32 @@ const Form = React.createClass({
             form = <PhoneForm changeForm={ this.changeForm } />;
             break;
 
-            case 'stopsessions':
-            form = <StopSessionsPhoneForm changeForm={ this.changeForm } />;
-            break;
-
-            case 'blockmnuchin':
-            form = <BlockMnuchinPhoneForm changeForm={ this.changeForm } />;
-            break;
-
             case 'script':
             form = <PhoneScript />;
+            break;
+
+            case 'stopsessions':
+            form = <StopSessionsPhoneForm changeForm={ this.changeForm } />;
             break;
 
             case 'scriptsessions':
             form = <StopSessionsPhoneScript />;
             break;
 
+            case 'blockmnuchin':
+            form = <BlockMnuchinPhoneForm changeForm={ this.changeForm } />;
+            break;
+
             case 'scriptmnuchin':
             form = <BlockMnuchinPhoneScript />;
+            break;
+
+            case 'demophone':
+            form = <DemoPhoneForm changeForm={ this.changeForm } />;
+            break;
+
+            case 'demoscript':
+            form = <DemoPhoneScript />;
             break;
 
             case 'thanks':
